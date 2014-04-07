@@ -1,12 +1,20 @@
-Subject: New nearby problems on FixMyStreet
+Subject: New reports on FixMyStreet
 
-The following nearby problems have been added:
+The following reports have been made within the area you specified on FixMyStreet:
 
 <?=$values['data']?>
 
--------
-
 <?=$values['signature']?>
 
-To stop receiving emails when there are nearby problems,
-please follow this link: <?=$values['unsubscribe_url']?>
+Unsubscribe?
+
+You asked us to send you an email when someone makes a new FixMyStreet report within your chosen area. This is a free service from FixMyStreet.
+
+If you no longer wish to receive an email whenever there are new reports within this area, please follow this link:
+<?=$values['unsubscribe_url']?>
+
+This email was sent automatically, from an unmonitored email account - so please do not reply to it. 
+
+Problems? questions?
+
+Visit http://www.fixmystreet.com/faq
