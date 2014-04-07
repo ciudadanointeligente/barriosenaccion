@@ -1,3 +1,7 @@
+branches:
+  except:
+    - 700-auto-emails
+
 notifications:
   email: false
   irc:
