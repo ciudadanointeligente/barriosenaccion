@@ -1576,7 +1576,7 @@ subtest "extra google analytics code displayed on email confirmation problem cre
 
         my $email = $mech->get_email;
         ok $email, "got an email";
-        like $email->body, qr/confirm the problem/i, "confirm the problem";
+        like $email->body, qr/confirm that you want to/i, "confirm the problem";
 
         my ($url) = $email->body =~ m{(https?://\S+)};
         ok $url, "extracted confirm url '$url'";
