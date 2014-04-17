@@ -9,9 +9,18 @@ The following updates have been left on this problem:
 To view or reply to these updates, please visit the following URL:
     <?=$values['problem_url']?>
 
-You cannot contact anyone by replying to this email.
+<?=$values['signature']?>.
 
-<?=$values['signature']?>
+Unsubscribe?
 
-To stop receiving emails when there are new updates on this problem,
-please follow this link: <?=$values['unsubscribe_url']?>
+You subscribed to receive an email when someone makes a new update on
+this <?=$values['site_name']?> report. This is a free service from
+<?=$values['site_name']?>.
+
+If you no longer wish to receive an email whenever there are new updates
+on this <?=$values['site_name']?> report please follow this link:
+
+<?=$values['unsubscribe_url']?>
+
+This email was sent automatically, from an unmonitored email account - so please
+do not reply to it.
