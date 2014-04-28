@@ -28,6 +28,6 @@ sub disambiguate_location {
         town => 'Santiago',
     };
 }
-
+sub site_title { return 'BellavistaEnAccion'; }
 1;
 
