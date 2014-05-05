@@ -1,4 +1,5 @@
 $logo-cv: '/cobrands/bellavistaenaccion/images/ciudadVivaNegro.png' !default;
+$logo-bellavistaenaccion: '/cobrands/bellavistaenaccion/images/bellavistaAccion.png' !default;
 
 #ciudadviva-logo {
 	background-image: url($logo-cv) !important;
@@ -6,4 +7,8 @@ $logo-cv: '/cobrands/bellavistaenaccion/images/ciudadVivaNegro.png' !default;
 	height: 16px;
 	opacity: 0.8;
 	width: 116px;
+}
+
+#site-logo {
+	background-image: url($logo-bellavistaenaccion) !important;
 }
