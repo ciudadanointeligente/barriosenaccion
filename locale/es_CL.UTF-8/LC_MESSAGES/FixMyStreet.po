@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2013-11-12 13:15+0000\n"
-"PO-Revision-Date: 2014-04-28 19:18-0300\n"
+"PO-Revision-Date: 2014-05-05 17:19-0300\n"
 "Last-Translator: mysociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/fixmystreet/"
 "language/es/)\n"
@@ -4824,7 +4824,7 @@ msgstr ""
 #: templates/web/zurich/tokens/confirm_problem.html:5
 #: templates/web/zurich/tokens/confirm_problem.html:8
 msgid "You can <a href=\"%s%s\">view the problem on this site</a>."
-msgstr ""
+msgstr "Puede <a href=\"%s%s\">ver el problema en este lugar</a>."
 
 #: templates/web/default/admin/user-form.html:47
 msgid ""
