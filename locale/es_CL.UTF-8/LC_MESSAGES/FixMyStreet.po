@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2013-11-12 13:15+0000\n"
-"PO-Revision-Date: 2014-05-05 17:19-0300\n"
+"PO-Revision-Date: 2014-05-05 18:07-0300\n"
 "Last-Translator: mysociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/fixmystreet/"
 "language/es/)\n"
@@ -1450,7 +1450,7 @@ msgstr "GeoRSS en Google Maps"
 #: templates/web/fixmystreet/around/_updates.html:3
 #: templates/web/fixmystreet/report/display.html:38
 msgid "Get updates"
-msgstr "Recibe actualizaciones"
+msgstr "Suscríbete"
 
 #: templates/web/fixmystreet/reports/_rss.html:3
 #: templates/web/fixmystreet/reports/_rss.html:9
@@ -3298,7 +3298,7 @@ msgstr "Hacer un reporte"
 #: templates/web/bromley/report/display.html:28
 #: templates/web/fixmystreet/report/display.html:35
 msgid "Report abuse"
-msgstr "Denunciar abuso"
+msgstr "Denuncia"
 
 #: templates/web/default/report_created.html:1
 #: templates/web/default/report_created.html:3
@@ -3515,7 +3515,7 @@ msgstr "Servicio:"
 
 #: templates/web/fixmystreet/report/display.html:41
 msgid "Share"
-msgstr ""
+msgstr "Comparte"
 
 #: templates/web/bromley/report/display.html:205
 #: templates/web/bromley/report/new/fill_in_details_form.html:129
