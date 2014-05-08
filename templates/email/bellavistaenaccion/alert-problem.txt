@@ -1,10 +1,10 @@
-Subject: New problems on FixMyStreet
+Subject: Nuevos problemas en Bellavista En Acción
 
-The following new problems have been added:
+Los siguientes nuevos problemas han sido reportados:
 
 <?=$values['data']?>
 
 <?=$values['signature']?>
 
-To stop receiving emails when there are new problems,
-please follow this link: <?=$values['unsubscribe_url']?>
+Para dejar de recibir avisos cuando existan nuevos problemas,
+haga click en el siguiente link: <?=$values['unsubscribe_url']?>

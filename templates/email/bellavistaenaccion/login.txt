@@ -1,7 +1,7 @@
-Subject: Your FixMyStreet.com account details
+Subject: Los datos de tu cuenta en Bellavista En Acción
 
-Please click on the link below to confirm your email address. Then you will be
-able to view your problem reports and manage them more easily.
+Por favor haga click en el siguiente link para confirmar su email. Luego será
+capaz de ver los reportes sobre sus problemas y manejarlos más facilmente.
 
 [% c.uri_for_action( 'auth/token', token ) %]
 

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2013-11-12 13:15+0000\n"
-"PO-Revision-Date: 2014-05-05 18:23-0300\n"
+"PO-Revision-Date: 2014-05-08 19:08-0300\n"
 "Last-Translator: mysociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/fixmystreet/"
 "language/es/)\n"
@@ -879,7 +879,7 @@ msgstr "Contacto"
 
 #: templates/web/default/footer.html:24
 msgid "Contact FixMyStreet"
-msgstr "Contactar BellavistaEnAccion"
+msgstr "Contactar"
 
 #: templates/web/bromley/contact/submit.html:1
 #: templates/web/default/contact/index.html:1
@@ -1020,7 +1020,7 @@ msgstr "¿Tiene una contraseña FixMyBarangay?"
 #: templates/web/fixmystreet/report/new/fill_in_details_form.html:155
 #: templates/web/fixmystreet/report/update-form.html:84
 msgid "Do you have a FixMyStreet password?"
-msgstr "¿Tiene una contraseña de BellavistaEnAcción?"
+msgstr "¿Tiene una contraseña?"
 
 #: templates/web/default/questionnaire/index.html:70
 #: templates/web/fixmystreet/questionnaire/index.html:64
@@ -1293,7 +1293,7 @@ msgstr ""
 #: templates/web/fiksgatami/header.html:16
 #: templates/web/fiksgatami/nn/header.html:16
 msgid "Fix<span id=\"my\">My</span>Street"
-msgstr "Fix <span id=\"my\"> My </span> Street"
+msgstr "Bellavista <span id=\"my\"> En </span> Acción"
 
 #: templates/web/default/header.html:24
 msgid "FixMyStreet"
@@ -1573,7 +1573,7 @@ msgstr "Cómo notificar un problema"
 #: templates/web/default/js/translation_strings.html:33
 #: templates/web/oxfordshire/js/translation_strings.html:27
 msgid "How to send successful reports"
-msgstr ""
+msgstr "Cómo enviar reportes exitosos"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:733
 msgid "I am afraid you cannot confirm unconfirmed reports."
@@ -1932,7 +1932,7 @@ msgstr "Alertas locales"
 
 #: templates/web/default/index-steps.html:25
 msgid "Locate the problem on a map of the area"
-msgstr "Busque el problema en un mapa de la zona"
+msgstr "Ubique el problema en un mapa de la zona"
 
 #: templates/web/default/js/translation_strings.html:43
 #: templates/web/oxfordshire/js/translation_strings.html:37
@@ -2754,6 +2754,8 @@ msgid ""
 "Please feel free to <a href=\"%s\">sign in again</a>, or go back to the <a "
 "href=\"/\">front page</a>."
 msgstr ""
+"Sientase libre de <a href=\"%s\">ingresar nuevamente</a>, volver a la <a "
+"href=\"/\">página de inicio</a>."
 
 #: templates/web/emptyhomes/report/new/fill_in_details_text.html:1
 msgid ""
@@ -4405,7 +4407,7 @@ msgstr ""
 #: templates/web/default/js/translation_strings.html:29
 #: templates/web/oxfordshire/js/translation_strings.html:23
 msgid "Try again"
-msgstr ""
+msgstr "Intentarlo nuevamente"
 
 #: templates/web/bromley/report/display.html:80
 #: templates/web/bromley/report/display.html:83
@@ -4416,7 +4418,7 @@ msgstr ""
 #: templates/web/fixmystreet/report/update-form.html:28
 #: templates/web/fixmystreet/report/update-form.html:31
 msgid "Unable to fix"
-msgstr ""
+msgstr "No es posible de arreglar"
 
 #: templates/web/default/admin/report_edit.html:35
 #: templates/web/default/admin/report_edit.html:51
@@ -5299,8 +5301,8 @@ msgstr "barrio"
 #, perl-format
 msgid "<big>%s</big> report recently"
 msgid_plural "<big>%s</big> reports recently"
-msgstr[0] "<big>%s</big> notificadas recientemente"
-msgstr[1] "<big>%s</big> notificadas recientemente"
+msgstr[0] "<big>%s</big> reporte reciente"
+msgstr[1] "<big>%s</big> reportes recientes"
 
 #: perllib/Utils.pm:282
 #, perl-format

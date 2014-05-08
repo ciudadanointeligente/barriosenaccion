@@ -1,11 +1,11 @@
-Subject: New problems reported to <?=$values['area_name']?> on FixMyStreet
+Subject: Nuevos problemas reportados a <?=$values['area_name']?> en Bellavista En Acción
 
-The following new problems have been reported to <?=$values['area_name']?>:
+Los siguientes nuevos problemas han sido reportados a <?=$values['area_name']?>:
 
 <?=$values['data']?>
 
 <?=$values['signature']?>
 
-To stop receiving emails when there are new problems reported to
-<?=$values['area_name']?>, please follow this link: 
+Para dejar de recibir emails cuando exista un nuevo problema reportado a
+<?=$values['area_name']?>, haga click en el siguiente link: 
 <?=$values['unsubscribe_url']?>
