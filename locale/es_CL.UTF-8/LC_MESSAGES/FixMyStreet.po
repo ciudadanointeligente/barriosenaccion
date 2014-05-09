@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2013-11-12 13:15+0000\n"
-"PO-Revision-Date: 2014-05-08 19:08-0300\n"
+"PO-Revision-Date: 2014-05-09 13:32-0300\n"
 "Last-Translator: mysociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/fixmystreet/"
 "language/es/)\n"
@@ -1293,11 +1293,11 @@ msgstr ""
 #: templates/web/fiksgatami/header.html:16
 #: templates/web/fiksgatami/nn/header.html:16
 msgid "Fix<span id=\"my\">My</span>Street"
-msgstr "Bellavista <span id=\"my\"> En </span> Acción"
+msgstr "Fix<span id=\"my\">My</span>Street"
 
 #: templates/web/default/header.html:24
 msgid "FixMyStreet"
-msgstr "Bellavista en Acción"
+msgstr "FixMyStreet"
 
 #: templates/web/default/admin/header.html:10
 msgid "FixMyStreet admin:"
@@ -1311,7 +1311,7 @@ msgid ""
 "problems\n"
 "within a certain distance of a particular location."
 msgstr ""
-"BellavistaEnAcción dispone de varias fuentes RSS y alertas por email de los "
+"FixMyStreet dispone de varias fuentes RSS y alertas por email de los "
 "problemas locales, incluyendo\n"
 "alertas para todos los problemas dentro de un barrio o municipalidad "
 "concreta, o para todos los problemas \n"
@@ -1331,7 +1331,7 @@ msgid ""
 "alert\n"
 "for the county council."
 msgstr ""
-"BellavistaEnAcción envía problemas de diferentes categorías\n"
+"FixMyStreet envía problemas de diferentes categorías\n"
 " a los diferentes departamentos de la municipalidad, por lo cual los "
 "problemas dentro de los límites de una determinada Concejalía\n"
 " pueden no responden a los problemas enviados. Por ejemplo, una notificación "
@@ -2083,7 +2083,7 @@ msgstr ""
 
 #: db/alert_types.pl:18 db/alert_types.pl:22
 msgid "New local problems on FixMyStreet"
-msgstr "Nuevos problemas locales en BellavistaEnAcción"
+msgstr "Nuevos problemas locales en FixMyStreet"
 
 #: db/alert_types_eha.pl:12
 msgid "New local reports on reportemptyhomes.com"
@@ -2097,24 +2097,23 @@ msgstr "Nuevos problemas"
 
 #: db/alert_types.pl:38
 msgid "New problems for {{COUNCIL}} within {{WARD}} ward on FixMyStreet"
-msgstr ""
-"Nuevos problemas en {{COUNCIL}} para el barrio {{WARD}} en BellavistaEnAcción"
+msgstr "Nuevos problemas en {{COUNCIL}} para el barrio {{WARD}} en FixMyStreet"
 
 #: db/alert_types.pl:26 db/alert_types.pl:30
 msgid "New problems near {{POSTCODE}} on FixMyStreet"
-msgstr "Nuevos problemas cerca de {{POSTCODE}} En BellavistaEnAcción"
+msgstr "Nuevos problemas cerca de {{POSTCODE}} En FixMyStreet"
 
 #: db/alert_types.pl:10
 msgid "New problems on FixMyStreet"
-msgstr "Nuevos problemas en BellavistaEnAcción"
+msgstr "Nuevos problemas en FixMyStreet"
 
 #: db/alert_types.pl:34
 msgid "New problems to {{COUNCIL}} on FixMyStreet"
-msgstr "Nuevos problemas en {{COUNCIL}} en BellavistaEnAcción"
+msgstr "Nuevos problemas en {{COUNCIL}} en FixMyStreet"
 
 #: db/alert_types.pl:42
 msgid "New problems within {{NAME}}'s boundary on FixMyStreet"
-msgstr "Nuevos problemas en los límites de {{NAME}} en BellavistaEnAcción"
+msgstr "Nuevos problemas en los límites de {{NAME}} en FixMyStreet"
 
 #: templates/web/zurich/admin/index-sdm.html:4
 msgid "New reports"
@@ -2319,8 +2318,7 @@ msgstr "Y ahora a enviar tu notificación ..."
 #: templates/web/default/report/new/fill_in_details_form.html:131
 msgid "Now to submit your report&hellip; do you have a FixMyStreet password?"
 msgstr ""
-"Y ahora a enviar tu notificación ... no tienes contraseña en "
-"BellavistaEnAcción?"
+"Y ahora a enviar tu notificación ... no tienes contraseña en FixMyStreet?"
 
 #: templates/web/fixmystreet/report/update-form.html:83
 msgid "Now to submit your update&hellip;"
@@ -2329,8 +2327,7 @@ msgstr "Y ahora a enviar tu actualización ..."
 #: templates/web/default/report/update-form.html:86
 msgid "Now to submit your update&hellip; do you have a FixMyStreet password?"
 msgstr ""
-"Y ahora a enviar tu actualización ... no tienes contraseña en "
-"BellavistaEnAcción?"
+"Y ahora a enviar tu actualización ... no tienes contraseña en FixMyStreet?"
 
 #: templates/web/default/js/translation_strings.html:42
 #: templates/web/oxfordshire/js/translation_strings.html:36
@@ -3023,8 +3020,7 @@ msgstr "Problemas en el mapa"
 
 #: db/alert_types.pl:14
 msgid "Problems recently reported fixed on FixMyStreet"
-msgstr ""
-"Problemas recientemente notificados como arreglados en BellavistaEnAcción"
+msgstr "Problemas recientemente notificados como arreglados en FixMyStreet"
 
 #: templates/web/default/alert/_list.html:19
 #: templates/web/fixmystreet/alert/_list.html:21
@@ -3046,7 +3042,7 @@ msgstr "Problemas en el barrio %s"
 #: templates/web/default/reports/body.html:0
 #: templates/web/default/reports/body.html:24
 msgid "Problems within %s, FixMyStreet"
-msgstr "Problemas en %s, BellavistaEnAcción"
+msgstr "Problemas en %s, FixMyStreet"
 
 #: templates/web/default/alert/_list.html:40
 #: templates/web/fixmybarangay/alert/_list.html:13
@@ -3233,7 +3229,7 @@ msgstr "Reciba un correo cuando se dejen actualizaciones sobre este problema."
 #: templates/web/default/around/display_location.html:0
 #: templates/web/default/around/display_location.html:32
 msgid "Recent local problems, FixMyStreet"
-msgstr "Problemas locales recientes, BellavistaEnAcción"
+msgstr "Problemas locales recientes, FixMyStreet"
 
 #: templates/web/default/reports/index.html:19
 #: templates/web/fixmybarangay/reports/index.html:19
@@ -3258,10 +3254,10 @@ msgid ""
 "site remember that you can contact your council directly using their own "
 "website."
 msgstr ""
-"Recuerde que BellavistaEnAcción es principalmente para informar sobre "
-"problemas físicos que pueden ser arreglados. Si su problema no es apropiado "
-"para ser presentado a través de este sitio recuerde que puede ponerse en "
-"contacto directamente con la municipalidad mediante su página web."
+"Recuerde que FixMyStreet es principalmente para informar sobre problemas "
+"físicos que pueden ser arreglados. Si su problema no es apropiado para ser "
+"presentado a través de este sitio recuerde que puede ponerse en contacto "
+"directamente con la municipalidad mediante su página web."
 
 #: templates/web/fixmybarangay/report/new/notes.html:9
 msgid ""
@@ -3921,7 +3917,7 @@ msgstr ""
 
 #: perllib/FixMyStreet/App/Controller/Report.pm:111
 msgid "That report has been removed from FixMyStreet."
-msgstr "Esa notificación ha sido eliminada de BellavistaEnAcción."
+msgstr "Esa notificación ha sido eliminada de FixMyStreet."
 
 #: templates/web/default/admin/body.html:115
 msgid ""
@@ -4538,7 +4534,7 @@ msgstr "Actualizaciones en {{title}}"
 #: templates/web/fixmystreet/report/display.html:0
 #: templates/web/fixmystreet/report/display.html:8
 msgid "Updates to this problem, FixMyStreet"
-msgstr "Actualizaciones para este problema, BellavistaEnAcción"
+msgstr "Actualizaciones para este problema, FixMyStreet"
 
 #: templates/web/default/admin/body.html:153
 msgid ""
