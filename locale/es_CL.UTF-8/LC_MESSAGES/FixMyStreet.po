@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2013-11-12 13:15+0000\n"
-"PO-Revision-Date: 2014-05-09 13:32-0300\n"
+"PO-Revision-Date: 2014-05-09 15:29-0300\n"
 "Last-Translator: mysociety <transifex@mysociety.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/fixmystreet/"
 "language/es/)\n"
@@ -5325,8 +5325,8 @@ msgstr[1] ""
 #, perl-format
 msgid "<big>%s</big> update on reports"
 msgid_plural "<big>%s</big> updates on reports"
-msgstr[0] "<big>%s</big> notificaciones actualizadas"
-msgstr[1] "<big>%s</big> notificaciones actualizadas"
+msgstr[0] "<big>%s</big> reporte actualizado"
+msgstr[1] "<big>%s</big> reportes actualizados"
 
 #: templates/web/emptyhomes/report/new/councils_text_none.html:3
 #, perl-format
