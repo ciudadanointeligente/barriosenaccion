@@ -1,21 +1,21 @@
-Subject: FixMyStreet questionnaire about '<?=$values['title']?>'
+Subject: Cuestionario de BellavistaEnAcción sobre'<?=$values['title']?>'
 
-Hi <?=$values['name']?>,
+Hola <?=$values['name']?>,
 
-<?=$values['created']?> ago, you left a problem on FixMyStreet
-with the details provided at the end of this email. To keep our
-site up to date and relevant, we'd appreciate it if you could
-follow the link below and fill in our short questionnaire
-updating the status of your problem:
+<?=$values['created']?> atrás, usted escribió un problema en BellavistaEnAcción
+con los detalles descritos al final de este mail. Para mantener nuestro
+sitio actualizado y relevante, podría usted seguir el siguiente link
+y llenar un pequeño cuestionario actualizando el estatus del problema.
 
     <?=$values['url']?>
 
-Please do not reply to this email; there is a public comment
-box on the questionnaire.
+
+Por favor no responda a este mail; existe un espacio para hacer
+comentarios en el cuestionario.
 
 <?=$values['signature']?>
 
-Your problem was as follows:
+El problema que usted ingresó es el siguiente:
 
 <?=$values['title']?>
 
