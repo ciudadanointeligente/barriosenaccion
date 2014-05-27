@@ -22,6 +22,8 @@ sub example_places {
 
 sub languages { [ 'es-cl,Castellano,es_CL', 'en-gb,English,en_GB' ] }
 
+sub language_override { 'es-cl' }
+
 sub disambiguate_location {
     return {
         country => 'cl',
