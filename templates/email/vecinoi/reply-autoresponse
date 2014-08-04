@@ -1,39 +1,38 @@
-Subject: Automatic reply to your message to FixMyStreet
+Subject: Respuesta automática a su mensaje en [% INCLUDE 'site-name.txt' | trim %]
 
-Hello,
+Hola,
 
-You are receiving this message because you have tried to reply to an automated
-email from FixMyStreet.
+Usted está recibiendo este mensaje por que usted ha tratado de responder a 
+un email automatizado de [% INCLUDE 'site-name.txt' | trim %].
 
-This is an automatic response to your email.
+Esta es una respuesta automática a su email.
 
-If you are trying to contact your council about a report you have made, please
-search your email for their latest communication (or auto-reply), and respond
-to that.
+Si usted está tratando de contactar a su municipio respecto a un reporte que
+usted realizó, por favor busque en su email la última comunicación (o autorespuesta),
+y responda a eso.
 
-Alternatively, if you would like your comment to be published on our website,
-you can post it as an update to the original report. Note, however, that updates
-are not sent to the council - they are a way for residents to discuss local
-problems and offer advice or support. With this in mind, you may wish to both
-update your original report, and chase your council via email.
+Alternativamente, si usted quisiera comentar en [% INCLUDE 'site-name.txt' | trim %],
+usted puede hacerlo como una actualización al reporte original. Tenga en cuenta,
+que estas actualizaciones, no serán enviadas a su municipio - Estos comentarios, son una
+forma para los residentes de discutir problemas locales y ofrecer consejos y ayuda.
+Con esto en mente usted podría realizar ambas cosas y actualizar el reporte original, 
+y contactar a su municipio via email.
 
-If you would like to respond to our question about whether your problem has
-been fixed, please follow the link in the email we sent you.
+Si usted quisiera responder a nuestra pregunta con respecto a si su problema
+ha sido resuelto, por favor haga click en el link email que le enviamos.
 
-If you are trying to reply to an update someone has left on your report, please
-visit your report page on FixMyStreet and enter your response in the 'update'
-box.
+Si usted está tratando de responder a una actualización que alguien más ha dejado
+en su reporte, por favor visite la página de su reporte en [% INCLUDE 'site-name.txt' | trim %]
+e ingrese su respuesta donde dice 'actualizar'.
 
-If you are trying to confirm a report or an email alert, please click the link
-in the email that we sent you, or, if you cannot click the link, copy and paste
-it into the address bar of your web browser.
+Si usted está tratando de confirmar un reporte o un email de alerta, por favor
+haga click en el link que aparece en el mail que le enviamos, si usted no puede
+hacer click copie y pegue la URL en la barra de su navegador.
 
-If you're trying to unsubscribe from an email alert, there is an unsubscribe
-link at the bottom of the email.
+Si usted está tratando de desuscribirse de una alerta de email, hay un link 
+de desuscribirse al final del email.
 
-All the best,
+[% INCLUDE 'signature.txt' %]
 
-The FixMyStreet team
-
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este email fue enviado automaticamente, desde una cuenta que no es revisada - por favor
+no responda.
