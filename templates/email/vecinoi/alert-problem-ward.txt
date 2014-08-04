@@ -1,24 +1,23 @@
-Subject: New <?=$values['site_name']?> reports to <?=$values['area_name']?> within <?=$values['ward_name']?>
+Subject: Nuevos reportes de <?=$values['site_name']?> en <?=$values['area_name']?> entre <?=$values['ward_name']?>
 
-The following new <?=$values['site_name']?> reports have been sent to <?=$values['area_name']?>
-within <?=$values['ward_name']?>:
+Los siguientes nuevos reportes de <?=$values['area_name']?> han sido enviados a <?=$values['site_name']?>
+en <?=$values['ward_name']?>:
 
 <?=$values['data']?>
 
 <?=$values['signature']?>
 
 
-Unsubscribe?
+Desuscribirse?
 
-You subscribed to receive an email every time someone makes a new <?=$values['site_name']?>
-report to <?=$values['area_name']?> within <?=$values['ward_name']?>.This is a
-free service from <?=$values['site_name']?>.
+Usted está suscrito para recibir un mail cada vez que alguien realiza un reporte en
+<?=$values['site_name']?> en <?=$values['area_name']?> en <?=$values['ward_name']?>.
 
-If you no longer wish to receive an email whenever there are new reports to
-<?=$values['area_name']?> within <?=$values['ward_name']?>, please follow
-this link:
+Si usted no desea seguir recibiendo estos mails cada vez que exista un reporte en
+<?=$values['site_name']?> en <?=$values['area_name']?>, por favor haga click en el
+siguiente link:
 
 <?=$values['unsubscribe_url']?>
 
-This email was sent automatically, from an unmonitored email account - so please
-do not reply to it.
+Este email fue enviado automaticamente, desde una cuenta que no es revisada - por favor
+no responda.

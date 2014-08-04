@@ -1,22 +1,22 @@
-Subject: New reports on <?=$values['site_name']?>
+Subject: Nuevos reportes en <?=$values['site_name']?>
 
-The following <?=$values['site_name']?> reports have been made within the area
-you specified:
+Los siguientes reportes en <?=$values['site_name']?> se han realizado en el area
+que usted especificó:
 
 <?=$values['data']?>
 
 <?=$values['signature']?>
 
 
-Unsubscribe?
+Desuscribirse?
 
-You asked us to send you an email when someone makes a new <?=$values['site_name']?>
-report within your chosen area. This is a free service from <?=$values['site_name']?>.
+Este mail le ha llegado por que usted está suscrito en <?=$values['site_name']?> para 
+recibir los nuevos reportes en <?=$values['area_name']?>. 
 
-If you no longer wish to receive an email whenever there are new reports within
-this area, please follow this link:
+Si usted no desea seguir recibiendo estos emails, por favor haga click en el siguiente
+link:
 
 <?=$values['unsubscribe_url']?>
 
-This email was sent automatically, from an unmonitored email account - so please
-do not reply to it.
+Este email fue enviado automaticamente, desde una cuenta que no es revisada - por favor
+no responda.

@@ -1,21 +1,20 @@
-Subject: New reports on <?=$values['site_name']?>
+Subject: Nuevos reportes en <?=$values['site_name']?>
 
-The following new reports have been added to <?=$values['site_name']?>:
+Los siguientes nuevos reportes han sido añadidos a <?=$values['site_name']?>:
 
 <?=$values['data']?>
 
 <?=$values['signature']?>
 
+Desuscribirse?
 
-Unsubscribe?
+Usted está recibiendo un mail cada vez que alguien realiza un nuevo reporte en
+<?=$values['site_name']?>.
 
-You subscribed to receive an email when someone makes a new <?=$values['site_name']?>
-report. This is a free service from <?=$values['site_name']?>.
-
-If you no longer wish to receive an email whenever there are new <?=$values['site_name']?>
-reports please follow this link:
+Si no desea seguir recibiendo mails cuando existan nuevos reportes en <?=$values['site_name']?>,
+por favor siga el siguiente link:
 
 <?=$values['unsubscribe_url']?>
 
-This email was sent automatically, from an unmonitored email account - so please
-do not reply to it.
+Este email fue enviado automaticamente, desde una cuenta que no es revisada - por favor
+no responda.
