@@ -1,0 +1,18 @@
+<div class="problem-header cf">
+    <h1>[% problem.title | html %]</h1>
+
+    <p><em>
+    [% problem.meta_line(c) | html %]
+    [%- IF !problem.used_map AND c.cobrand.moniker != 'emptyhomes' %]; <strong>[% loc('there is no pin shown as the user did not use the map') %]</strong>[% END %]
+    [% IF problem.bodies_str %]
+        [% INCLUDE 'report/_council_sent_info.html' %]
+    [% ELSE %]
+        <br><small>[% loc('Not reported to council') %]</small>
+    [% END %]
+    </em></p>
+    [% INCLUDE 'report/_support.html' %]
+
+    [% INCLUDE 'report/photo.html' object=problem %]
+    [% add_links( problem.detail ) | html_para %]
+
+</div>

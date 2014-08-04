@@ -14,23 +14,22 @@ sub base_url {
     return 'https://fix.bromley.gov.uk';
 }
 
-sub path_to_web_templates {
-    my $self = shift;
-    return [
-        FixMyStreet->path_to( 'templates/web', $self->moniker )->stringify,
-        FixMyStreet->path_to( 'templates/web/fixmystreet' )->stringify
-    ];
-}
-
 sub disambiguate_location {
     my $self    = shift;
     my $string  = shift;
 
     my $town = 'Bromley';
+
     # Bing turns High St Bromley into Bromley High St which is in 
     # Bromley by Bow.
     $town .= ', BR1' if $string =~ /^high\s+st(reet)?$/i;
+
+    # White Horse Hill is on boundary with Greenwich, so need a 
+    # specific postcode
+    $town = 'chislehurst, BR7 6DH' if $string =~ /^white\s+horse/i;
+
     $town = '' if $string =~ /orpington/i;
+
     return {
         %{ $self->SUPER::disambiguate_location() },
         town => $town,
