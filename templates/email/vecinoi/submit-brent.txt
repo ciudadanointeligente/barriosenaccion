@@ -1,43 +1,43 @@
-Subject: FMS Problem Report: <?=$values['title']?>
+Subject:[% INCLUDE 'site-name.txt' | trim %] Reporte de problema: <?=$values['title']?>
 
-Dear <?=$values['bodies_name']?>,
+Estimada/o <?=$values['bodies_name']?>,
 
-<?=$values['missing']?><?=$values['multiple']?>A user of
-FixMyStreet has submitted the following report
-of a local problem that they believe might require your attention.
+<?=$values['missing']?><?=$values['multiple']?> Un usuario de 
+[% INCLUDE 'site-name.txt' | trim %] ha enviado el siguiente reporte
+de un problema local que se presume requiere su atención.
 
-<?=$values['fuzzy']?>, or to provide an update on the problem,
-please visit the following link:
+<?=$values['fuzzy']?>, o para proveer de una actualización del problema,
+por favor visite el siguiente link:
 
     <?=$values['url']?>
 
 <?=$values['has_photo']?>----------
 
-Name: <?=$values['name']?>
+Nombre: <?=$values['name']?>
 
 Email: <?=$values['email']?>
 
-<?=$values['phone_line']?><?=$values['category_line']?>Subject: <?=$values['title']?>
+<?=$values['phone_line']?><?=$values['category_line']?>Título: <?=$values['title']?>
 
-Details: <?=$values['detail']?>
+Detalles: <?=$values['detail']?>
 
-<?=$values['easting_northing']?>Latitude: <?=$values['latitude']?>
+<?=$values['easting_northing']?>Latitud: <?=$values['latitude']?>
 
-Longitude: <?=$values['longitude']?>
+Longitud: <?=$values['longitude']?>
 
 <?=$values['closest_address']?>----------
 
-Replies to this email will go to the user who submitted the problem.
+Las respuestas a este email irán directamente al usuario que emitió este problema.
 
 <?=$values['signature']?>
 
-This message was sent via FixMyStreet, a project of UKCOD, registered charity
-number 1076346. If there is a more appropriate email address for messages about
-<?=$values['category_footer']?>, please let us know by visiting <http://www.fixmystreet.com/contact>.
-This will help improve the service for local people. We
-also welcome any other feedback you may have.
+Este mensaje fue enviado vía [% INCLUDE 'site-name.txt' | trim %].
+Si existe algún email donde redirigir los problemas relacionados a 
+<?=$values['category_footer']?>, por favor haganozlo saber. Esto nos ayudará a mejorar
+el servicio para nuestros ciudadanos. Nosotros también agradecemos cualquier feedback
+que usted pueda tener.
 
-FixMyStreet is now available for full integration into council
-websites, making life easier for both you and your residents.
-Read more here: http://www.mysociety.org/services/fixmystreet-for-councils/
-
+<?=$values['category_footer']?> es una adaptación de FixMyStreet, y actualmente
+existe una integración completa con su municipio, haciendo que todo sea más fácil
+para usted y para sus ciudadanos. Para más información visite 
+http://www.mysociety.org/services/fixmystreet-for-councils/.
