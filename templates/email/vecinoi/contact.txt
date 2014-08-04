@@ -1,4 +1,4 @@
-Subject: FMS message: [% subject %]
+Subject: Mensaje de [% INCLUDE 'site-name.txt' | trim %]: [% subject %]
 
 [% message %]
 

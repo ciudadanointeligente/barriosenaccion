@@ -1,25 +1,25 @@
-Subject: <?=$values['site_name']?> Report Sent: <?=$values['title']?>
+Subject: <?=$values['site_name']?> Reporte enviado: <?=$values['title']?>
 
-Hello,
+Hola,
 
-Thank you for using <?=$values['site_name']?> to submit your report
+Gracias por usar <?=$values['site_name']?> para enviar su reporte
 "<?=$values['title']?>".
 
-This is to confirm that it has now been sent to <?=$values['bodies_name']?>,
-who should respond to you directly.
+Este mail es para confirmar que ha sido recientemente enviado a <?=$values['bodies_name']?>,
+quien debería responder a usted directamente.
 
-Your report is also on <?=$values['url']?>, where others may read, comment or
-offer advice.
+Su reporte puede ser encontrado también en <?=$values['url']?>, donde otros 
+pueden leer, comentar o proveer de algún consejo.
 
-You should also feel free to add updates to that page, although note that they
-will not be sent to your council.
+Usted también puede agregar alguna actualización en esta página, aunque debe tener
+en cuenta que estas no serán enviadas a su municipalidad.
 
-If you'd like to update your council, please wait for their reply so that you
-can respond to them directly.
+Si usted quisiera actualizar el reporte con su municipalidad, por favor espere
+a su respuesta y así interactuar con ellos directamente.
 
-Good luck in getting your problem fixed.
+Le deseamos la mejor de las suertes al solucionar su problema.
 
 <?=$values['signature']?>
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este email fue enviado automaticamente, desde una cuenta que no es revisada - por favor
+no responda.

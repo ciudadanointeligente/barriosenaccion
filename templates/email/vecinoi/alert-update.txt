@@ -1,27 +1,30 @@
 Subject: New <?=$values['site_name']?> updates on report: '<?=$values['title']?>'
+Subject: Nuevas actualizaciones en <?=$values['site_name']?> al reporte: '<?=$values['title']?>'
 
-You asked us to send you an email every time an update was made to the
-<?=$values['site_name']?> report: <?=$values['title']?>.
+Este email lo está recibiendo por que usted está suscrito en <?=$values['site_name']?> 
+para recibir las actualizaciones en el reporte: <?=$values['title']?>.
 
-The following updates have been left on this report:
+Las siguientes actualizaciones han sido añadidas en este reporte:
 
 <?=$values['data']?>
 
 <?=$values['state_message']?>
 
-If you would like to view or reply to these updates, please visit the following URL:
+Si usted deseara ver o responder en esta actualización, por favor visite la siguiente
+URL:
     <?=$values['problem_url']?>
 
-This email was sent automatically, from an unmonitored email account - so
-please do not reply to it.
+Este email fue enviado automaticamente, desde una cuenta que no es revisada - por favor
+no responda.
 
 <?=$values['signature']?>
 
 
-Unsubscribe?
+Desuscribirse?
 
-We currently email you whenever someone leaves an update on the
-<?=$values['site_name']?> report: <?=$values['title']?>.
+Actualmente nosotros le enviamos un email cada vez que alguien
+realiza una actualización en <?=$values['site_name']?> en
+el reporte: <?=$values['title']?>.
 
-If you no longer wish to receive an email whenever this report is updated,
-please follow this link: <?=$values['unsubscribe_url']?>
+Si usted quisiera desuscribirse por favor siga el siguiente link:
+<?=$values['unsubscribe_url']?>
