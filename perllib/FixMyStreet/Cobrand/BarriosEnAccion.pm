@@ -1,4 +1,4 @@
-package FixMyStreet::Cobrand::BellaVistaEnAccion;
+package FixMyStreet::Cobrand::BarriosEnAccion;
 use base 'FixMyStreet::Cobrand::Default';
 
 use strict;
