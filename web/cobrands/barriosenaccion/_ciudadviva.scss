@@ -1,13 +1,14 @@
 #ciudadviva-logo{
         background-image:url("/cobrands/barriosenaccion/images/ciudadVivaNegro.png") !important;
         background-position:0 -5px !important;
-        height:16px;
+        height:40px;
         opacity:0.8;
-        width:116px
+        width:100%;
+        background-repeat: no-repeat !important;
     }
 .form-box h5 strong{font-size:1em}
 .purple {
-	color: #6e5ca4;
+	color: $purple;
 }
 
 /* Header */
@@ -35,7 +36,6 @@ header .branding {
 .tipos_home, .pasos_home {
 	text-transform: uppercase;
 	text-align: center;
-	padding: 20px 0;
 }
 .tipos_home {
 	background-color: #e8e8e8;

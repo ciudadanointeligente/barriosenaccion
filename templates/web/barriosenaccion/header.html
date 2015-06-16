@@ -60,7 +60,7 @@
                                 </p>
                             </div>
                         [% ELSE%]
-                        <p>Ingresar</p>
+                        <a href="/auth">Ingresar</a>
                         [% END %]
                     </div>
                 </div>
@@ -79,13 +79,18 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse navbar-ex1-collapse">
                             <ul class="nav navbar-nav center-block">
-                                <li class="text-center active"><a href="#"><img src="/cobrands/barriosenaccion/images/m_home.png" alt="Inicio" class="hidden-xs"><br>Inicio</a></li>
-                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_reporta.png" alt="Reporta un Problema" class="hidden-xs"><br>Reporta un Problema</a></li>
-                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Reporte de Vecinos" class="hidden-xs"><br>Reporte de Vecinos</a></li>
-                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_alertas.png" alt="Alertas en Tu Barrio" class="hidden-xs"><br>Alertas en Tu Barrio</a></li>
-                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_uso.png" alt="Uso del Sitio" class="hidden-xs"><br>Uso del Sitio</a></li>
-                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>
-                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>
+                                <li class="text-center active"><a href="#"><img src="/cobrands/barriosenaccion/images/m_home.png" alt="Inicio" class="hidden-xs"><br/ >Inicio</a></li>
+                                <li class="text-center[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" class="report-a-problem-btn"
+                            ><img src="/cobrands/barriosenaccion/images/m_reporta.png" alt="Reporta un Problema" class="hidden-xs"><br/ >Reporta un Problema</a></li>[%
+                        %]<li class="text-center [% IF c.req.uri.path == '/my' %] active[% END
+                            %]"><a href="/my"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Tus reportes" class="hidden-xs"><br/ >Tus reportes</a></li>[%
+                        %]<li class="text-center[% IF c.req.uri.path == '/alert' %] active[% END
+                            %]"><a href="/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"><img src="/cobrands/barriosenaccion/images/m_alertas.png" alt="Alertas en Tu Barrio" class="hidden-xs"><br>Alertas en Tu Barrio</a></li>[%
+                        %]<li class="text-center[% IF c.req.uri.path == '/reports' %] active[% END
+                            %]"><a href="/reports"><img src="/cobrands/barriosenaccion/images/m_uso.png" alt="Todos los reportes" class="hidden-xs"><br>Todos los reportes</a></li>[%
+                        %]<li class="text-center[% IF c.req.uri.path == '/faq' %]span[% END
+                        %]"><a href="/faq"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>[%
+                        %]<li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                         </div>
@@ -95,7 +100,6 @@
 
             [% pre_container_extra %]
 
-            <div class="container">
-                <div class="content[% " $mainclass" | html IF mainclass %]" role="main">
+            <div class="row pasos_home">
 
         <!-- [% INCLUDE 'debug_header.html' %] -->
