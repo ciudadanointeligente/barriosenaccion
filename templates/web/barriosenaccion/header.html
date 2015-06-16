@@ -1,0 +1,101 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie7 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie8 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie9 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="[% lang_code %]"><!--<![endif]-->
+    <head>
+        <meta name="viewport" content="initial-scale=1.0">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="HandHeldFriendly" content="true">
+        <meta name="mobileoptimized" content="0">
+
+        [% INCLUDE 'header_opengraph.html' %]
+
+[% SET start = c.config.ADMIN_BASE_URL IF admin %]
+
+        [% extra_css %]
+        <!--[if (lt IE 9) & (!IEMobile)]>
+            <link rel="stylesheet" href="[% start %][% version('/cobrands/' _ c.cobrand.moniker _ '/layout.css') %]">
+        <![endif]-->
+        <!-- Bootstrap CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="[% start %][% version('/cobrands/' _ c.cobrand.moniker _ '/base.css') %]">
+
+        <script src="[% start %][% version('/js/modernizr.custom.js') %]" charset="utf-8"></script>
+        <script src="[% start %][% version('/cobrands/fixmystreet/position_map.js') %]" charset="utf-8"></script>
+        [% INCLUDE 'common_header_tags.html', js_override = '/cobrands/fixmystreet/fixmystreet.js' %]
+        [% extra_js %]
+
+        [% IF c.req.uri.host == 'osm.fixmystreet.com' %]
+            <link rel="canonical" href="https://www.fixmystreet.com[% c.req.uri.path_query %]">
+        [% END %]
+
+        [% TRY %][% PROCESS 'header_extra.html' %][% CATCH file %][% END %]
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    [% TRY %][% PROCESS 'set_body_class.html' %][% CATCH file %][% END %]
+    <body class="[% bodyclass | html IF bodyclass %]">
+    <div class="container-fluid">
+            <header id="site-header" role="banner">
+                <div class="row branding">
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        [% INCLUDE 'header_logo.html' %]
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        [% IF c.user_exists %]
+                            <div id="user-meta">
+                                <p>
+                                    [% tprintf(loc('Hi %s'), c.user.name || c.user.email) %]
+                                    <a href="/auth/sign_out">[% loc('sign out') %]</a>
+                                </p>
+                            </div>
+                        [% ELSE%]
+                        <p>Ingresar</p>
+                        [% END %]
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="container">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="nav navbar-nav center-block">
+                                <li class="text-center active"><a href="#"><img src="/cobrands/barriosenaccion/images/m_home.png" alt="Inicio" class="hidden-xs"><br>Inicio</a></li>
+                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_reporta.png" alt="Reporta un Problema" class="hidden-xs"><br>Reporta un Problema</a></li>
+                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Reporte de Vecinos" class="hidden-xs"><br>Reporte de Vecinos</a></li>
+                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_alertas.png" alt="Alertas en Tu Barrio" class="hidden-xs"><br>Alertas en Tu Barrio</a></li>
+                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_uso.png" alt="Uso del Sitio" class="hidden-xs"><br>Uso del Sitio</a></li>
+                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>
+                                <li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            [% pre_container_extra %]
+
+            <div class="container">
+                <div class="content[% " $mainclass" | html IF mainclass %]" role="main">
+
+        <!-- [% INCLUDE 'debug_header.html' %] -->
