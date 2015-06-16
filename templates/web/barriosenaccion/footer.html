@@ -1,13 +1,5 @@
-                    [% IF pagefooter %]
-                    <footer role="contentinfo">
-                        [% INCLUDE 'front/footer-marketing.html' %]
-                    </footer>
-                    [% END %]
                 </div><!-- .content role=main -->
             </div><!-- .container -->
-            [% IF c.cobrand.moniker == 'fixmystreet' AND bodyclass != 'mappage' %]
-                [% INCLUDE 'footer-nav.html' %]
-            [% END %]
 
         <div class="nav-wrapper">
             <div class="nav-wrapper-2">
@@ -15,10 +7,6 @@
                     <ul id="mysoc-menu">
                         <li><a id="ciudadviva-logo" href="http://www.ciudadviva.cl/"></a></li>
                         <li><a id="mysoc-logo" href="https://www.mysociety.org/">mySociety</a></li>
-                    </ul>
-
-                    <ul id="main-menu"><li id="top-nav-privacy"><[% IF c.req.uri.path == '/privacy' %]span[% ELSE %]a href="/privacy"[% END
-                            %]>[% loc("Privacy") %]</[% c.req.uri.path == '/privacy' ? 'span' : 'a' %]></li>
                     </ul>
                 </div>
             </div>
