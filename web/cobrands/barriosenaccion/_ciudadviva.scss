@@ -59,6 +59,9 @@ header .branding {
 .carousel {
   margin: 0 -7px;
 }
+.carousel-inner>.item {
+  max-height: 415px;
+}
 
 #container_carousel {
 	div.slogan div.slogan_container {
