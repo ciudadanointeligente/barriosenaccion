@@ -1,17 +1,17 @@
-Subject: New updates on problem - '<?=$values['title']?>'
+Subject: Novedades con el problema - '<?=$values['title']?>'
 
-The following updates have been left on this problem:
+Estas son las novedades con respecto a este problema:
 
 <?=$values['data']?>
 
 <?=$values['state_message']?>
 
-To view or reply to these updates, please visit the following URL:
+Para ver o responder a estas actualizaciones, visite la siguiente URL:
     <?=$values['problem_url']?>
 
-You cannot contact anyone by replying to this email.
+Por favor no responder a este mail.
 
 <?=$values['signature']?>
 
-To stop receiving emails when there are new updates on this problem,
-please follow this link: <?=$values['unsubscribe_url']?>
+Para dejar de recibir avisos cuando existan novedades con este problema,
+haga click en el siguiente link: <?=$values['unsubscribe_url']?>

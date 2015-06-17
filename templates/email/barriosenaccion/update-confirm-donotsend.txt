@@ -1,0 +1,3 @@
+Nosotros no enviamos actualizaciones a [% update.problem.body %] - ellas
+están para que los usuarios de [% INCLUDE 'site-name.txt' | trim %]
+discutan, apoyen y ofrezcan ayuda.
