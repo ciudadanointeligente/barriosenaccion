@@ -46,13 +46,14 @@
     <div class="container-fluid">
             <header role="banner">
                 <div class="row branding">
+                [% INCLUDE 'header_logo.html' %]
+                </div>
+                <div class="row">
                     <nav class="navbar navbar-default" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                        [% INCLUDE 'header_logo.html' %]
-                        </div>
-                        <div class="navbar-header">
-                            <ul class="nav navbar-nav center-block">
+                        
+                        <div class="navbar-header" role="navigation">
+                            <ul class="nav navbar-nav nav-justified">
                                 <li class="text-center[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" 
                                 ><img src="/cobrands/barriosenaccion/images/m_home.png" alt="Home" class="hidden-xs"><br>Home</a></li>[%
                             %]

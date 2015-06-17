@@ -47,40 +47,10 @@ header .branding {
 	color: #FFF;
 }
 
-/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	.navbar-default .navbar-nav>li {
-	  max-width: 120px;
-	  text-transform: uppercase;
-	}
-	.navbar-default .navbar-nav>li>a {
-	  min-height: 106px;
-	}
+.nav-justified>li {
+  float: none !important;
 }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-	.navbar-default .navbar-nav>li {
-	  max-width: 120px;
-	  text-transform: uppercase;
-	  margin-right: 30px;
-	}
-	.navbar-default .navbar-nav>li>a {
-	  min-height: 106px;
-	}
-}
-
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-	.navbar-default .navbar-nav>li {
-	  max-width: 120px;
-	  text-transform: uppercase;
-	  margin-right: 30px;
-	}
-	.navbar-default .navbar-nav>li>a {
-	  min-height: 106px;
-	}
 }
 
 #container_carousel {
