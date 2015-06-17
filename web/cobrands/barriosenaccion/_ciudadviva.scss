@@ -28,6 +28,7 @@ header .branding {
 }
 .navbar-default .navbar-nav>li>a {
   color: #000;
+  min-height: 106px;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: #FFF;
@@ -51,6 +52,28 @@ header .branding {
 .nav-justified>li {
   float: none !important;
 }
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.carousel {
+  margin: 0 -7px;
+}
+.carousel-inner>.item {
+  max-height: 415px;
+}
+.carousel-caption {
+  right: 15%;
+  top: 60px;
+  left: 15%;
+  bottom: auto;
+  color: #fff;
+  text-align: left;
+  max-width: 500px;
+}
+.tipos_home img {
+	max-width: 90px;
+	margin-bottom: 20px;
 }
 
 #container_carousel {

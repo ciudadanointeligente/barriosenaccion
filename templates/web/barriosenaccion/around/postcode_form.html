@@ -1,15 +1,13 @@
 [%# Identical to parent, but with an extra div and javascript for our homepage A/B test %]
 
-<div id="front-main">
-    <div id="front-main-container">
+
         [% INCLUDE 'around/intro.html' %]
 
         <div id="homepage-ab-test">
             <p><a id="cta-report">Report a problem</a></p>
             <p><a id="cta-view">Or view problems in an area you know</a></p>
         </div>
-    </div>
-</div>
+
 
 <script type="text/javascript">
 $(function(){
