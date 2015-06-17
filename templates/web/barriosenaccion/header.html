@@ -7,7 +7,7 @@
     <head>
         <meta name="viewport" content="initial-scale=1.0">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="HandHeldFriendly" content="true">
         <meta name="mobileoptimized" content="0">
 
@@ -28,12 +28,10 @@
 
         <script src="[% start %][% version('/js/modernizr.custom.js') %]" charset="utf-8"></script>
         <script src="[% start %][% version('/cobrands/fixmystreet/position_map.js') %]" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         [% INCLUDE 'common_header_tags.html', js_override = '/cobrands/fixmystreet/fixmystreet.js' %]
         [% extra_js %]
-
-        [% IF c.req.uri.host == 'osm.fixmystreet.com' %]
-            <link rel="canonical" href="https://www.fixmystreet.com[% c.req.uri.path_query %]">
-        [% END %]
 
         [% TRY %][% PROCESS 'header_extra.html' %][% CATCH file %][% END %]
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -46,27 +44,14 @@
     [% TRY %][% PROCESS 'set_body_class.html' %][% CATCH file %][% END %]
     <body class="[% bodyclass | html IF bodyclass %]">
     <div class="container-fluid">
-            <header id="site-header" role="banner">
+            <header>
                 <div class="row branding">
-                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                        [% INCLUDE 'header_logo.html' %]
-                    </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                        [% IF c.user_exists %]
-                            <div id="user-meta">
-                                <p>
-                                    [% tprintf(loc('Hi %s'), c.user.name || c.user.email) %]
-                                    <a href="/auth/sign_out">[% loc('sign out') %]</a>
-                                </p>
-                            </div>
-                        [% ELSE%]
-                        <a href="/auth">Ingresar</a>
-                        [% END %]
-                    </div>
+                [% INCLUDE 'header_logo.html' %]
                 </div>
                 <div class="row">
                     <nav class="navbar navbar-default" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
+                        
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                                 <span class="sr-only">Toggle navigation</span>
@@ -75,24 +60,27 @@
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
-                        <div class="container">
-                            <!-- Collect the nav links, forms, and other content for toggling -->
+
                         <div class="collapse navbar-collapse navbar-ex1-collapse">
-                            <ul class="nav navbar-nav center-block">
-                                <li class="text-center active"><a href="#"><img src="/cobrands/barriosenaccion/images/m_home.png" alt="Inicio" class="hidden-xs"><br/ >Inicio</a></li>
-                                <li class="text-center[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" class="report-a-problem-btn"
-                            ><img src="/cobrands/barriosenaccion/images/m_reporta.png" alt="Reporta un Problema" class="hidden-xs"><br/ >Reporta un Problema</a></li>[%
-                        %]<li class="text-center [% IF c.req.uri.path == '/my' %] active[% END
-                            %]"><a href="/my"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Tus reportes" class="hidden-xs"><br/ >Tus reportes</a></li>[%
-                        %]<li class="text-center[% IF c.req.uri.path == '/alert' %] active[% END
-                            %]"><a href="/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"><img src="/cobrands/barriosenaccion/images/m_alertas.png" alt="Alertas en Tu Barrio" class="hidden-xs"><br>Alertas en Tu Barrio</a></li>[%
-                        %]<li class="text-center[% IF c.req.uri.path == '/reports' %] active[% END
-                            %]"><a href="/reports"><img src="/cobrands/barriosenaccion/images/m_uso.png" alt="Todos los reportes" class="hidden-xs"><br>Todos los reportes</a></li>[%
-                        %]<li class="text-center[% IF c.req.uri.path == '/faq' %]span[% END
-                        %]"><a href="/faq"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>[%
-                        %]<li class="text-center"><a href="#"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
+                            <ul class="nav navbar-nav nav-justified">
+                                <li class="[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" 
+                                ><img src="/cobrands/barriosenaccion/images/m_home.png" alt="Home" class="hidden-xs"><br>Home</a></li>[%
+                            %]
+                            <li class="[% IF c.req.uri.path == '/around' %] active[% END %]"><a id="geolocate_link" href="/around" class="report-a-problem-btn"
+                                ><img src="/cobrands/barriosenaccion/images/m_reporta.png" alt="Reporta un Problema" class="hidden-xs"><br>Reporta un Problema</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/my' %] active[% END
+                                %]"><a href="/my"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Tus reportes" class="hidden-xs"><br>Tus reportes</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/alert' %] active[% END
+                                %]"><a href="/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"><img src="/cobrands/barriosenaccion/images/m_alertas.png" alt="Alertas en Tu Barrio" class="hidden-xs"><br>Alertas en Tu Barrio</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/reports' %] active[% END
+                                %]"><a href="/reports"><img src="/cobrands/barriosenaccion/images/m_uso.png" alt="Todos los reportes" class="hidden-xs"><br>Todos los reportes</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/faq' %] active[% END
+                            %]"><a href="/faq"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/about' %] active[% END
+                            %]"><a href="/about"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/privacy' %] active[% END
+                            %]"><a href="/privacy"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Privacidad" class="hidden-xs"><br>Privacidad</a></li>
+                        </ul>
                         </div>
                     </nav>
                 </div>
@@ -100,6 +88,6 @@
 
             [% pre_container_extra %]
 
-            <div class="row pasos_home">
+            <div class="pasos_home">
 
         <!-- [% INCLUDE 'debug_header.html' %] -->

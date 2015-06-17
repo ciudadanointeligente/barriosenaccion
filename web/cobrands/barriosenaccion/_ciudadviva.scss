@@ -47,38 +47,38 @@ header .branding {
 	color: #FFF;
 }
 
-/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	.navbar-default .navbar-nav>li {
-	  max-width: 120px;
-	  text-transform: uppercase;
-	}
-	.navbar-default .navbar-nav>li>a {
-	  min-height: 106px;
-	}
+.nav-justified>li {
+  float: none !important;
+}
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-	.navbar-default .navbar-nav>li {
-	  max-width: 120px;
-	  text-transform: uppercase;
-	  margin-right: 30px;
+#container_carousel {
+	div.slogan div.slogan_container {
+		position:absolute;
+		margin-top: 100px;
+		padding-left: 10px;
+		margin-right: 1px;
+		z-index: 1;
+		color: #FFF;
+		background-color: #000;
+		text-align: left;
+		p {
+			list-style: outside none none;
+		}
 	}
-	.navbar-default .navbar-nav>li>a {
-	  min-height: 106px;
+	.carousel_item {
+	  	width: 100%;
+	  	background: #eee;
+	  	margin: auto;
 	}
-}
 
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-	.navbar-default .navbar-nav>li {
-	  max-width: 120px;
-	  text-transform: uppercase;
-	  margin-right: 30px;
-	}
-	.navbar-default .navbar-nav>li>a {
-	  min-height: 106px;
+	.carrusel {
+		height: 300px;
+		overflow: hidden;
+		img {
+			top:-300px;
+			position: absolute;
+		}
 	}
 }

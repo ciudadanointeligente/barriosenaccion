@@ -1,0 +1,641 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mh",
+				"max-height"
+			],
+			[
+				"ov",
+				"ov	overflow: ${1:hidden};"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bo",
+				"border-left"
+			],
+			[
+				"fff",
+				"ffffff"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"t",
+				"text-top"
+			],
+			[
+				"fl",
+				"fl	float: ${1:left};"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"IM",
+				"img	Tag"
+			],
+			[
+				"mi",
+				"max-width"
+			],
+			[
+				"s",
+				"span	Tag"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"in",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_ciudadviva.scss",
+			"settings":
+			{
+				"buffer_size": 2313,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"row",
+				"Snippet: bs3-row-col"
+			],
+			[
+				"bs row",
+				"Snippet: bs3-row-col"
+			],
+			[
+				"bs con",
+				"Snippet: bs3-container"
+			],
+			[
+				"come",
+				"Toggle Comment"
+			],
+			[
+				"nav",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"na",
+				"Snippet: bs3-navbar-inverse"
+			],
+			[
+				"col",
+				"Snippet: bs3-col-2"
+			],
+			[
+				"bs heade",
+				"Snippet: bs3-page header"
+			],
+			[
+				"heade",
+				"Snippet: <header>"
+			],
+			[
+				"head",
+				"Snippet: bs3-page header"
+			],
+			[
+				"bs3 ht",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"bs col5",
+				"Snippet: bs3-col-5"
+			],
+			[
+				"bs col3",
+				"Snippet: bs3-col-3"
+			],
+			[
+				"bs col9",
+				"Snippet: bs3-col-9"
+			],
+			[
+				"bs col12",
+				"Snippet: bs3-col-12"
+			],
+			[
+				"bs we",
+				"Snippet: bs3-well"
+			],
+			[
+				"bs r",
+				"Snippet: bs3-row"
+			],
+			[
+				"bs co",
+				"Snippet: bs3-container"
+			],
+			[
+				"bs bred",
+				"Snippet: bs3-breadcrumbs"
+			],
+			[
+				"bs nav",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"bs tml",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"bs respo",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"bs col4",
+				"Snippet: bs3-col-4"
+			],
+			[
+				"bs col 6",
+				"Snippet: bs3-col-6"
+			],
+			[
+				"bs col 4",
+				"Snippet: bs3-col-4"
+			],
+			[
+				"bs3col",
+				"Snippet: bs3-col-8"
+			],
+			[
+				"col3",
+				"Snippet: bs3-col-3"
+			],
+			[
+				"col2",
+				"Snippet: bs3-col-2"
+			],
+			[
+				"col 10",
+				"Snippet: bs3-col-10"
+			],
+			[
+				"bs3 cn",
+				"Snippet: bs3-container"
+			],
+			[
+				"bs3 col",
+				"Snippet: bs3-col-6"
+			],
+			[
+				"bs3 ro",
+				"Snippet: bs3-row"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-col-3"
+			],
+			[
+				"bs3 nav",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"bs3 tem",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"bs3-h",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/marcelino/Documents/INIA/diario mural/css/jquery.carousel.fullscreen.css",
+		"/Users/marcelino/Documents/INIA/diario mural/CUMPLEAÑOS.txt",
+		"/Users/marcelino/Documents/INIA/diario mural/index.html",
+		"/Users/marcelino/Downloads/barrios/index.html",
+		"/Users/marcelino/Downloads/barrios/css/style.css",
+		"/Users/marcelino/Documents/INIA/diario mural/DiME.zip",
+		"/Users/marcelino/Downloads/barrios/style.css",
+		"/Users/marcelino/Documents/FCI/fixmystreet/templates/web/barriosenaccion/index-steps.html",
+		"/Users/marcelino/Documents/FCI/fixmystreet/templates/web/barriosenaccion/index.html",
+		"/Users/marcelino/Documents/FCI/fixmystreet/conf/general.yml",
+		"/Users/marcelino/Documents/FCI/fixmystreet/templates/web/base/index-steps.html",
+		"/Users/marcelino/Documents/FCI/fixmystreet/web/cobrands/barriosenaccion/_colours.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/stage4.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/controllers/steps_controller.rb",
+		"/Users/marcelino/Documents/FCI/vizard/config/routes.rb",
+		"/Users/marcelino/Downloads/AdminLTE-2.1.1/index2.html",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/projects/index.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/style.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/stage3.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/visitors/index.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/layouts/sandboxes.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/project_index.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/layouts/application.html.erb",
+		"/Users/marcelino/Downloads/Dime/Agromet/css/jquery.carousel.fullscreen.css",
+		"/Users/marcelino/Downloads/Dime/Agromet/index.html",
+		"/Users/marcelino/Downloads/Dime/Clima/css/jquery.carousel.fullscreen.css",
+		"/Users/marcelino/Downloads/Dime/Clima/index.html",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/stage1.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/_resources.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/activities.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/asks.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/application.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/actors.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/bpmn.css",
+		"/Users/marcelino/Desktop/new_wizard/index.html",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/marcelino/Desktop/new_wizard/my_styles.css",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/application2.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/new_wizard.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/sandboxes.css.scss",
+		"/Users/marcelino/Desktop/DiME/my_style.css",
+		"/Users/marcelino/Documents/INIA/diario mural/js/jquery.carousel.fullscreen.js",
+		"/Users/marcelino/Downloads/rwm_carousel_fullscreen 2/css/jquery.carousel.fullscreen.css",
+		"/Users/marcelino/Downloads/rwm_carousel_fullscreen 2/js/jquery.carousel.fullscreen.js",
+		"/Users/marcelino/Downloads/rwm_carousel_fullscreen 2/index.html",
+		"/Users/marcelino/Desktop/DiME/Noticias_LaPlatina.html",
+		"/Users/marcelino/Desktop/DiME/Proyecto.html",
+		"/Users/marcelino/Desktop/DiME/Noticias_INIA.html",
+		"/Users/marcelino/Desktop/DiME/noticia.png",
+		"/Users/marcelino/Desktop/DiME/INDEX.html",
+		"/Users/marcelino/Desktop/my_style.css",
+		"/Users/marcelino/Desktop/example.html",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step7.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step5.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/config/database.yml",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step4.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step4_2.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step4_1.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step411.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step3.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step3_1.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step3_2.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step3_3.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step2.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/.gitignore",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step2_1.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step1_1.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step1_3.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step1_2.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step1.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/index.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/sandboxes/index.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/projects_list.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step6.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/steps/step4-1-1.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/controllers/tests_controller.rb",
+		"/Users/marcelino/Downloads/kit-responsive-flat-penrose/newsletter.html",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/sandboxes/index.json.jbuilder",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/layouts/_navigation.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/resources/show.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/resources/index.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/projects/edit.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/projects/_form.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/projects/show.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/sandboxes/_form.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/sandboxes/edit.html.erb",
+		"/Users/marcelino/Documents/INIA/mail/table.html",
+		"/Users/marcelino/Downloads/kit-responsive-flat-penrose/news_convertido.html",
+		"/Users/marcelino/Documents/INIA/mail2/untitled.html",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/projects/new.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/resources/new.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/sandboxes/new.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/resources/new",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/resources/index.html.erb\nindex.html.erb\nnew",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/projects/project.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/projects/projet.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/projects.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/javascripts/joint.all.js",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/javascripts/gdrive.js",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/javascripts/vizard-extras.js",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/stylesheets/framework_and_overrides.css.scss",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/proyects/index.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/devise/sessions/new.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/devise/shared/_links.html.erb",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/javascripts/bpmn.js",
+		"/Users/marcelino/Documents/FCI/vizard/app/assets/javascripts/inspector.js",
+		"/Users/marcelino/Documents/FCI/vizard/app/controllers/application_controller.rb",
+		"/Users/marcelino/Documents/FCI/vizard/app/views/layouts/_navigation_links.html.erb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"example",
+			"explication",
+			".</",
+			"Articulate problems and policy solutions",
+			" Stage 1: Articulate problems and policy solutions",
+			"add",
+			"eventos",
+			"Which policy solutions would constitute an appropriate response?",
+			" \"></",
+			"//",
+			"document",
+			"\nBy the end of 2018, the National Assembly amends the Penal Code to remove detention among the list of sanctions for sex workers",
+			"h5",
+			"0",
+			".site-wrapper-inner img",
+			"site-wrapper-inner",
+			".site-wrapper-inner ",
+			".masthead",
+			"h4.panel-title a .fa-check-circle",
+			"Are you sure you want to permanently delete this sandbox?",
+			"add",
+			"<th class=\"text-center\">Status</th>",
+			"class=\"collapse",
+			" pull-right",
+			"\n              <td class=\"text-center\">\n                    <a href=\"#\"><i class=\"fa fa-check-square\" title=\"Priority\"></i></a>\n              </td>",
+			"<td>Political will</td>",
+			"<td class=\"text-right actions\">\n                                                        <a href=\"#\"><i class=\"fa fa-edit\" title=\"Edit\"></i></a>      <a data-confirm=\"Are you sure you want to permanently delete this sandbox?\" data-method=\"delete\" href=\"#\" rel=\"nofollow\"><i class=\"fa fa-trash\" title=\"Delete\"></i></a>\n                                                  </td>",
+			"table",
+			"add",
+			"myTab",
+			">\n",
+			"Lire l'article",
+			"#2ecc71",
+			"badge",
+			"\n                    <a href=\"#\"><i class=\"fa fa-home\" title=\"Vist Home\"></i></a>",
+			"Hard",
+			"Project",
+			"th",
+			"\n                    <a href=\"#\"><i class=\"fa fa-home\" title=\"Vist Home\"></i></a>",
+			"actio",
+			".dataTables_paginate",
+			".dataTables_info, .dataTables_paginate",
+			"alert",
+			"gear",
+			"Link",
+			"<g",
+			"tool-options",
+			"StepLink",
+			"span",
+			"toolbarName:hover",
+			"clearfix toolbarName",
+			":ho",
+			"clearfix",
+			"fileName",
+			"toolbarName",
+			"\n#fileName",
+			"#fileName",
+			"help",
+			"save",
+			".navbar-inverse",
+			".nav",
+			".nav > li > a",
+			".nav",
+			"F55923",
+			"#F55923",
+			"intervention",
+			"sidebar-left",
+			".inspector .field",
+			"alertSuccess",
+			"banne",
+			".dropdown-toggle:hover",
+			"v-55",
+			"Phasellus convallis ipsum non purus",
+			"PLorem",
+			"h4",
+			"h3",
+			"/",
+			"nav",
+			"Phasellus convallis ipsum non purus aliquam",
+			"150x150"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Are you sure you want to permanently delete this?",
+			"<th class=\"text-center status\">Status</th>",
+			"class=\"collapse steps",
+			"",
+			"<td><input type=\"checkbox\" value=\"\"></td>\n                                                  <td>Political will</td>",
+			"",
+			"Leer más",
+			"#97c00e",
+			"label label-default",
+			"",
+			"Great",
+			"great",
+			"Resource",
+			"",
+			"Phasellus convallis ipsum non",
+			"Lorem",
+			"h3",
+			"h2",
+			"Phasellus convallis ipsum non purus",
+			"100x100"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_ciudadviva.scss",
+					"settings":
+					{
+						"buffer_size": 2313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 295.0,
+	"status_bar_visible": true
+}
