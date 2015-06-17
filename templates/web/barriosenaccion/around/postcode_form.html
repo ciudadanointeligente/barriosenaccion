@@ -8,16 +8,6 @@
             <p><a id="cta-report">Report a problem</a></p>
             <p><a id="cta-view">Or view problems in an area you know</a></p>
         </div>
-
-        [%
-            question = c.cobrand.enter_postcode_text || loc('Enter a nearby street name and area');
-        %]
-        <form action="[% c.uri_for('/around') %]" method="get" name="postcodeForm" id="postcodeForm">
-            <label for="pc">[% question %]:</label>
-            [% IF partial_token %]
-                <input type="hidden" name="partial" value="[% partial_token.token %]">
-            [% END %]
-        </form>
     </div>
 </div>
 
