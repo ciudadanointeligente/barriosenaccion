@@ -62,6 +62,18 @@ header .branding {
 .carousel-inner>.item {
   max-height: 415px;
 }
+.carousel-caption {
+  right: 15%;
+  top: 60px;
+  left: 15%;
+  bottom: auto;
+  color: #fff;
+  text-align: left;
+  max-width: 500px;
+}
+.tipos_home {
+	max-width: 90px;
+}
 
 #container_carousel {
 	div.slogan div.slogan_container {
