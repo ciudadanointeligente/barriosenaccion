@@ -41,11 +41,20 @@ header .branding {
 .tipos_home {
 	background-color: #e8e8e8;
 	color: #6e5ca4;
+	padding-bottom: 20px;
 	
 }
 .pasos_home {
 	background-color: #6e5ca4;
 	color: #FFF;
+	padding-bottom: 20px;
+}
+.tipos_home img, .pasos_home img {
+	max-width: 90px;
+	margin-bottom: 20px;
+}
+.tipos_home h2, .pasos_home h2 {
+	margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -70,10 +79,6 @@ header .branding {
   color: #fff;
   text-align: left;
   max-width: 500px;
-}
-.tipos_home img {
-	max-width: 90px;
-	margin-bottom: 20px;
 }
 
 #container_carousel {
