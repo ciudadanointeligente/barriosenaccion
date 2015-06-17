@@ -1,16 +1,16 @@
-Subject: Confirm your update on [% INCLUDE 'site-name.txt' | trim %]
+Subject: Confirme su actualización en [% INCLUDE 'site-name.txt' | trim %]
 
-Hi [% update.name %],
+Hola [% update.name %],
 
-Please click on the link below to confirm the update you just
-wrote:
+Por favor haga click en el siguiente link para confirmar su
+actualización:
 
 [% token_url %]
 
-If your email program does not let you click on this link,
-copy and paste it into your web browser and press return.
+Si no es posible hacer click, por favor copie y pegue el
+link en la barra de su navegador.
 
-Your update reads:
+Su actualización es la siguiente:
 
 [% update.text %]
 

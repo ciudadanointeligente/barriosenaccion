@@ -1,0 +1,37 @@
+Subject: Su reporte en [% INCLUDE 'site-name.txt' | trim %] ha sido moderado
+
+Estimada/o [% user.name %],
+
+Su reporte en [% INCLUDE 'site-name.txt' | trim %] ha sido moderado.
+
+[% IF types == 'hide' -%]
+El reporte ha sido marcado como 'escondido' en el sitio.
+[% ELSE %]
+La siguiente información ha cambiado:
+
+	[% types %]
+
+[% END -%]
+
+Su reporte tenía el siguiente título:
+
+[% problem.moderation_original_data.title %]
+
+Y los siguientes detalles:
+
+[% problem.moderation_original_data.detail %]
+
+[% UNLESS types == 'hide' %]
+Usted puede ver el reporte en [% report_uri %]
+[% END %]
+
+Si usted considera que el reporte no debió haber sido moderado, usted puede
+contactar al equipo en [% report_complain_uri %]
+
+Muchas gracias por usar [% INCLUDE 'site-name.txt' | trim %].
+
+
+[% INCLUDE 'signature.txt' %]
+
+Este email fue enviado automáticamente, desde una cuenta de email que no es
+monitoreada, por favor no responda.
