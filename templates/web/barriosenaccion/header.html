@@ -52,24 +52,33 @@
                     <nav class="navbar navbar-default" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         
-                        <div class="navbar-header" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
                             <ul class="nav navbar-nav nav-justified">
-                                <li class="text-center[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" 
+                                <li class="[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" 
                                 ><img src="/cobrands/barriosenaccion/images/m_home.png" alt="Home" class="hidden-xs"><br>Home</a></li>[%
                             %]
-                            <li class="text-center[% IF c.req.uri.path == '/around' %] active[% END %]"><a id="geolocate_link" href="/around" class="report-a-problem-btn"
+                            <li class="[% IF c.req.uri.path == '/around' %] active[% END %]"><a id="geolocate_link" href="/around" class="report-a-problem-btn"
                                 ><img src="/cobrands/barriosenaccion/images/m_reporta.png" alt="Reporta un Problema" class="hidden-xs"><br>Reporta un Problema</a></li>[%
-                            %]<li class="text-center [% IF c.req.uri.path == '/my' %] active[% END
+                            %]<li class="[% IF c.req.uri.path == '/my' %] active[% END
                                 %]"><a href="/my"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Tus reportes" class="hidden-xs"><br>Tus reportes</a></li>[%
-                            %]<li class="text-center[% IF c.req.uri.path == '/alert' %] active[% END
+                            %]<li class="[% IF c.req.uri.path == '/alert' %] active[% END
                                 %]"><a href="/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"><img src="/cobrands/barriosenaccion/images/m_alertas.png" alt="Alertas en Tu Barrio" class="hidden-xs"><br>Alertas en Tu Barrio</a></li>[%
-                            %]<li class="text-center[% IF c.req.uri.path == '/reports' %] active[% END
+                            %]<li class="[% IF c.req.uri.path == '/reports' %] active[% END
                                 %]"><a href="/reports"><img src="/cobrands/barriosenaccion/images/m_uso.png" alt="Todos los reportes" class="hidden-xs"><br>Todos los reportes</a></li>[%
-                            %]<li class="text-center[% IF c.req.uri.path == '/faq' %] active[% END
+                            %]<li class="[% IF c.req.uri.path == '/faq' %] active[% END
                             %]"><a href="/faq"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>[%
-                            %]<li class="text-center [% IF c.req.uri.path == '/about' %] active[% END
+                            %]<li class="[% IF c.req.uri.path == '/about' %] active[% END
                             %]"><a href="/about"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>[%
-                            %]<li class="text-center [% IF c.req.uri.path == '/privacy' %] active[% END
+                            %]<li class="[% IF c.req.uri.path == '/privacy' %] active[% END
                             %]"><a href="/privacy"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Privacidad" class="hidden-xs"><br>Privacidad</a></li>
                         </ul>
                         </div>
