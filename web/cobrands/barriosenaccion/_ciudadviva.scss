@@ -47,7 +47,9 @@ header .branding {
 .pasos_home {
 	background-color: #6e5ca4;
 	color: #FFF;
-	padding-bottom: 20px;
+}
+.pasos_home .row div {
+	margin-bottom: 20px;
 }
 .tipos_home img, .pasos_home img {
 	max-width: 90px;
