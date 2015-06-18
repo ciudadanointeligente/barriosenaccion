@@ -1,8 +1,8 @@
 <div id="report-a-problem-main">
-    <h1>[% loc('Report your problem') %]</h1>
+    <h1>Reporte su problema</h1>
 
   [% IF report.used_map %]
-    <p class="change_location">[% loc('Wrong location? Just click again on the map.') %]</p>
+    <p class="change_location">Ubicación equivocada? Sólo haga click nuevamente en el mapa</p>
   [% END %]
 
   [% IF js %]
@@ -11,7 +11,7 @@
           loc('All the information you provide here will be sent to <strong>%s</strong>.'),
           loc('the local council')
       ); %]
-      [% loc('The summary and description will also be made public (see our <a href="/privacy">privacy policy</a>).') %]
+      La descripción y el resumen también serán públicos (revise nuestra <a href="/privacy">política de privacidad</a>).
     </p>
   [% ELSE %]
       [% PROCESS 'report/new/councils_text.html' %]
@@ -34,13 +34,13 @@
             <p class='form-error'>[% field_errors.bodies %]</p>
           [% END %]
 
-            <label for="form_title">[% loc('One-line summary') %] [% INCLUDE 'report/public_label.html' %]</label>
+            <label for="form_title">Resumen de una linea [% INCLUDE 'report/public_label.html' %]</label>
           [% IF field_errors.title %]
             <p class='form-error'>[% field_errors.title %]</p>
           [% END %]
             <input type="text" value="[% report.title | html %]" name="title" id="form_title" placeholder="[% loc('What’s the issue, and where is it?') %]" required>
 
-            <label for="form_detail">[% loc('Description') %] [% INCLUDE 'report/public_label.html' %]</label>
+            <label for="form_detail">Descripción [% INCLUDE 'report/public_label.html' %]</label>
           [% IF field_errors.detail %]
             <p class='form-error'>[% field_errors.detail %]</p>
           [% END %]
