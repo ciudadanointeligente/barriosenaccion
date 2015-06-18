@@ -66,7 +66,7 @@
                                 <li class="[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" 
                                 ><i class="fa fa-home"></i>Home</a></li>[%
                             %]
-                            <li class="[% IF c.req.uri.path == '/around' %] active[% END %]"><a id="geolocate_link" href="/around" class="report-a-problem-btn"
+                            <li class="[% IF c.req.uri.path == '/around' %] active[% END %]" data-toggle="modal" data-target="#myModal"><a class="report-a-problem-btn"
                                 ><i class="fa fa-bullhorn"></i>Reporta un Problema</a></li>[%
                             %]<li class="[% IF c.req.uri.path == '/my' %] active[% END
                                 %]"><a href="/my"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Tus reportes" class="hidden-xs"><br>Tus reportes</a></li>[%
@@ -85,7 +85,10 @@
                     </nav>
                 </div>
             </header>
+            
 
+
+           
             [% pre_container_extra %]
 
             <div class="">
