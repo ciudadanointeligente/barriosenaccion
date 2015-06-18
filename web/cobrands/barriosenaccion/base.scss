@@ -21,7 +21,10 @@
     p#international_message { margin: auto; padding: 0.5em 2em; max-width: 40em; text-align: center; }
     #message_close { float: right; }
 }
-
+#front-main {
+  margin: 0px;
+  padding: 0px;
+}
 #site-logo {
   background: url($logo-barriosenaccion) no-repeat;
 }

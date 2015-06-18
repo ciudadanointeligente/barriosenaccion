@@ -25,6 +25,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
         <link rel="stylesheet" href="[% start %][% version('/cobrands/' _ c.cobrand.moniker _ '/base.css') %]">
+        <link rel="stylesheet" href="[% start %][% version('/cobrands/' _ c.cobrand.moniker _ '/layout.css') %]" media="(min-width:48em)">
 
         <script src="[% start %][% version('/js/modernizr.custom.js') %]" charset="utf-8"></script>
         <script src="[% start %][% version('/cobrands/fixmystreet/position_map.js') %]" charset="utf-8"></script>
@@ -91,6 +92,8 @@
            
             [% pre_container_extra %]
 
-            <div class="">
+            <div class="[% IF c.req.uri.path != '/' %]container[% END %]">
+
+                <div class="[% IF c.req.uri.path != '/' %]content[% " $mainclass" | html IF mainclass %][% END %]" role="main">
 
         <!-- [% INCLUDE 'debug_header.html' %] -->
