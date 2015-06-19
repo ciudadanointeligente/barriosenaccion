@@ -1,0 +1,10 @@
+Subject: Nuevos problemas en BarriosEnAcción
+
+Los siguientes nuevos problemas han sido reportados:
+
+<?=$values['data']?>
+
+<?=$values['signature']?>
+
+Para dejar de recibir avisos cuando existan nuevos problemas,
+haga click en el siguiente link: <?=$values['unsubscribe_url']?>

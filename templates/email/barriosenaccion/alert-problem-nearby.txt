@@ -1,0 +1,10 @@
+Subject: Nuevos problemas cercanos en BarriosEnAcción
+
+Los siguientes problemas han sido añadidos:
+
+<?=$values['data']?>
+
+<?=$values['signature']?>
+
+Para dejar de recibir mails,
+haga click en el siguiente link: <?=$values['unsubscribe_url']?>

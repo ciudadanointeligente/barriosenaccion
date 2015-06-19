@@ -1,0 +1,13 @@
+Subject: Confirme su problema en BarriosEnAcción
+
+Hola [% report.name || report.email %],
+
+Para confirmar el reporte que ha subido a BarriosEnAcción vía
+[% report.service %], y para revisar o añadir detalles,
+por favor revise la siguiente URL.
+
+[% token_url %]
+
+Gracias!
+
+[% INCLUDE 'signature.txt' %]

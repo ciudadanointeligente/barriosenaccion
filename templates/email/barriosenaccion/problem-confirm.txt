@@ -1,0 +1,19 @@
+Subject: Confirme su problema en [% INCLUDE 'site-name.txt' | trim %]
+
+Hola [% report.name %],
+
+Por favor haz click en el siguiente link para reportar el
+problema que recientemente reportó [% INCLUDE 'site-name.txt' | trim %]:
+
+[% token_url %]
+
+Si su lector de email no le permite hacer click en el link,
+copie y pegue en su navegador web.
+
+Su problema tiene el título:
+[% report.title %]
+
+Y los detalles:
+[% report.detail %]
+
+[% INCLUDE 'signature.txt' %]

@@ -1,0 +1,12 @@
+Subject: Nuevos problemas reportados a <?=$values['area_name']?> en <?=$values['ward_name']?> en BarriosEnAcción
+
+Los siguientes nuevos problemas han sido reportados a <?=$values['area_name']?>
+en <?=$values['ward_name']?>:
+
+<?=$values['data']?>
+
+<?=$values['signature']?>
+
+Para dejar de recibir emails cuando existan nuevos problemas reportados a
+<?=$values['area_name']?> en <?=$values['ward_name']?>,
+haga click en el siguiente link: <?=$values['unsubscribe_url']?>

@@ -1,0 +1,93 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie7 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie8 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie9 oldie" lang="[% lang_code %]"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="[% lang_code %]"><!--<![endif]-->
+    <head>
+        <meta name="viewport" content="initial-scale=1.0">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="HandHeldFriendly" content="true">
+        <meta name="mobileoptimized" content="0">
+
+        [% INCLUDE 'header_opengraph.html' %]
+
+[% SET start = c.config.ADMIN_BASE_URL IF admin %]
+
+        [% extra_css %]
+        <!--[if (lt IE 9) & (!IEMobile)]>
+            <link rel="stylesheet" href="[% start %][% version('/cobrands/' _ c.cobrand.moniker _ '/layout.css') %]">
+        <![endif]-->
+        <!-- Bootstrap CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="[% start %][% version('/cobrands/' _ c.cobrand.moniker _ '/base.css') %]">
+
+        <script src="[% start %][% version('/js/modernizr.custom.js') %]" charset="utf-8"></script>
+        <script src="[% start %][% version('/cobrands/fixmystreet/position_map.js') %]" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        [% INCLUDE 'common_header_tags.html', js_override = '/cobrands/fixmystreet/fixmystreet.js' %]
+        [% extra_js %]
+
+        [% TRY %][% PROCESS 'header_extra.html' %][% CATCH file %][% END %]
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    [% TRY %][% PROCESS 'set_body_class.html' %][% CATCH file %][% END %]
+    <body class="[% bodyclass | html IF bodyclass %]">
+    <div class="container-fluid">
+            <header>
+                <div class="row branding">
+                [% INCLUDE 'header_logo.html' %]
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="nav navbar-nav nav-justified">
+                                <li class="[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" 
+                                ><i class="fa fa-home"></i>Home</a></li>[%
+                            %]
+                            <li class="[% IF c.req.uri.path == '/around' %] active[% END %]"><a id="geolocate_link" href="/around" class="report-a-problem-btn"
+                                ><i class="fa fa-bullhorn"></i>Reporta un Problema</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/my' %] active[% END
+                                %]"><a href="/my"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Tus reportes" class="hidden-xs"><br>Tus reportes</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/alert' %] active[% END
+                                %]"><a href="/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"><i class="fa fa-map-marker"></i>Alertas en Tu Barrio</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/reports' %] active[% END
+                                %]"><a href="/reports"><i class="fa fa-users"></i>Reportes de vecinos</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/faq' %] active[% END
+                            %]"><a href="/faq"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/about' %] active[% END
+                            %]"><a href="/about"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>[%
+                            %]<li class="[% IF c.req.uri.path == '/privacy' %] active[% END
+                            %]"><a href="/privacy"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Privacidad" class="hidden-xs"><br>Privacidad</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            [% pre_container_extra %]
+
+            <div class="">
+
+        <!-- [% INCLUDE 'debug_header.html' %] -->

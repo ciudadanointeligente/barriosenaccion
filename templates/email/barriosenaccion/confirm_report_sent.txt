@@ -1,0 +1,9 @@
+Subject: Enviado reporte de problema: <?=$values['title']?>
+
+Hola,
+
+Tu reporte de problema "<?=$values['title']?>" ha sido enviado a <?=$values['bodies_name']?>.
+
+Gracias
+
+<?=$values['signature']?>

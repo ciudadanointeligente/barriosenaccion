@@ -1,0 +1,25 @@
+[%
+    fms_councils = {
+        'Barnet Borough Council' = 'barnet.fixmystreet.com'
+        'Bromley Council' = 'fix.bromley.gov.uk'
+        'East Sussex County Council' = 'eastsussex.fixmystreet.com'
+        'Hart District Council' = 'hart.fixmystreet.com'
+        'Oxfordshire County Council' = 'fixmystreet.oxfordshire.gov.uk'
+        'Stevenage Borough Council' = 'stevenage.fixmystreet.com'
+    }
+    secure = {
+        'fix.bromley.gov.uk' = 's'
+    }
+    site = fms_councils.${body.name}
+%]
+[% IF site %]
+<tr align="center"
+[%- IF ! (loop.count % 2) %] class="a"
+[%- END %]>
+<td class="title" colspan="6" style="padding-top:0">
+    <small title="This council's online reporting is powered by FixMyStreet">(includes reports from
+    <a href="http[% secure.$site %]://[% site %]">[% site %]</a> using
+    <a href="https://www.fixmystreet.com/council">FixMyStreet for Councils</a>)</small>
+</td>
+</tr>
+[% END %]

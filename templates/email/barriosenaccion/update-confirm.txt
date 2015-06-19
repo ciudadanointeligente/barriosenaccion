@@ -1,0 +1,17 @@
+Subject: Confirme su actualización en [% INCLUDE 'site-name.txt' | trim %]
+
+Hola [% update.name %],
+
+Por favor haga click en el siguiente link para confirmar su
+actualización:
+
+[% token_url %]
+
+Si no es posible hacer click, por favor copie y pegue el
+link en la barra de su navegador.
+
+Su actualización es la siguiente:
+
+[% update.text %]
+
+[% INCLUDE 'signature.txt' %]

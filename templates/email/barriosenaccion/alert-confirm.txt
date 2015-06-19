@@ -1,0 +1,13 @@
+Subject: Confirme su alerta en [% INCLUDE 'site-name.txt' | trim %]
+
+Hola,
+
+Por favor, haga click en el link que está abajo para confirmar
+que su suscripción a [% INCLUDE 'site-name.txt' | trim %]:
+
+    [% token_url %]
+
+Si no puede hacer click, por favor copie y peguelo en la barra
+de su navegador web.
+
+[% INCLUDE 'signature.txt' %]

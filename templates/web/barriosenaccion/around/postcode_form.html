@@ -1,0 +1,32 @@
+[%# Identical to parent, but with an extra div and javascript for our homepage A/B test %]
+
+
+        [% INCLUDE 'around/intro.html' %]
+
+        <div id="homepage-ab-test">
+            <p><a id="cta-report">Report a problem</a></p>
+            <p><a id="cta-view">Or view problems in an area you know</a></p>
+        </div>
+
+
+<script type="text/javascript">
+$(function(){
+  $('#homepage-ab-test a').on('click', function(e){
+      e.preventDefault();
+      $('#homepage-ab-test').fadeOut(250, function(){
+
+        /* fadeIn() normal form, and focus input */
+        $('#postcodeForm').fadeIn(250, function(){
+          $('#pc').focus();
+        });
+
+        /* Can't just fadeIn() because #geolocate_link
+           should have { display: inline-block } */
+        $('#geolocate_link').css({
+          opacity: 0,
+          display: 'inline-block'
+        }).animate({ opacity: 1 }, 250);
+      });
+  });
+});
+</script>

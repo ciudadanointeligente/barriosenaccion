@@ -1,0 +1,12 @@
+Subject: Nuevos problemas en <?=$values['area_name']?> en BarriosEnAcción
+
+Los siguientes problemas han sido añadidos en
+<?=$values['area_name']?>:
+
+<?=$values['data']?>
+
+<?=$values['signature']?>
+
+Para dejar de recibir avisos de problemas en esta area
+<?=$values['area_name']?>, por favor siga el link.
+<?=$values['unsubscribe_url']?>

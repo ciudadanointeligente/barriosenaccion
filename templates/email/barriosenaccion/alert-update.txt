@@ -1,0 +1,17 @@
+Subject: Novedades con el problema - '<?=$values['title']?>'
+
+Estas son las novedades con respecto a este problema:
+
+<?=$values['data']?>
+
+<?=$values['state_message']?>
+
+Para ver o responder a estas actualizaciones, visite la siguiente URL:
+    <?=$values['problem_url']?>
+
+Por favor no responder a este mail.
+
+<?=$values['signature']?>
+
+Para dejar de recibir avisos cuando existan novedades con este problema,
+haga click en el siguiente link: <?=$values['unsubscribe_url']?>
