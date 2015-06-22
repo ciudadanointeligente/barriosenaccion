@@ -81,6 +81,10 @@ header .branding {
 .nav-justified>li {
   float: none !important;
 }
+.navbar-nav>li>a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 }
 .navbar {
   margin-bottom: 0px;
