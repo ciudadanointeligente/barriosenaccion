@@ -182,10 +182,14 @@ div#main-nav {
 }
 #side {
   position: absolute;
-  top: 157px;
+  top: 140px;
   background-color: #F7F7F7;
   left: 0;
   z-index: 3000;
+  width: 500px;
+  padding: 0 15px;
+  overflow: scroll;
+  height: 437px;
 }
 #side-form {
   position: absolute;
@@ -213,6 +217,10 @@ div#main-nav {
 #side-form p.change_location {
   color: #FFF;
 }
+.form-box {
+  background: #F7F7F7;
+}
+
 #container_carousel {
 	div.slogan div.slogan_container {
 		position:absolute;
