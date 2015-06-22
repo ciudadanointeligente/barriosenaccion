@@ -1,8 +1,9 @@
 <div id="report-a-problem-main">
-    <h1>[% loc('Report your problem') %]</h1>
+    <h2>[% loc('Reporta un problema') %]</h2>
+    <p>Su información será enviada a la municipalidad de Lorem Ipsum.</p>
 
   [% IF report.used_map %]
-    <p class="change_location">[% loc('Wrong location? Just click again on the map.') %]</p>
+    <p class="change_location">[% loc('Puede elegir ocultar su nombre ya que el reporte quedará disponible de forma pública en el sitio.') %]</p>
   [% END %]
 
   [% IF js %]
@@ -34,17 +35,17 @@
             <p class='form-error'>[% field_errors.bodies %]</p>
           [% END %]
 
-            <label for="form_title">[% loc('One-line summary') %] [% INCLUDE 'report/public_label.html' %]</label>
+            <label for="form_title">[% loc('Escriba un título para el reporte') %] [% INCLUDE 'report/public_label.html' %]</label>
           [% IF field_errors.title %]
             <p class='form-error'>[% field_errors.title %]</p>
           [% END %]
-            <input type="text" value="[% report.title | html %]" name="title" id="form_title" placeholder="[% loc('What’s the issue, and where is it?') %]" required>
+            <input type="text" value="[% report.title | html %]" name="title" id="form_title" placeholder="[% loc('Sea claro y breve') %]" required>
 
-            <label for="form_detail">[% loc('Description') %] [% INCLUDE 'report/public_label.html' %]</label>
+            <label for="form_detail">[% loc('Describa su problema') %] [% INCLUDE 'report/public_label.html' %]</label>
           [% IF field_errors.detail %]
             <p class='form-error'>[% field_errors.detail %]</p>
           [% END %]
-            <textarea rows="7" cols="26" name="detail" id="form_detail" placeholder="[% loc('Explain what’s wrong, exactly where it is, and how long it’s been there…') %]" required>[% report.detail | html %]</textarea>
+            <textarea rows="7" cols="26" name="detail" id="form_detail" placeholder="[% loc('Especifíque en detalle') %]" required>[% report.detail | html %]</textarea>
 
           [% TRY %][% PROCESS 'report/new/inline-tips.html' %][% CATCH file %][% END %]
 

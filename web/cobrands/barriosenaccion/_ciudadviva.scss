@@ -5,6 +5,63 @@ body {
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+label {
+  font-weight: 300;
+  font-size: 1.286em;
+}
+label.inline {
+  font-weight: 300;
+  font-size: 1em;
+  color: #898989;
+}
+input[type=text], input[type=password], input[type=email], textarea {
+  border: 0.071em solid #f3f3f3;
+  color: #898989;
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  -ms-border-radius: 0em;
+  -o-border-radius: 0em;
+  border-radius: 0em;
+}
+select {
+  background: #B4B4B4;
+  color: #FFF;
+  font-weight: 300;
+  height: 2.5em;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  -ms-border-radius: 0em;
+  -o-border-radius: 0em;
+  border-radius: 0em;
+}
+input[type=file] {
+  width: 100%;
+  background-color: #FFF;
+  border: 0.071em solid #f3f3f3;
+  padding: 1em;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+}
+.green-btn, button.green-btn, input.green-btn {
+  background: #975CA8;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  border: #975CA8;
+  font-weight: 300;
+}
+.green-btn:hover, button.green-btn:hover, input.green-btn:hover {
+  background: #854F95;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  border: #975CA8;
+  font-weight: 300;
 }
 #ciudadviva-logo{
         background-image:url("/cobrands/barriosenaccion/images/ciudadVivaNegro.png") !important;
@@ -42,6 +99,7 @@ header .branding {
   color: #000;
   font-weight: 300;
   font-size: 14px;
+  margin-top: -6px;
 }
 .navbar-default .navbar-nav>li>a>i {
   font-weight: normal;
@@ -81,6 +139,11 @@ header .branding {
 .nav-justified>li {
   float: none !important;
 }
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 75px;
+}
 }
 .navbar {
   margin-bottom: 0px;
@@ -116,6 +179,44 @@ header .branding {
 div#main-nav {
   color: #ffffff;
   background: #864598;
+}
+#side {
+  position: absolute;
+  top: 140px;
+  background-color: #F7F7F7;
+  left: 0;
+  z-index: 3000;
+  width: 500px;
+  padding: 0 15px;
+  overflow: scroll;
+  height: 437px;
+}
+#side-form {
+  position: absolute;
+  top: 140px;
+  background-color: #F7F7F7;
+  left: 0;
+  z-index: 3000;
+  width: 500px;
+  overflow: scroll;
+  height: 480px;
+  padding: 0 15px;
+}
+#side-form p {
+  font-weight: 300;
+  color: #898989;
+}
+#side-form .change_location {
+  background: #CEABD8;
+  margin: 0 -15px;
+  padding: 15px;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #FFF;
+}
+.form-box {
+  background: #F7F7F7;
 }
 
 #container_carousel {
