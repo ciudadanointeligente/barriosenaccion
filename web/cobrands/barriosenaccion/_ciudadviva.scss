@@ -11,6 +11,11 @@ label {
   font-weight: 300;
   font-size: 1.286em;
 }
+label.inline {
+  font-weight: 300;
+  font-size: 1em;
+  color: #898989;
+}
 input[type=text], input[type=password], input[type=email], textarea {
   border: 0.071em solid #f3f3f3;
   color: #898989;
@@ -43,6 +48,20 @@ input[type=file] {
   padding: 1em;
   font-style: normal;
   font-family: 'Roboto', sans-serif;
+}
+.green-btn, button.green-btn, input.green-btn {
+  background: #975CA8;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  border: #975CA8;
+  font-weight: 300;
+}
+.green-btn:hover, button.green-btn:hover, input.green-btn:hover {
+  background: #854F95;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  border: #975CA8;
+  font-weight: 300;
 }
 #ciudadviva-logo{
         background-image:url("/cobrands/barriosenaccion/images/ciudadVivaNegro.png") !important;
