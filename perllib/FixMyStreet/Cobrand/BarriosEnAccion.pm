@@ -21,5 +21,19 @@ sub disambiguate_location {
     };
 }
 
+sub pin_colour {
+    my ( $self, $p, $context ) = @_;
+    #return 'green' if time() - $p->confirmed->epoch < 7 * 24 * 60 * 60;
+    if ($context eq 'around' || $context eq 'reports' || $context eq 'report') {
+        return 'yellow';
+    }
+    return $p->is_fixed ? 'green' : 'red';
+}
+
+sub path_to_pin_icons {
+    return '/cobrands/barriosenaccion/images/pins/';
+}
+
+
 1;
 
