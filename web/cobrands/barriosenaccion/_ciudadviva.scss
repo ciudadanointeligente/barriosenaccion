@@ -42,6 +42,7 @@ header .branding {
   color: #000;
   font-weight: 300;
   font-size: 14px;
+  margin-top: -6px;
 }
 .navbar-default .navbar-nav>li>a>i {
   font-weight: normal;
@@ -82,8 +83,9 @@ header .branding {
   float: none !important;
 }
 .navbar-nav>li>a {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 75px;
 }
 }
 .navbar {
@@ -121,7 +123,12 @@ div#main-nav {
   color: #ffffff;
   background: #864598;
 }
-
+#side {
+  position: absolute;
+  top: 157px;
+  background-color: #FFF;
+  left: 0;
+}
 #container_carousel {
 	div.slogan div.slogan_container {
 		position:absolute;
