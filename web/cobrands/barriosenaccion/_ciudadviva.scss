@@ -202,11 +202,14 @@ div#main-nav {
   text-align: left;
   font-size: 1em;
   margin: 0 -15px;
+  font-weight: 100;
 }
-.big-green-banner a {
-  color: #FFF;
+#skip-this-step {
+  text-decoration: underline;
+  display: block;
+  margin: 15px 0;
 }
-.key-tools {
+.shadow-wrap ul#key-tools{
   display: none;
 }
 #side-form {
@@ -219,6 +222,9 @@ div#main-nav {
   overflow: scroll;
   height: 480px;
   padding: 0 15px;
+  -webkit-box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
+  box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
 }
 #side-form p {
   font-weight: 300;
