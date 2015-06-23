@@ -1,6 +1,5 @@
 <div id="report-a-problem-main">
     <h2>[% loc('Reporta un problema') %]</h2>
-    <p>Su información será enviada a la municipalidad de Lorem Ipsum.</p>
 
   [% IF report.used_map %]
     <p class="change_location">[% loc('Puede elegir ocultar su nombre ya que el reporte quedará disponible de forma pública en el sitio.') %]</p>
@@ -12,7 +11,7 @@
           loc('All the information you provide here will be sent to <strong>%s</strong>.'),
           loc('the local council')
       ); %]
-      [% loc('The summary and description will also be made public (see our <a href="/privacy">privacy policy</a>).') %]
+      El resumen y descripción del problema también estarán públicos (puede revisar nuestra <a href="/privacy">política de privacidad</a>).
     </p>
   [% ELSE %]
       [% PROCESS 'report/new/councils_text.html' %]

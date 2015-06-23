@@ -1,5 +1,6 @@
 package FixMyStreet::Cobrand::BarriosEnAccion;
 use base 'FixMyStreet::Cobrand::Default';
+use Unicode::Normalize;
 
 use strict;
 use warnings;
@@ -20,6 +21,46 @@ sub disambiguate_location {
         town => 'Santiago',
     };
 }
+
+use constant CATEGORY_PINS_AND_CLASSES => {
+                                            "Mantencion del entorno" => "mantencion_del_entorno",
+                                            "Basura y falta de higiene en el espacio publico" => "basura_y_falta_de_higiene_en_el_espacio_publico",
+                                            "Espacios abandonados y escondites" => "espacios_abandonados_y_escondites",
+                                            "Rayados" => "rayados",
+                                            "Estado de los elementos del transito" => "estado_de_los_elementos_del_transito",
+                                            "Flujo vehicular y peatonal" => "flujo_vehicular_y_peatonal",
+                                            "Presencia de personas y/o vehiculos no autorizados" => "presencia_de_personas_y_vehiculos_no_autorizados",
+                                            "Clandestinos" => "clandestinos",
+                                            "Faltas a la Convivencia"  => "faltas_a_la_convivencia",
+                                            "Ruidos Molestos" => "ruidos_molestos",
+                                            "Congestion"  => "congestion",
+                                            "Otros" => 'otros'
+                                        };
+
+sub pin_colour {
+    my ( $self, $p, $context ) = @_;
+    #return 'green' if time() - $p->confirmed->epoch < 7 * 24 * 60 * 60;
+    if ($context eq 'around' || $context eq 'reports' || $context eq 'report') {
+
+        my $decomposed = NFKD( $p->category );
+        $decomposed =~ s/\p{NonspacingMark}//g;
+
+
+        if ( grep( /^$decomposed$/, keys $self->CATEGORY_PINS_AND_CLASSES ) ) {
+          return $self->CATEGORY_PINS_AND_CLASSES->{$decomposed};
+        }
+        else {
+            return 'yellow'
+        }
+        
+    }
+    return $p->is_fixed ? 'green' : 'red';
+}
+
+sub path_to_pin_icons {
+    return '/cobrands/barriosenaccion/images/pins/';
+}
+
 
 1;
 
