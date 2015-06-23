@@ -1,7 +1,8 @@
 /* COLOURS */
-
-$primary: #FFD000;
-$primary_b: #F3B11E; // For the box around the front page postcode form only
+$purple: #6E5CA4;
+$darker_purple: #6EF0A4;
+$primary: $purple;
+$primary_b: $darker_purple; // For the box around the front page postcode form only
 $primary_text: #222;
 
 // Tiled main body background
@@ -20,6 +21,8 @@ $col_click_map_dark: #4B8304;
 $col_fixed_label: #00BD08;
 $col_fixed_label_dark: #4B8304;
 
+
 $image-sprite: '/cobrands/barriosenaccion/images/sprite.png';
 $logo-ciudadviva: '/cobrands/barriosenaccion/images/ciudadVivaNegro.png';
+$logo-barriosenaccion: 'cobrands/barriosenaccion/images/logo_barrios.png';
 $top-menu-colour: #8CDC00;

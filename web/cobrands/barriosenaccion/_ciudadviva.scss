@@ -1,10 +1,250 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,100,300);
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+label {
+  font-weight: 300;
+  font-size: 1.286em;
+}
+label.inline {
+  font-weight: 300;
+  font-size: 1em;
+  color: #898989;
+}
+input[type=text], input[type=password], input[type=email], textarea {
+  border: 0.071em solid #f3f3f3;
+  color: #898989;
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  -ms-border-radius: 0em;
+  -o-border-radius: 0em;
+  border-radius: 0em;
+}
+select {
+  background: #B4B4B4;
+  color: #FFF;
+  font-weight: 300;
+  height: 2.5em;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  -ms-border-radius: 0em;
+  -o-border-radius: 0em;
+  border-radius: 0em;
+}
+input[type=file] {
+  width: 100%;
+  background-color: #FFF;
+  border: 0.071em solid #f3f3f3;
+  padding: 1em;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+}
+.green-btn, button.green-btn, input.green-btn {
+  background: #975CA8;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  border: #975CA8;
+  font-weight: 300;
+}
+.green-btn:hover, button.green-btn:hover, input.green-btn:hover {
+  background: #854F95;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  border: #975CA8;
+  font-weight: 300;
+}
 #ciudadviva-logo{
         background-image:url("/cobrands/barriosenaccion/images/ciudadVivaNegro.png") !important;
         background-position:0 -5px !important;
-        height:16px;
+        height:40px;
         opacity:0.8;
-        width:116px
+        width:100%;
+        background-repeat: no-repeat !important;
     }
-#site-logo{
-    background-image:url("/cobrands/barriosenaccion/images/bellavistaAccion.png")
-}.form-box h5 strong{font-size:1em}
+.form-box h5 strong{font-size:1em}
+.purple {
+	color: $purple;
+}
+
+/* Header */
+
+header .branding {
+	background-color: #975CA8;
+	padding: 10px 0;
+}
+.navbar {
+  border-radius: 0;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: #F7F7F7;
+}
+.navbar-default .navbar-nav>li {
+  border-style: solid;
+  border-color: #ffffff;
+  border-right: 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: -6px;
+}
+.navbar-default .navbar-nav>li>a>i {
+  font-weight: normal;
+  font-size: 18px;
+  display: block;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  background-color: #ffffff;
+}
+.tipos_home, .pasos_home {
+	text-align: center;
+}
+.tipos_home {
+	background-color: #664EBC;
+	color: #ffffff;
+	padding-bottom: 20px;
+	
+}
+.pasos_home {
+	color: #000000;
+}
+.pasos_home .row div {
+	margin-bottom: 20px;
+}
+.tipos_home img, .pasos_home img {
+	max-width: 90px;
+	margin-bottom: 20px;
+}
+.tipos_home h2, .pasos_home h2 {
+	margin-bottom: 30px;
+	font-weight: 100;
+	font-size: 2.571em;
+}
+
+
+@media (min-width: 768px) {
+.nav-justified>li {
+  float: none !important;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 75px;
+}
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.carousel {
+  margin: 0 -7px;
+}
+.carousel-inner>.item {
+  max-height: 415px;
+}
+.carousel-inner>.item>img {
+	  -webkit-filter: grayscale(40%);
+}
+.carousel-caption {
+  right: 15%;
+  top: 30px;
+  left: 15%;
+  bottom: auto;
+  color: #fff;
+  text-align: left;
+  max-width: 50%;
+}
+.carousel-caption h2 {
+  font-weight: 100;
+  font-size: 2.571em;
+}
+.carousel-caption span {
+  font-weight: 500;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+  color: #6e5ca4;
+}
+div#main-nav {
+  color: #ffffff;
+  background: #864598;
+}
+#side {
+  position: absolute;
+  top: 140px;
+  background-color: #F7F7F7;
+  left: 0;
+  z-index: 3000;
+  width: 500px;
+  padding: 0 15px;
+  overflow: scroll;
+  height: 437px;
+}
+#side-form {
+  position: absolute;
+  top: 140px;
+  background-color: #F7F7F7;
+  left: 0;
+  z-index: 3000;
+  width: 500px;
+  overflow: scroll;
+  height: 480px;
+  padding: 0 15px;
+}
+#side-form p {
+  font-weight: 300;
+  color: #898989;
+}
+#side-form .change_location {
+  background: #CEABD8;
+  margin: 0 -15px;
+  padding: 15px;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #FFF;
+}
+.form-box {
+  background: #F7F7F7;
+}
+
+#container_carousel {
+	div.slogan div.slogan_container {
+		position:absolute;
+		margin-top: 100px;
+		padding-left: 10px;
+		margin-right: 1px;
+		z-index: 1;
+		color: #FFF;
+		background-color: #000;
+		text-align: left;
+		p {
+			list-style: outside none none;
+		}
+	}
+	.carousel_item {
+	  	width: 100%;
+	  	background: #eee;
+	  	margin: auto;
+	}
+
+	.carrusel {
+		height: 300px;
+		overflow: hidden;
+		img {
+			top:-300px;
+			position: absolute;
+		}
+	}
+}

@@ -1,6 +1,5 @@
 [%# Identical to parent, but with an extra div and javascript for our homepage A/B test %]
-
-<div id="front-main">
+<div>
     <div id="front-main-container">
         [% INCLUDE 'around/intro.html' %]
 
@@ -8,12 +7,23 @@
             <p><a id="cta-report">Report a problem</a></p>
             <p><a id="cta-view">Or view problems in an area you know</a></p>
         </div>
+        
+    </div>
+</div>
 
-        [%
-            question = c.cobrand.enter_postcode_text || loc('Enter a nearby street name and area');
-        %]
+
+ <!-- El terrible de modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dónde quieres reportar?</h4>
+      </div>
+      <div class="modal-body">
         <form action="[% c.uri_for('/around') %]" method="get" name="postcodeForm" id="postcodeForm">
-            <label for="pc">[% question %]:</label>
+            <label for="pc">Ingresa una dirección:</label>
             <div>
                 <input type="text" name="pc" value="[% pc | html %]" id="pc" size="10" maxlength="200" placeholder="[% tprintf(loc('e.g. ‘%s’ or ‘%s’'), c.cobrand.example_places) %]">
                 <input type="submit" value="[% loc('Go') %]" id="sub">
@@ -22,8 +32,25 @@
                 <input type="hidden" name="partial" value="[% partial_token.token %]">
             [% END %]
         </form>
+        [% IF possible_location_matches %]
+            <script type="text/javascript">
+                $( function(){
+                    jQuery.noConflict();
+                    $('#myModal').modal('show');
+                } )
+            </script>
+            <p>[% loc('We found more than one match for that location. We show up to ten matches, please try a different search if yours is not here.') %]</p>
+            <ul class="pc_alternatives">
+                [% FOREACH match IN possible_location_matches %]
+                <li><a href="/around?latitude=[% match.latitude | uri %];longitude=[% match.longitude | uri %]">[% match.address | html %]</a></li>
+                [% END %]
+            </ul>
+        [% END %]
+      </div>
     </div>
+  </div>
 </div>
+<!-- Fin del terrible de modal -->
 
 <script type="text/javascript">
 $(function(){

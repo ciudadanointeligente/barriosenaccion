@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/marcelino/Documents/FCI/vizard"
+		},
+		{
+			"path": "/Users/marcelino/Desktop/DiME"
+		},
+		{
+			"path": "/Users/marcelino/Documents/INIA/diario mural"
+		},
+		{
+			"path": "/Users/marcelino/Documents/FCI/fixmystreet"
+		},
+		{
+			"path": "/Users/marcelino/Downloads/barrios",
+			"file_exclude_patterns": ["*.css", "*.ttc"]
+		}
+	]
+}
