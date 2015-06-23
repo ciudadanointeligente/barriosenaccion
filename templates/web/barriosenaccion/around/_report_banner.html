@@ -1,9 +1,10 @@
-<h1 class="big-green-banner">
-    [% loc( 'Haga click en el mapa para reportar el problema' ) %]
+<div class="big-green-banner">
+    <p><i class="fa fa-exclamation-triangle"></i> Haga click en el mapa para reportar el problema</p>
     [% IF c.cobrand.moniker == 'bromley' %]
         <span>Yellow pins show existing reports</span>
     [% END %]
-</h1>
-<a id="skip-this-step" href="[% url_skip %]" rel="nofollow">
-    [% loc("Can't see the map? <em>Skip this step</em>") %]
-</a>
+    <a id="skip-this-step" href="[% url_skip %]" rel="nofollow">
+    [% loc("¿No puedes ver el mapa? Salta este paso") %]
+	</a>
+</div>
+
