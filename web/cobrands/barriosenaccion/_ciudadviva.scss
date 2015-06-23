@@ -187,9 +187,21 @@ div#main-nav {
   left: 0;
   z-index: 3000;
   width: 500px;
-  padding: 0 15px;
+  padding: 20px 15px 15px;
   overflow: scroll;
   height: 437px;
+}
+.big-green-banner:before {
+  display: none;
+}
+.big-green-banner {
+  top: 0;
+  background: #CEABD8;
+  color: #FFF;
+  text-transform: none;
+  text-align: left;
+  font-size: 1em;
+  margin: 0 -15px;
 }
 #side-form {
   position: absolute;
