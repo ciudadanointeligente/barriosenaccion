@@ -1,8 +1,18 @@
 [% map_js = PROCESS 'front/javascript.html' %]
 
-[% pre_container_extra = PROCESS 'around/postcode_form.html' %]
-[% INCLUDE 'header.html', title = '', bodyclass = 'frontpage fullwidthpage' %]
 
+[% INCLUDE 'header.html', title = '', bodyclass = 'frontpage fullwidthpage' %]
+<div>
+<div id="front-main-container">
+    [% INCLUDE 'around/intro.html' %]
+
+    <div id="homepage-ab-test">
+        <p><a id="cta-report">Report a problem</a></p>
+        <p><a id="cta-view">Or view problems in an area you know</a></p>
+    </div>
+    
+</div>
+            </div>
 [% IF error %]
     <p class="form-error">[% error %]</p>
 [% END %]
