@@ -155,11 +155,13 @@ header .branding {
   max-height: 415px;
 }
 .carousel-inner>.item>img {
-	  -webkit-filter: grayscale(40%);
+  height: 415px;
+  width: 1920px;
+  overflow: hidden;
 }
 .carousel-caption {
   right: 15%;
-  top: 30px;
+  top: 0px;
   left: 15%;
   bottom: auto;
   color: #fff;
@@ -242,7 +244,36 @@ div#main-nav {
 .form-box {
   background: #F7F7F7;
 }
-
+.btn-primary {
+  background-color: #975CA8;
+  border-color: #975CA8;
+  font-weight: 100;
+}
+.btn-default {
+  color: #ffffff;
+  background-color: #25ABC3;
+  border-color: #25ABC3;
+  font-weight: 100;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #693D75;
+  border-color: #693D75;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+  color: #ffffff;
+  background-color: #1D8395;
+  border-color: #1D8395;
+}
+.branding a:hover, .branding a:active, .branding a:visited:hover, .branding a:visited:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+.branding a, .branding a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 100;
+}
 #container_carousel {
 	div.slogan div.slogan_container {
 		position:absolute;

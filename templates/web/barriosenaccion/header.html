@@ -46,7 +46,26 @@
     <div class="container-fluid">
             <header>
                 <div class="row branding">
-                [% INCLUDE 'header_logo.html' %]
+                    <div class="col-md-10">
+                        [% INCLUDE 'header_logo.html' %]
+                    </div>
+                    <div class="col-md-2">
+
+                        [% IF c.user_exists %]
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="fa fa-user"></i> [% c.user.name %]
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                            <li class=""><a href="/my">Tus reportes</a></li>
+                            <li class=""><a href="/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]">Alertas en Tu Barrio</a></li>
+                          </ul>
+                        </div>
+                        [% ELSE %]
+                        <a  class="login" role="button" href="[% c.uri_for('/auth') %]">Ingresar / Regístrate</a>
+                        [% END %]
+                    </div>
                 </div>
                 <div class="row">
                     <nav class="navbar navbar-default" role="navigation">
@@ -67,18 +86,12 @@
                                 ><i class="fa fa-home"></i>Home</a></li>[%
                             %]
                             <li class="[% IF c.req.uri.path == '/around' %] active[% END %]" data-toggle="modal" data-target="#myModal"><a class="report-a-problem-btn"><i class="fa fa-bullhorn"></i>Reporta un Problema</a></li>[%
-                            %]<li class="[% IF c.req.uri.path == '/my' %] active[% END
-                                %]"><a href="/my"><img src="/cobrands/barriosenaccion/images/m_reportes.png" alt="Tus reportes" class="hidden-xs"><br>Tus reportes</a></li>[%
-                            %]<li class="[% IF c.req.uri.path == '/alert' %] active[% END
-                                %]"><a href="/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"><i class="fa fa-map-marker"></i>Alertas en Tu Barrio</a></li>[%
                             %]<li class="[% IF c.req.uri.path == '/reports' %] active[% END
                                 %]"><a href="/reports"><i class="fa fa-users"></i>Reportes de vecinos</a></li>[%
                             %]<li class="[% IF c.req.uri.path == '/faq' %] active[% END
                             %]"><a href="/faq"><img src="/cobrands/barriosenaccion/images/m_faq.png" alt="Preguntas Frecuentes" class="hidden-xs"><br>Preguntas Frecuentes</a></li>[%
                             %]<li class="[% IF c.req.uri.path == '/about' %] active[% END
-                            %]"><a href="/about"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>[%
-                            %]<li class="[% IF c.req.uri.path == '/privacy' %] active[% END
-                            %]"><a href="/privacy"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Privacidad" class="hidden-xs"><br>Privacidad</a></li>
+                            %]"><a href="/about"><img src="/cobrands/barriosenaccion/images/m_nosotros.png" alt="Sobre Nosotros" class="hidden-xs"><br>Sobre Nosotros</a></li>
                         </ul>
                         </div>
                     </nav>
