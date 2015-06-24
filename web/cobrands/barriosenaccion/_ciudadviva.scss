@@ -265,6 +265,14 @@ div#main-nav {
   background-color: #1D8395;
   border-color: #1D8395;
 }
+.branding a:hover, .branding a:active, .branding a:visited:hover, .branding a:visited:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+.branding a, .branding a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
 #container_carousel {
 	div.slogan div.slogan_container {
 		position:absolute;
