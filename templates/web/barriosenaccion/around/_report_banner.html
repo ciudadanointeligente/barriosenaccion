@@ -1,0 +1,10 @@
+<div class="big-green-banner">
+    <p><i class="fa fa-exclamation-triangle"></i> Haga click en el mapa para reportar el problema</p>
+    [% IF c.cobrand.moniker == 'bromley' %]
+        <span>Yellow pins show existing reports</span>
+    [% END %]
+    <a id="skip-this-step" href="[% url_skip %]" rel="nofollow">
+    [% loc("¿No puedes ver el mapa? Salta este paso") %]
+	</a>
+</div>
+
