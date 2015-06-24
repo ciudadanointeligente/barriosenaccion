@@ -20,6 +20,10 @@ sub disambiguate_location {
         town => 'Santiago',
     };
 }
+sub all_reports_single_body {
+    my $self = shift;
+    return { name => 'Municipalidad de Providencia' };
+}
 
 1;
 
