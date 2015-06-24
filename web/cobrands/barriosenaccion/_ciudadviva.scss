@@ -70,6 +70,17 @@ input[type=file] {
   background-color: #1D8395;
   border-color: #1D8395;
 }
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
 .branding a:hover, .branding a:active, .branding a:visited:hover, .branding a:visited:active {
   text-decoration: none;
   color: #ffffff;
@@ -155,8 +166,21 @@ header .branding {
   background-image: url("/cobrands/barriosenaccion/images/bg_pasos_reportar.jpg"); 
   background-repeat: no-repeat;
 }
-.pasos_home .row div {
+.pasos_home .well {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 	margin-bottom: 20px;
+  padding: 85px 21px;
+  min-width: 300px;
+  min-height: 300px;
+}
+.pasos_home .well p {
+  font-weight: 100;
+  text-align: center;
+}
+.pasos_home button {
+  margin-bottom: 30px;
 }
 .tipos_home img, .pasos_home img {
 	max-width: 90px;
