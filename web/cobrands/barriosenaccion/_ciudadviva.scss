@@ -142,6 +142,18 @@ header .branding {
   border-top: 0px;
   border-bottom: 0px;
 }
+.navbar-default .navbar-nav>li>a.reporta {
+  color: #25ABC3;
+}
+.navbar-default .navbar-nav>li>a.vecinos {
+  color: #664EBC;
+}
+.navbar-default .navbar-nav>li>a.preguntas {
+  color: #664EBC;
+}
+.navbar-default .navbar-nav>li>a.inicio {
+  color: #975CA8;
+}
 .navbar-default .navbar-nav>li>a {
   color: #000;
   font-weight: 300;
@@ -256,7 +268,7 @@ div#main-nav {
   top: 140px;
   background-color: #F7F7F7;
   left: 0;
-  z-index: 3000;
+  z-index: 100;
   width: 500px;
   padding: 20px 15px 15px;
   overflow: scroll;
@@ -359,7 +371,19 @@ footer ul {
   padding: 15px;
   color: #ffffff;
 }
-
+.problem-header .moderate-display p {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+#side p em {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+#map_box {
+  margin-bottom: 0;
+}
 
 #container_carousel {
 	div.slogan div.slogan_container {
