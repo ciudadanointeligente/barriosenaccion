@@ -134,7 +134,7 @@ $(function(){
 
     // Geolocation
     if (geo_position_js.init()) {
-        var link = '<div class="elquegeolocaliza"><p>Ser localizado automáticamente</p><a href="#LINK" id="geolocate_link" class="btn btn-primary btn-lg"><i class="fa fa-location-arrow"></i> Encuéntrame</a></div>';
+        var link ='<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div><div class="elquegeolocaliza col-xs-5 col-sm-5 col-md-5 col-lg-5"><p>Ser localizado automáticamente</p><a href="#LINK" id="geolocate_link" class="btn btn-primary btn-lg"><i class="fa fa-location-arrow"></i> Encuéntrame</a></div>';
         $('form[action="/alert/list"]').append(link.replace('LINK','alert/list'));
         if ($('body.frontpage').length) {
             $('#postcodeForm').after(link.replace('LINK','around'));

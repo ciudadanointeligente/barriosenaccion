@@ -11,18 +11,22 @@
         <h3 class="modal-title" id="myModalLabel">Seleccione como desea localizar el reporte</h3>
       </div>
       <div class="modal-body">
-        <form action="[% c.uri_for('/around') %]" method="get" name="postcodeForm" id="postcodeForm">
-            <label for="pc">Ingresa una dirección:</label>
-            <div class="input-group">
-                <input type="text" name="pc" value="[% pc | html %]" id="pc" size="10" maxlength="200" placeholder="[% tprintf(loc('e.g. ‘%s’ or ‘%s’'), c.cobrand.example_places) %]" class="form-control" >
-                <span class="input-group-btn">
-                  <input type="submit" value="[% loc('Buscar') %]" id="sub" class="btn btn-default">
-                </span>
-            </div>
-            [% IF partial_token %]
-                <input type="hidden" name="partial" value="[% partial_token.token %]">
-            [% END %]
-        </form>
+        <div class="row">
+          <div  id="postcodeForm" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <form action="[% c.uri_for('/around') %]" method="get" name="postcodeForm">
+                <label for="pc">Ingresa una dirección:</label>
+                <div class="input-group">
+                    <input type="text" name="pc" value="[% pc | html %]" id="pc" size="10" maxlength="200" placeholder="[% tprintf(loc('e.g. ‘%s’ or ‘%s’'), c.cobrand.example_places) %]" class="form-control" >
+                    <span class="input-group-btn">
+                      <input type="submit" value="[% loc('Buscar') %]" id="sub" class="btn btn-default">
+                    </span>
+                </div>
+                [% IF partial_token %]
+                    <input type="hidden" name="partial" value="[% partial_token.token %]">
+                [% END %]
+            </form>
+          </div>
+        </div>
         [% IF possible_location_matches %]
             <script type="text/javascript">
                 $( function(){
