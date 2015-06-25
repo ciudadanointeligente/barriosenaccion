@@ -8,14 +8,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Dónde quieres reportar?</h4>
+        <h3 class="modal-title" id="myModalLabel">Seleccione como desea localizar el reporte</h3>
       </div>
       <div class="modal-body">
         <form action="[% c.uri_for('/around') %]" method="get" name="postcodeForm" id="postcodeForm">
             <label for="pc">Ingresa una dirección:</label>
-            <div>
-                <input type="text" name="pc" value="[% pc | html %]" id="pc" size="10" maxlength="200" placeholder="[% tprintf(loc('e.g. ‘%s’ or ‘%s’'), c.cobrand.example_places) %]">
-                <input type="submit" value="[% loc('Go') %]" id="sub">
+            <div class="input-group">
+                <input type="text" name="pc" value="[% pc | html %]" id="pc" size="10" maxlength="200" placeholder="[% tprintf(loc('e.g. ‘%s’ or ‘%s’'), c.cobrand.example_places) %]" class="form-control" >
+                <span class="input-group-btn">
+                  <input type="submit" value="[% loc('Buscar') %]" id="sub" class="btn btn-default">
+                </span>
             </div>
             [% IF partial_token %]
                 <input type="hidden" name="partial" value="[% partial_token.token %]">
@@ -28,7 +30,7 @@
                     $('#myModal').modal('show');
                 } )
             </script>
-            <p>[% loc('We found more than one match for that location. We show up to ten matches, please try a different search if yours is not here.') %]</p>
+            <div class="alerta-resultado">[% loc('Hemos encontrado más de un resultado para esta dirección. Mostraremos hasta diez resultados, intenta una búsqueda diferente si el tuyo no está aquí.') %]</div>
             <ul class="pc_alternatives">
                 [% FOREACH match IN possible_location_matches %]
                 <li><a href="/around?latitude=[% match.latitude | uri %];longitude=[% match.longitude | uri %]">[% match.address | html %]</a></li>
