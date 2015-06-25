@@ -148,7 +148,7 @@ $(function(){
             if($('.mobile').length){
                 $link.append(' <img src="/cobrands/fixmystreet/images/spinner-black.gif" alt="" align="bottom">');
             }else{
-                var spincolor = $('<span>').css("color","white").css("color") === $('#front-main').css("background-color")? 'white' : 'yellow';
+                var spincolor = $('<span>').css("color","white").css("color") === $('#front-main').css("background-color")? 'white' : 'black';
                 $link.append(' <img src="/cobrands/fixmystreet/images/spinner-' + spincolor + '.gif" alt="" align="bottom">');
             }
             geo_position_js.getCurrentPosition(function(pos) {
