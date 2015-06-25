@@ -10,10 +10,12 @@ h1, h2, h3, h4, h5 {
 label {
   font-weight: 300;
   font-size: 1.286em;
+  font-family: 'Roboto', sans-serif;
 }
 label.inline {
   font-weight: 300;
   font-size: 1em;
+  font-family: 'Roboto', sans-serif;
   color: #898989;
 }
 input[type=text], input[type=password], input[type=email], textarea {
@@ -53,22 +55,28 @@ input[type=file] {
   background-color: #975CA8;
   border-color: #975CA8;
   font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 .btn-default {
   color: #ffffff;
   background-color: #25ABC3;
   border-color: #25ABC3;
   font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #693D75;
   border-color: #693D75;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
   color: #ffffff;
   background-color: #1D8395;
   border-color: #1D8395;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 .row-centered {
     text-align:center;
@@ -99,14 +107,14 @@ input[type=file] {
   border: #975CA8;
   font-weight: 300;
 }
-#ciudadviva-logo{
+/*#ciudadviva-logo{
         background-image:url("/cobrands/barriosenaccion/images/ciudadVivaNegro.png") !important;
         background-position:0 -5px !important;
         height:40px;
         opacity:0.8;
         width:100%;
         background-repeat: no-repeat !important;
-    }
+    }*/
 .form-box h5 strong{font-size:1em}
 .purple {
 	color: $purple;
@@ -308,6 +316,20 @@ div#main-nav {
   font-weight: 100;
   font-size: 1em;
 }
+footer {
+  background-color: #713283;
+  padding: 20px 0;
+  margin-top: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+footer ul {
+  margin-bottom: 0;
+}
+
+
 #container_carousel {
 	div.slogan div.slogan_container {
 		position:absolute;
