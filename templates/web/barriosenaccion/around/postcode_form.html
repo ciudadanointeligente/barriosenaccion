@@ -11,6 +11,15 @@
         <h3 class="modal-title" id="myModalLabel">Seleccione como desea localizar el reporte</h3>
       </div>
       <div class="modal-body">
+        [% IF location_error %]
+            <script type="text/javascript">
+                $( function(){
+                    jQuery.noConflict();
+                    $('#myModal').modal('show');
+                } )
+            </script>
+            [% INCLUDE 'around/location_error.html' %]
+        [% END %]
         <div class="row">
           <div  id="postcodeForm" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
             <form action="[% c.uri_for('/around') %]" method="get" name="postcodeForm">

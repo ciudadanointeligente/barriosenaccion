@@ -1,4 +1,4 @@
-[% pre_container_extra = INCLUDE 'around/postcode_form.html' %]
+
 [% INCLUDE 'header.html', title = loc('Reporting a problem'), bodyclass = 'frontpage fullwidthpage' %]
 
 [%
@@ -8,11 +8,16 @@
     # '/report/new' and the partial hidden field is added to the form.
 %]
 
-<div class="tablewrapper">
-[% IF location_error %]
-    [% INCLUDE 'around/location_error.html' %]
-[% END %]
+<div>
+<div id="front-main-container">
+    [% INCLUDE 'around/intro.html' %]
 
+    <div id="homepage-ab-test">
+        <p><a id="cta-report">Report a problem</a></p>
+        <p><a id="cta-view">Or view problems in an area you know</a></p>
+    </div>
+    
+</div>
 
 
 [% IF partial_token %]
@@ -22,5 +27,5 @@
     </p>
 [% END %]
 </div>
-
+[% INCLUDE 'index-steps.html' %]
 [% INCLUDE 'footer.html' %]
