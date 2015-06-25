@@ -331,6 +331,34 @@ footer ul li {
 footer ul {
   margin-bottom: 0;
 }
+.modal-content {
+  font-family: 'Roboto', sans-serif;
+}
+.modal-content label {
+  font-size: 1em;
+}
+.modal-content ul.pc_alternatives {
+  margin-left: 0;
+}
+.modal-content ul.pc_alternatives li {
+  list-style: none;
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.modal-content ul.pc_alternatives li a {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+}
+.modal-content .alerta-resultado {
+  background-color: #CEABD8;
+  font-size: 1em;
+  margin: 20px -15px;
+  padding: 15px;
+  color: #ffffff;
+}
 
 
 #container_carousel {
