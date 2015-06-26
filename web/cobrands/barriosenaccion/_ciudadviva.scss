@@ -1,4 +1,50 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,100,300);
+@font-face {
+  font-family: "barriosenaccion";
+  src:url("/cobrands/barriosenaccion/fonts/barriosenaccion.eot");
+  src:url("/cobrands/barriosenaccion/fonts/barriosenaccion.eot?#iefix") format("embedded-opentype"),
+    url("/cobrands/barriosenaccion/fonts/barriosenaccion.woff") format("woff"),
+    url("/cobrands/barriosenaccion/fonts/barriosenaccion.ttf") format("truetype"),
+    url("/cobrands/barriosenaccion/fonts/barriosenaccion.svg#barriosenaccion") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "barriosenaccion" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "barriosenaccion" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alertas:before {
+  content: "a";
+  font-family: "barriosenaccion";
+}
+.icon-logo:before {
+  content: "b";
+  font-family: "barriosenaccion";
+  font-size: 1.2em;
+}
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -131,6 +177,7 @@ header .branding {
 }
 .navbar {
   border-radius: 0;
+  overflow: hidden;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   background-color: #F7F7F7;
@@ -141,6 +188,10 @@ header .branding {
   border-right: 1px;
   border-top: 0px;
   border-bottom: 0px;
+}
+.navbar-default .navbar-nav>li>a.nosotros {
+  min-height: 5.8em;
+  color: #975CA8;
 }
 .navbar-default .navbar-nav>li>a.reporta {
   color: #25ABC3;
@@ -154,15 +205,20 @@ header .branding {
 .navbar-default .navbar-nav>li>a.inicio {
   color: #975CA8;
 }
+.navbar-default .navbar-nav>li>a.alertas {
+  min-height: 5.8em;
+  color: #975CA8;
+}
 .navbar-default .navbar-nav>li>a {
   color: #000;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1em;
   margin-top: -6px;
+  min-height: 5.643em;
 }
 .navbar-default .navbar-nav>li>a>i {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.286em;
   display: block;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
