@@ -86,16 +86,23 @@
                                 <li class="[% IF c.req.uri.path == '/' %] active[% END %]"><a href="/" class="inicio"
                                 ><i class="fa fa-home"></i>Home</a></li>[%
                             %]
-                            <li class="[% IF c.req.uri.path == '/around' %] active[% END %]" data-toggle="modal" data-target="#myModal"><a class="report-a-problem-btn reporta"><i class="fa fa-bullhorn"></i>Reporta un Problema</a></li>[%
-                            %]<li class="[% IF c.req.uri.path == '/reports' %] active[% END
-                                %]"><a href="/reports" class="vecinos"><i class="fa fa-users"></i>Reportes de vecinos</a></li>[%
-                                %]<li class="[% IF c.req.uri.path == '/reports' %] active[% END
-                                %]"><a href="/reports" class="alertas"><i data-icon="a" class="icon"></i>Alertas en tu barrio</a></li>[%
-                            %]<li class="[% IF c.req.uri.path == '/faq' %] active[% END
-                            %]"><a href="/faq" class="preguntas"><i class="fa fa-question"></i>Preguntas Frecuentes</a></li>[%
-                            %]<li class="[% IF c.req.uri.path == '/about' %] active[% END
-                            %]"><a href="/about" class="nosotros"><i class="icon icon-logo"></i>
-                            Sobre Nosotros</a></li>
+                            <li class="[% IF c.req.uri.path == '/around' %] active[% END %]" data-toggle="modal" data-target="#myModal"><a class="report-a-problem-btn reporta"><i class="fa fa-bullhorn"></i>Reporta un Problema</a></li>
+                            <li class="[% IF c.req.uri.path == '/reports' %] active[% END
+                                %]">
+                                <a href="/reports" class="vecinos"><i class="fa fa-users"></i>Reportes de vecinos</a>
+                            </li>
+                            <li class="[% IF c.req.uri.path == '/alert' %] active[% END
+                                %]">
+                                <a href="/alert" class="alertas"><i class="fa fa-map-marker"></i>Alertas en tu barrio</a>
+                            </li>
+                            <li class="[% IF c.req.uri.path == '/faq' %] active[% END
+                            %]">
+                                <a href="/faq" class="preguntas"><i class="fa fa-question"></i>Preguntas Frecuentes</a>
+                            </li>
+                            <li class="[% IF c.req.uri.path == '/about' %] active[% END
+                            %]">
+                                <a href="/about" class="nosotros"><i class="fa fa-heart"></i>Sobre Nosotros</a>
+                            </li>
                         </ul>
                         </div>
                     </nav>

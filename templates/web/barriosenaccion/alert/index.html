@@ -1,0 +1,48 @@
+[% INCLUDE 'header.html', title = loc('Local RSS feeds and email alerts'), bodyclass = 'twothirdswidthpage alertindex' %]
+
+<h1>[% loc('Local RSS feeds and email alerts') %]   </h1>
+
+<p>
+  BarriosEnAccion tiene alertas por RSS e email para problemas locales, incluyendo alertas para todos los problemas y los problemas alrededor de un punto.
+</p>
+
+[% IF location_error %]
+  <div class="error">[% location_error %]</div>
+[% ELSE %]
+  [% INCLUDE 'errors.html' %]
+[% END %]
+
+<p>
+Para saber cuáles son las alertas locales que tenemos para usted, por favor introduzca su dirección.
+</p>
+<div class="row">
+          <div  id="postcodeForm" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <form action="/alert/list" method="get" name="postcodeForm">
+                <label for="pc">Ingresa una dirección:</label>
+                <div class="input-group">
+                    <input type="text" name="pc" value="[% pc | html %]" id="pc" size="10" maxlength="200" placeholder="[% tprintf(loc('e.g. ‘%s’ or ‘%s’'), c.cobrand.example_places) %]" class="form-control" >
+                    <span class="input-group-btn">
+                      <input type="submit" value="Ir" id="sub" class="btn btn-default">
+                    </span>
+                </div>
+            </form>
+          </div>
+        </div>
+[% IF photos.size %]
+<div class="" id="alert_recent">
+  
+    <h2>[% loc('Some photos of recent reports') %]</h2>
+    <ul>
+    [% FOREACH p IN photos;
+        photo = p.get_photo_params;
+    %]
+        <li>
+        <a href="/report/[% p.id %]"><img border="0" height="100"
+            src="[% photo.url_tn %]" alt="[% p.title | html %]" title="[% p.title | html %]"></a>
+        </li>
+    [% END %]
+    </ul>
+</div>
+[% END %]
+
+[% INCLUDE 'footer.html' %]
