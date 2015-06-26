@@ -371,6 +371,9 @@ footer ul {
   padding: 15px;
   color: #ffffff;
 }
+.modal-body .row {
+  margin-bottom: 20px;
+}
 .problem-header .moderate-display p {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
@@ -383,6 +386,16 @@ footer ul {
 }
 #map_box {
   margin-bottom: 0;
+}
+.elquegeolocaliza {
+  margin-top: 20px;
+}
+.elquegeolocaliza p {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 5px;
 }
 
 #container_carousel {
