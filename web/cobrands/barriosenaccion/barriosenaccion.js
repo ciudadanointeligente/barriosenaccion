@@ -139,7 +139,7 @@ $(function(){
         if ($('body.frontpage').length) {
             $('#postcodeForm').after(link.replace('LINK','around'));
         } else{
-            $('#postcodeForm').append(link.replace('LINK','around'));
+            $('#postcodeForm').parent().append(link.replace('LINK','around'));
         }
         $('#geolocate_link').click(function(e) {
             var $link = $(this);
