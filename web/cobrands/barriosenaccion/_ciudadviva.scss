@@ -321,14 +321,17 @@ div#main-nav {
 }
 #side {
   position: absolute;
-  top: 137px;
+  top: 148px;
   background-color: #F7F7F7;
   left: 0;
   z-index: 100;
-  width: 500px;
+  width: 35.714em;
   padding: 20px 15px 15px;
   overflow: scroll;
-  height: 437px;
+  height: 29em;
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
 }
 .big-green-banner:before {
   display: none;
@@ -353,17 +356,17 @@ div#main-nav {
 }
 #side-form {
   position: absolute;
-  top: 140px;
+  top: 148px;
   background-color: #F7F7F7;
   left: 0;
   z-index: 3000;
-  width: 500px;
+  width: 35.714em;
   overflow: scroll;
-  height: 480px;
+  height: 29em;
   padding: 0 15px;
-  -webkit-box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
-  -moz-box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
-  box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
 }
 #side-form p {
   font-weight: 300;
@@ -430,15 +433,54 @@ footer ul {
 .modal-body .row {
   margin-bottom: 20px;
 }
+.problem-header .moderate-display {
+  margin-bottom: 5px;
+}
 .problem-header .moderate-display p {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-#side p em {
+#side p {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  font-style: normal;
+}
+#side .full-width h2.static-with-rule {
+  margin: 30px 15px 15px 15px;
+}
+.issue-list {
+  border-bottom: none;
+}
+.issue-list li.issue {
+  border-left: 4px solid #975ca8;
+  margin: 10px 15px;
+    padding: 5px;
+}
+.issue-list li.issue p.meta-2 {
+  margin-bottom: 0px;
+}
+#side .issue-list li.issue .update-text p.meta-2 {
+  font-size: 0.8125em;
+  color: #898989;
+}
+.council_sent_info {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #898989;
+}
+#update_form {
+  margin-top: 40px;
+}
+#sub_map_links {
+  display: none;
+}
+.banner p {
+  display: none;
+}
+h4.static-with-rule {
+  border-top: none;
 }
 #map_box {
   margin-bottom: 0;
@@ -463,12 +505,27 @@ footer ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+.faq dl dt {
+  font-size: 1.143em;
+  line-height: 1.5em;
+  margin-bottom: 1.071em;
+  font-weight: 300;
+}
 .indice {
     margin-left: 0px;
 }
 .indice li {
     font-size: 1em;
     font-weight: 300;
+}
+#alert_recent ul {
+  margin-left: 0;
+  margin-bottom: 2.143em;
+}
+#alert_recent ul li {
+  float: left;
+  margin-right: 15px;
+  list-style-type: none;
 }
 
 #container_carousel {
