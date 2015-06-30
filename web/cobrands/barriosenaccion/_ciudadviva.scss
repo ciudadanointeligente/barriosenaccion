@@ -430,6 +430,9 @@ footer ul {
 .modal-body .row {
   margin-bottom: 20px;
 }
+.problem-header .moderate-display {
+  margin-bottom: 5px;
+}
 .problem-header .moderate-display p {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
@@ -439,6 +442,26 @@ footer ul {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  font-style: normal;
+}
+.issue-list {
+  border-bottom: none;
+}
+.issue-list li.issue {
+  border-left: 4px solid #975ca8;
+  margin: 10px 15px;
+    padding: 5px;
+}
+.issue-list li.issue p.meta-2 {
+  margin-bottom: 0px;
+}
+.council_sent_info {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #898989;
+}
+h4.static-with-rule {
+  border-top: none;
 }
 #map_box {
   margin-bottom: 0;
