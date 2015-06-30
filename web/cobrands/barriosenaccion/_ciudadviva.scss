@@ -518,6 +518,15 @@ h4.static-with-rule {
     font-size: 1em;
     font-weight: 300;
 }
+#alert_recent ul {
+  margin-left: 0;
+  margin-bottom: 2.143em;
+}
+#alert_recent ul li {
+  float: left;
+  margin-right: 15px;
+  list-style-type: none;
+}
 
 #container_carousel {
 	div.slogan div.slogan_container {
