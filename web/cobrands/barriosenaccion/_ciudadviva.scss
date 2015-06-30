@@ -321,7 +321,7 @@ div#main-nav {
 }
 #side {
   position: absolute;
-  top: 137px;
+  top: 148px;
   background-color: #F7F7F7;
   left: 0;
   z-index: 100;
@@ -329,6 +329,9 @@ div#main-nav {
   padding: 20px 15px 15px;
   overflow: scroll;
   height: 437px;
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
 }
 .big-green-banner:before {
   display: none;
@@ -353,7 +356,7 @@ div#main-nav {
 }
 #side-form {
   position: absolute;
-  top: 140px;
+  top: 148px;
   background-color: #F7F7F7;
   left: 0;
   z-index: 3000;
@@ -361,9 +364,9 @@ div#main-nav {
   overflow: scroll;
   height: 480px;
   padding: 0 15px;
-  -webkit-box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
-  -moz-box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
-  box-shadow: inset 0px 8px 3px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
+  box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
 }
 #side-form p {
   font-weight: 300;
@@ -444,6 +447,9 @@ footer ul {
   font-weight: 100;
   font-style: normal;
 }
+#side .full-width h2.static-with-rule {
+  margin: 30px 15px 15px 15px;
+}
 .issue-list {
   border-bottom: none;
 }
@@ -455,10 +461,23 @@ footer ul {
 .issue-list li.issue p.meta-2 {
   margin-bottom: 0px;
 }
+#side .issue-list li.issue .update-text p.meta-2 {
+  font-size: 0.8125em;
+  color: #898989;
+}
 .council_sent_info {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #898989;
+}
+#update_form {
+  margin-top: 40px;
+}
+#sub_map_links {
+  display: none;
+}
+.banner p {
+  display: none;
 }
 h4.static-with-rule {
   border-top: none;
