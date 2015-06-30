@@ -14,11 +14,11 @@
                     <label for="update_hide">Hide update completely?</label>
                     <br />
                     <input type="checkbox" name="update_show_name" [% update.anonymous ? '' : 'checked' %]>
-                    <label for="update_show_name">Show name publicly?</label>
+                    <label for="update_show_name">¿Mostrar nombre públicamente?</label>
                     [% IF update.photo or original_update.photo %]
                         <br />
                         <input type="checkbox" name="update_show_photo" [% update.photo ? 'checked' : '' %]>
-                        <label for="update_show_photo">Show Photo?</label>
+                        <label for="update_show_photo">¿Mostrar foto?</label>
                     [% END %]
                 </div>
           [% END %]
@@ -47,7 +47,7 @@
                         <a name="update_[% update.id %]"></a>
                         [% INCLUDE meta_line %]
                         [% mlog = update.latest_moderation_log_entry(); IF mlog %]
-                            <br /> Moderated by [% mlog.user.from_body.name %] at [% prettify_dt(mlog.whenedited) %]
+                            <br /> Moderado por [% mlog.user.from_body.name %] at [% prettify_dt(mlog.whenedited) %]
                         [% END %]
                     </p>
                 </div>
@@ -55,11 +55,11 @@
             </div>
             [% IF moderating %]
                 <div class="moderate-edit">
-                    <label for="moderation_reason">Moderation reason:</label>
+                    <label for="moderation_reason">Razón para moderación:</label>
                     <input type="text" name="moderation_reason" 
-                        placeholder="Describe why you are moderating this">
+                        placeholder="Describa por qué están moderando esto">
                     <input type="submit" class="red-btn" value="moderate it">
-                    <input type="button" class="btn cancel" value="cancel">
+                    <input type="button" class="btn cancel" value="Cancelar">
                 </div>
                 </form>
             [% END %]
