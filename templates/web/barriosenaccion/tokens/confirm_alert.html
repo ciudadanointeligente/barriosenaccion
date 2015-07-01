@@ -1,0 +1,19 @@
+[% INCLUDE 'header.html', bodyclass = 'fullwidthpage', title =>  loc('Local RSS feeds and email alerts') %]
+
+<div class="confirmation-header">
+
+  [% IF confirm_type == 'subscribe' || confirm_type == 'created' %]
+    <h1>Creamos una alerta de emails</h1>
+    <p>Por qué parar ahí? <a href="/alert">agregar más alertas</a></p>
+
+  [% ELSIF confirm_type == 'unsubscribe' %]
+    <h1>Eliminamos tu alerta por email</h1>
+    <p>Bandeja de entrada vacía ahí vamos!</p>
+
+  [% END %]
+
+</div>
+
+[% INCLUDE next_steps.html %]
+
+[% INCLUDE 'footer.html' %]
