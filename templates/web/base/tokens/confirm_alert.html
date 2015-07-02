@@ -3,12 +3,12 @@
 <div class="confirmation-header">
 
   [% IF confirm_type == 'subscribe' || confirm_type == 'created' %]
-    <h1>[% loc('Email alert created') %]</h1>
-    <p>[% loc('Why stop there? <a href="/alert">Set up more alerts</a> for free.') %]</p>
+    <h1>Creamos una alerta de emails</h1>
+    <p>Por qué parar ahí? <a href="/alert">agregar más alertas</a></p>
 
   [% ELSIF confirm_type == 'unsubscribe' %]
-    <h1>[% loc('Email alert deleted') %]</h1>
-    <p>[% loc('Inbox zero, here we come!') %]</p>
+    <h1>Eliminamos tu alerta por email</h1>
+    <p>Bandeja de entrada vacía ahí vamos!</p>
 
   [% END %]
 
