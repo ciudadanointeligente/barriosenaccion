@@ -27,7 +27,8 @@ Longitud: <?=$values['longitude']?>
 
 <?=$values['closest_address']?>----------
 
-Las respuestas a este email irán al usuario que informó sobre este problema.
+Por favor no responda a este email puesto que irá a una cuenta no monitoreada.
+Si desea proveer una actualización por favor hágalo en el sitio.
 
 <?=$values['signature']?>
 
