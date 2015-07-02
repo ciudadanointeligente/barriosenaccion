@@ -84,33 +84,58 @@
             <div id="form_sign_in">
                 <h3>[% loc("Now to submit your update&hellip;") %]</h3>
                 <h2>[% loc("Do you have a FixMyStreet password?") %]</h2>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
-                <div id="form_sign_in_yes" class="form-box">
-                    <h5>[% loc('<strong>Yes</strong> I have a password') %]</h5>
 
-                    <label class="hidden-js n" for="password_sign_in">[% loc('Yes I have a password') %]</label>
-                    [% IF field_errors.password %]
-                        <p class='form-error'>[% field_errors.password %]</p>
-                    [% END %]
-                    <div class="form-txt-submit-box">
-                        <input type="password" name="password_sign_in" id="password_sign_in" value="" placeholder="[% loc('Your password') %]">
-                        <input class="green-btn" type="submit" name="submit_sign_in" id="submit_sign_in" value="[% loc('Post') %]">
-                    </div>
+                                <h5>[% loc('<strong>Yes</strong> I have a password') %]<span class="pull-right"><i class="fa fa-chevron-down"></i></h5>
+                                
+                </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
 
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="remember_me" name="remember_me" value='1'[% ' checked' IF remember_me %]>
-                        <label class="inline n" for="remember_me">[% loc('Keep me signed in on this computer') %]</label>
-                    </div>
 
-                    <div class="general-notes">
-                        <p><strong>[% loc('Forgotten your password?') %]</strong>
-                        [% loc('Confirm by email below, providing a new password at that point. When you confirm, your password will be updated.') %]</p>
-                    </div>
+                                <label class="hidden-js n" for="password_sign_in">[% loc('Yes I have a password') %]</label>
+                                [% IF field_errors.password %]
+                                    <p class='form-error'>[% field_errors.password %]</p>
+                                [% END %]
+                                <div class="form-txt-submit-box">
+                                    <input type="password" name="password_sign_in" id="password_sign_in" value="" placeholder="[% loc('Your password') %]">
+                                    <input class="green-btn" type="submit" name="submit_sign_in" id="submit_sign_in" value="[% loc('Post') %]">
+                                </div>
 
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="remember_me" name="remember_me" value='1'[% ' checked' IF remember_me %]>
+                                    <label class="inline n" for="remember_me">[% loc('Keep me signed in on this computer') %]</label>
+                                </div>
+
+                                <div class="general-notes">
+                                    <p><strong>[% loc('Forgotten your password?') %]</strong>
+                                    [% loc('Confirm by email below, providing a new password at that point. When you confirm, your password will be updated.') %]</p>
+                                </div>
+
+            
                 </div>
-                <div id="form_sign_in_no" class="form-box">
-                    <h5>[% loc('<strong>No</strong> Let me confirm my update by email') %]</h5>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 
+
+
+                    <h5>[% loc('<strong>No</strong> Let me confirm my update by email') %]<span class="pull-right"><i class="fa fa-chevron-down"></i></h5>
+                </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
                     [% INCLUDE name %]
                     
                     <label for="password_register">[% loc('Password (optional)') %]</label>
@@ -125,6 +150,13 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
             </div>
 
         [% END %]
