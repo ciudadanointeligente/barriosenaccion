@@ -1,7 +1,7 @@
 [% moderating = c.user && c.user.has_permission_to('moderate', problem.bodies_str) %]
 
 [% IF loop.first %]
-<section class="full-width">
+<section class="">
     <h2 class="static-with-rule">[% loc('Updates') %]</h2>
     <ul class="issue-list">
 [% END %]
