@@ -21,10 +21,10 @@ sub disambiguate_location {
         town => 'Santiago',
     };
 }
-sub all_reports_single_body {
-    my $self = shift;
-    return { name => 'Municipalidad de Providencia' };
-}
+# sub all_reports_single_body {
+#     my $self = shift;
+#     return { name => 'Municipalidad de Providencia' };
+# }
 
 use constant CATEGORY_PINS_AND_CLASSES => {
                                             "Mantencion del entorno" => "mantencion_del_entorno",
