@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2015-02-25 15:01+0000\n"
-"PO-Revision-Date: 2015-07-07 12:33-0300\n"
+"PO-Revision-Date: 2015-07-07 12:46-0300\n"
 "Last-Translator: lfalvarez <luisfelipealvarez@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/"
 "fixmystreet/language/es_CL/)\n"
@@ -1685,7 +1685,7 @@ msgstr ""
 
 #: templates/web/base/email_sent.html:3
 msgid "Nearly Done! Now check your email..."
-msgstr "Estamos casi listos! Ahora revise su email..."
+msgstr "¡Casi terminado! Ahora comprueba tu dirección de correo electrónico"
 
 #: templates/web/base/reports/index.html:21
 msgid "New <br>problems"
