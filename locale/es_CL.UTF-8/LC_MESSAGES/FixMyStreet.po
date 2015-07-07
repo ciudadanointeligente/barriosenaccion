@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2015-02-25 15:01+0000\n"
-"PO-Revision-Date: 2015-07-07 13:19-0300\n"
+"PO-Revision-Date: 2015-07-07 14:42-0300\n"
 "Last-Translator: lfalvarez <luisfelipealvarez@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/"
 "fixmystreet/language/es_CL/)\n"
@@ -4037,7 +4037,9 @@ msgstr ""
 
 #: templates/web/base/email_sent.html:13
 msgid "You must now click the link in the email we've just sent you."
-msgstr "Ahora debe hacer click en el link del email que le hemos enviado."
+msgstr ""
+"Al recibir tu email debes hacer click en el link que te enviamos, si no lo "
+"haces no se activará la alerta. "
 
 #: templates/web/base/admin/index.html:18
 msgid ""
