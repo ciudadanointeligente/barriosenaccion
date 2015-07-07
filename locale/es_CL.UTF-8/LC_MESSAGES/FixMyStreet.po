@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
 "POT-Creation-Date: 2015-02-25 15:01+0000\n"
-"PO-Revision-Date: 2015-07-07 14:42-0300\n"
-"Last-Translator: lfalvarez <luisfelipealvarez@gmail.com>\n"
+"PO-Revision-Date: 2015-07-07 15:42-0300\n"
+"Last-Translator: Vale Barahona <vbarahona@ciudadanointeligente.org>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/"
 "fixmystreet/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
@@ -177,12 +177,12 @@ msgstr "(nunca mostramos su email)"
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:662
 #: perllib/FixMyStreet/DB/Result/Problem.pm:385
 msgid "-- Pick a category --"
-msgstr "-- Elija una categoría --"
+msgstr "-- Elije una categoría --"
 
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:618
 #: perllib/FixMyStreet/DB/Result/Problem.pm:391
 msgid "-- Pick a property type --"
-msgstr "-- Seleccione un tipo de propiedad --"
+msgstr "-- Selecciona un tipo de propiedad --"
 
 #: templates/web/base/admin/body-form.html:42
 #: templates/web/base/admin/body-form.html:43
@@ -199,7 +199,7 @@ msgid ""
 "<small>If you cannot see the map, <a href='%s' rel='nofollow'>skip this "
 "step</a>.</small>"
 msgstr ""
-"<small>Si no puede ver el mapa, <a href='%s' rel='nofollow'>sáltese este "
+"<small>Si no puedes ver el mapa, <a href='%s' rel='nofollow'>salta este "
 "paso</a>.</small>"
 
 #: templates/web/base/admin/index.html:33
@@ -209,16 +209,16 @@ msgstr "<strong>%d</strong> problemas abiertos"
 
 #: templates/web/fixmystreet/report/new/form_user_loggedout.html:39
 msgid "<strong>No</strong> Let me confirm my report by email"
-msgstr "<strong>No</strong> Dejame confirmar mi reporte por email"
+msgstr "<strong>No</strong>, déjame confirmar mi reporte por email"
 
 #: templates/web/fixmystreet/report/update-form.html:112
 msgid "<strong>No</strong> Let me confirm my update by email"
-msgstr "<strong>No</strong> Dejame confirmar mi actualización por email"
+msgstr "<strong>No</strong>,déjame confirmar mi actualización por email"
 
 #: templates/web/fixmystreet/auth/general.html:51
 #: templates/web/zurich/auth/general.html:51
 msgid "<strong>No</strong> let me sign in by email"
-msgstr "<strong>No</strong> Dejame registrarme por email"
+msgstr "<strong>No</strong>, déjame registrarme por email"
 
 #: templates/web/base/auth/general.html:55
 msgid "<strong>No</strong>, I do not, let me sign in by email:"
@@ -226,11 +226,11 @@ msgstr "<strong>No</strong>, déjame registrarme por email:"
 
 #: templates/web/base/report/new/fill_in_details_form.html:163
 msgid "<strong>No</strong>, let me confirm my report by email:"
-msgstr "<strong>No</strong>, dejame confirmar mi reporte por email:"
+msgstr "<strong>No</strong>, déjame confirmar mi reporte por email:"
 
 #: templates/web/base/report/update-form.html:117
 msgid "<strong>No</strong>, let me confirm my update by email:"
-msgstr "<strong>No</strong>, dejame confirmar mi actualización por email:"
+msgstr "<strong>No</strong>, déjame confirmar mi actualización por email:"
 
 #: templates/web/base/auth/general.html:37
 #: templates/web/base/report/new/fill_in_details_form.html:141
@@ -240,7 +240,7 @@ msgstr "<strong>No</strong>, dejame confirmar mi actualización por email:"
 #: templates/web/fixmystreet/report/new/form_user_loggedout.html:15
 #: templates/web/fixmystreet/report/update-form.html:89
 msgid "<strong>Yes</strong> I have a password"
-msgstr "<strong>Si</strong> tengo un password"
+msgstr "<strong>Sí</strong>, tengo un password"
 
 #: templates/web/base/static/about-en-gb.html:1
 #: templates/web/base/static/about-en-gb.html:3
@@ -621,8 +621,8 @@ msgid ""
 "Confirm by email below, providing a new password at that point. When you "
 "confirm, your password will be updated."
 msgstr ""
-"Confirme por email, entonces usted podrá proveer de un nuevo password. "
-"Cuando usted confime su password se actualizará."
+"Confirma el email y podrás proveer un nuevo password. Cuando confimes tu "
+"password se actualizará."
 
 #: templates/web/base/questionnaire/creator_fixed.html:1
 #: templates/web/base/tokens/confirm_problem.html:1
@@ -882,7 +882,7 @@ msgstr ""
 
 #: templates/web/base/around/_updates.html:5
 msgid "Email me new local problems"
-msgstr "Envíame nuevos problemas locales por email"
+msgstr "Envíame nuevos reportes locales por email"
 
 #: templates/web/base/report/display.html:38
 msgid "Email me updates"
@@ -1018,7 +1018,7 @@ msgstr ""
 msgid ""
 "Explain what’s wrong, exactly where it is, and how long it’s been there…"
 msgstr ""
-"Explique qué está mal, exactamente dónde es y cuanto tiempo ha estado allí..."
+"Explique qué está mal, exactamente dónde es y cuánto tiempo ha estado allí..."
 
 #: templates/web/base/admin/report_edit.html:76
 msgid "Extra data:"
@@ -1060,9 +1060,9 @@ msgid ""
 "problems\n"
 "within a certain distance of a particular location."
 msgstr ""
-"FixMyStreet tiene una variedad de feeds de RSS y alertas por email para "
+"BarriosEnAcción tiene una variedad de  alertas por email y feeds de RSS para "
 "problemas locales, incluyendo\n"
-"alertas para todos los problemas en un barrio o municipalidad en particular, "
+"alertas para todos los reportes en un barrio o municipalidad en particular, "
 "o todos los problemas a una cierta distancia de una ubicación."
 
 #: templates/web/base/alert/_list.html:71
@@ -1229,7 +1229,7 @@ msgid ""
 "Have you ever reported a problem to a council before, or is this your first "
 "time?"
 msgstr ""
-"Ha reportado algún problema a su municipalidad anteriormente o esta es su "
+"¿Has reportado algún problema a tu municipalidad anteriormente o esta es tu "
 "primera vez?"
 
 #: templates/web/base/footer.html:15 templates/web/fixmystreet/footer.html:30
@@ -1315,8 +1315,8 @@ msgid ""
 "I'm afraid we couldn't validate that token. If you've copied the URL from an "
 "email, please check that you copied it exactly.\n"
 msgstr ""
-"Lo sentimos, no pudimos validar su token. Si usted copió la URL desde un "
-"email, por favor revise que lo copió exáctamente.\n"
+"Lo sentimos, no pudimos validar tu código. Si copiaste la URL desde un "
+"email, por favor revisa que lo copiaste exáctamente.\n"
 
 #: templates/web/base/admin/flagged.html:14
 #: templates/web/base/admin/list_updates.html:6
@@ -1948,7 +1948,7 @@ msgstr ""
 
 #: templates/web/fixmystreet/report/new/fill_in_details_form.html:37
 msgid "One-line summary"
-msgstr "Resumen en una linea"
+msgstr "Resumen en una línea"
 
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:137
 #: templates/web/base/admin/report_edit.html:35
@@ -2111,7 +2111,7 @@ msgstr ""
 
 #: templates/web/base/report/new/notes.html:5
 msgid "Please be polite, concise and to the point."
-msgstr "Por favor sea cortéz, conciso."
+msgstr "Por favor sé cortés y conciso."
 
 #: templates/web/base/auth/change_password.html:12
 #: templates/web/base/auth/change_password.html:17
@@ -2120,7 +2120,7 @@ msgstr ""
 
 #: templates/web/base/auth/token.html:14
 msgid "Please check your email"
-msgstr "Por favor revise su email"
+msgstr "Por favor revise tu email"
 
 #: templates/web/base/auth/general.html:14
 #: templates/web/base/auth/general.html:8
@@ -2129,7 +2129,7 @@ msgstr "Por favor revise su email"
 #: templates/web/zurich/auth/general.html:3
 #: templates/web/zurich/auth/general.html:9
 msgid "Please check your email address is correct"
-msgstr "Por favor revise que su email esté correcto"
+msgstr "Por favor revisa que tu email esté correcto"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:349
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:859
@@ -2138,7 +2138,7 @@ msgstr "Por favor revise que su email esté correcto"
 #: perllib/FixMyStreet/DB/Result/Problem.pm:387
 #: templates/web/base/js/translation_strings.html:9
 msgid "Please choose a category"
-msgstr "Por favor elija una categoría"
+msgstr "Por favor elije una categoría"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:393
 msgid "Please choose a property type"
@@ -2188,12 +2188,12 @@ msgstr ""
 #: templates/web/base/js/translation_strings.html:12
 #: templates/web/base/js/translation_strings.html:16
 msgid "Please enter a valid email"
-msgstr "Por favor ingrese un email válid"
+msgstr "Por favor ingresa un email válido"
 
 #: perllib/FixMyStreet/App/Controller/Alert.pm:346
 #: perllib/FixMyStreet/App/Controller/Contact.pm:123
 msgid "Please enter a valid email address"
-msgstr "Por favor ingrese un email válido"
+msgstr "Por favor ingresa un email válido"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:365
 #: templates/web/base/js/translation_strings.html:4
@@ -2211,12 +2211,12 @@ msgstr ""
 #: templates/web/zurich/auth/general.html:3
 #: templates/web/zurich/auth/general.html:8
 msgid "Please enter your email"
-msgstr "Por favor ingrese su emai"
+msgstr "Por favor ingresa tu email"
 
 #: templates/web/fixmystreet/report/new/form_user_loggedout.html:7
 #: templates/web/zurich/report/new/fill_in_details_form.html:92
 msgid "Please enter your email address"
-msgstr "Por favor ingrese su emai"
+msgstr "Por favor ingresa tu email"
 
 #: templates/web/base/js/translation_strings.html:25
 msgid "Please enter your first name"
@@ -2295,8 +2295,8 @@ msgid ""
 "Please note your report has <strong>not yet been sent</strong>. Choose a "
 "category and add further information below, then submit."
 msgstr ""
-"Tenga en cuenta que su reporte <strong>aún no es enviado</strong>. Elija una "
-"categoría y agregue más información abajo, luego presione enviar."
+"Ten en cuenta que tu reporte <strong>aún no es enviado</strong>. Elije una "
+"categoría y agrega más información abajo, luego presiona enviar."
 
 #: templates/web/base/report/new/notes.html:1
 #: templates/web/zurich/report/new/notes.html:1
@@ -2316,8 +2316,8 @@ msgstr ""
 msgid ""
 "Please say whether you've ever reported a problem to your council before"
 msgstr ""
-"Por favor especifique si usted ha reportado algún problema a su "
-"municipalidad anteriormente"
+"Por favor especifica si has reportado algún problema a tu municipalidad "
+"anteriormente"
 
 #: perllib/FixMyStreet/App/Controller/Alert.pm:80
 msgid "Please select the feed you want"
@@ -2487,9 +2487,8 @@ msgid ""
 "Providing a name and password is optional, but doing so will allow you to "
 "more easily report problems, leave updates and manage your reports."
 msgstr ""
-"Proveer un nombre y un password es opcional, pero al hacerlo usted podrá "
-"reportar problemas más facilmente, dejar actualizaciones y manejar sus "
-"reportes."
+"Proveer un nombre y un password es opcional, pero al hacerlo podrás reportar "
+"problemas más fácilmente, dejar actualizaciones y manejar tus reportes."
 
 #: templates/web/base/report/new/fill_in_details_form.html:174
 #: templates/web/base/report/update-form.html:128
@@ -2499,8 +2498,8 @@ msgid ""
 "Providing a password is optional, but doing so will allow you to more easily "
 "report problems, leave updates and manage your reports."
 msgstr ""
-"Proveer un password es opcional, pero al hacerlo usted podrá reportar "
-"problemas más facilmente, dejar actualizaciones y manejar sus reportes."
+"Proveer un nombre y un password es opcional, pero al hacerlo podrás reportar "
+"problemas más fácilmente, dejar actualizaciones y manejar tus reportes."
 
 #: templates/web/zurich/admin/report_edit.html:195
 #: templates/web/zurich/admin/report_edit.html:211
@@ -2630,7 +2629,7 @@ msgid ""
 "site remember that you can contact your council directly using their own "
 "website."
 msgstr ""
-"Recuerde que FixMyStreet es principalmente para reportar problemas físicos "
+"Recuerda que FixMyStreet es principalmente para reportar problemas físicos "
 "que pueden ser arreglados. Si su problema no corresponde a esta categoría a "
 "través de este sitio, aún puede contactar a su municipalidad usando su sitio."
 
@@ -2661,7 +2660,7 @@ msgstr ""
 #: templates/web/base/report/new/fill_in_details_form.html:1
 #: templates/web/fixmystreet/report/new/fill_in_details_form.html:2
 msgid "Report your problem"
-msgstr "Reporte su problema"
+msgstr "Reporta tu problema"
 
 #: templates/web/base/index.html:11
 #: templates/web/fixmystreet/around/intro.html:1
@@ -2717,7 +2716,7 @@ msgstr ""
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:555
 msgid "Reported via %s in the %s category anonymously at %s"
-msgstr "Reportado vía %s en la categoría %s anonimamente a las %s"
+msgstr "Reportado vía %s en la categoría %s anónimamente a las %s"
 
 #: perllib/FixMyStreet/DB/Result/Problem.pm:575
 msgid "Reported via %s in the %s category by %s at %s"
@@ -3063,7 +3062,7 @@ msgstr ""
 #: templates/web/base/alert/_list.html:97
 #: templates/web/fixmystreet/alert/_list.html:92
 msgid "Subscribe me to an email alert"
-msgstr "Suscribirme a una alerta de emai"
+msgstr "Suscribirme a una alerta de email"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:1193
 #: perllib/FixMyStreet/Cobrand/Zurich.pm:289
@@ -3345,7 +3344,7 @@ msgid ""
 "The summary and description will also be made public (see our <a href=\"/"
 "privacy\">privacy policy</a>)."
 msgstr ""
-"La descripción y resumen también serán públicos (por favor revise nuestras  "
+"La descripción y resumen también serán públicos (por favor revisa nuestras  "
 "<a href=\"/privacy\">políticas de privacidad</a>)."
 
 #: perllib/FixMyStreet/DB/ResultSet/Problem.pm:295
@@ -3382,15 +3381,15 @@ msgid ""
 "remember your password, or do not have one, please fill in the &lsquo;sign "
 "in by email&rsquo; section of the form."
 msgstr ""
-"Hay un problema con su email/password. Si no recuerda su password, o no "
-"tiene uno, por favor complete la seccion &lsquo;registrarse por email&rsquo; "
-"del formulario"
+"Hay un problema con tu email/password. Si no recuerdas tu password, o no "
+"tienes uno, por favor completa la sección &lsquo;registrarse por "
+"email&rsquo; del formulario"
 
 #: perllib/FixMyStreet/App/Controller/Alert.pm:355
 msgid ""
 "There was a problem with your email/password combination. Please try again."
 msgstr ""
-"Tuvimos un problema con la combinación email/password. Por favor inténtelo "
+"Tuvimos un problema con la combinación email/password. Por favor inténtalo "
 "una vez más."
 
 #: perllib/FixMyStreet/App/Controller/Report/Update.pm:272
@@ -3399,7 +3398,7 @@ msgstr ""
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:140
 msgid "There were problems with your report. Please see below."
-msgstr "Existen problemas con su reporte por favor revise abajo."
+msgstr "Existen problemas con tu reporte por favor revisa abajo."
 
 #: perllib/FixMyStreet/App/Controller/Report/Update.pm:300
 msgid "There were problems with your update. Please see below."
@@ -3567,7 +3566,7 @@ msgstr ""
 
 #: perllib/FixMyStreet/DB/ResultSet/Problem.pm:294
 msgid "To view a map of the precise location of this issue"
-msgstr "Para ver la ubicación precisa de este problema"
+msgstr "Para ver la ubicación precisa de este reporte"
 
 #: templates/web/base/admin/index.html:55
 #: templates/web/base/admin/questionnaire.html:24
@@ -3583,7 +3582,7 @@ msgstr ""
 
 #: templates/web/base/contact/submit.html:14
 msgid "Try emailing us directly:"
-msgstr "Intente escribirnos un email directamente a:"
+msgstr "Intenta escribirnos un email directamente a:"
 
 #: templates/web/base/admin/report_edit.html:35
 #: templates/web/base/admin/report_edit.html:46
@@ -3787,17 +3786,17 @@ msgstr ""
 #: templates/web/base/auth/token.html:16
 msgid "We have sent you an email containing a link to confirm your account."
 msgstr ""
-"Le hemos enviado un email que contiene el link para confirmar su cuenta."
+"Te hemos enviado un email que contiene el link para confirmar tu cuenta."
 
 #: templates/web/fixmystreet/report/new/form_user_loggedout.html:2
 #: templates/web/fixmystreet/report/update-form.html:77
 msgid "We never show your email"
-msgstr "Nunca mostramos su email"
+msgstr "Nunca mostramos tu email"
 
 #: templates/web/fixmystreet/report/new/form_user_loggedin.html:31
 #: templates/web/fixmystreet/report/new/form_user_loggedout.html:65
 msgid "We never show your email address or phone number."
-msgstr "Nunca mostramos su email ni teléfono"
+msgstr "Nunca mostramos tu email ni teléfono"
 
 #: perllib/FixMyStreet/DB/ResultSet/Problem.pm:384
 msgid ""
@@ -3828,8 +3827,8 @@ msgid ""
 "We'd love to hear what you think about this site. Just fill in the form, or "
 "send an email to <a href='mailto:%s'>%s</a>:"
 msgstr ""
-"Nos encantaría saber qué piensa del sitio. Sólo complete el siguiente "
-"formulario, o envíenos un email a <a href='mailto:%s'>%s</a>:"
+"Nos encantaría saber qué piensas del sitio. Sólo completa el siguiente "
+"formulario, o envíanos un email a <a href='mailto:%s'>%s</a>:"
 
 #: templates/web/base/contact/submit.html:7
 msgid "We’ll get back to you as soon as we can."
@@ -3837,7 +3836,7 @@ msgstr ""
 
 #: templates/web/fixmystreet/report/new/fill_in_details_form.html:41
 msgid "What’s the issue, and where is it?"
-msgstr "Cual es el problema y dónde es?"
+msgstr "¿Cuál es el problema y dónde es?"
 
 #: templates/web/base/admin/category_edit.html:82
 #: templates/web/zurich/admin/body.html:18
@@ -3969,8 +3968,8 @@ msgid ""
 "You can help us by finding a contact email address for local problems for %s "
 "and emailing it to us at <a href='mailto:%s'>%s</a>."
 msgstr ""
-"Usted nos puede ayudar mediante encontrar un email de contacto para los "
-"problemas en %s y haciendonoslo llegar a <a href='mailto:%s'>%s</a>."
+"Tú nos puedes ayudar a encontrar un email de contacto para los problemas en "
+"%s y haciéndonoslo llegar a <a href='mailto:%s'>%s</a>."
 
 #: templates/web/base/admin/body-form.html:81
 msgid ""
@@ -4019,7 +4018,7 @@ msgstr ""
 #: templates/web/zurich/tokens/confirm_problem.html:5
 #: templates/web/zurich/tokens/confirm_problem.html:6
 msgid "You have successfully confirmed your email address."
-msgstr "Usted ha confirmado su dirección de correos"
+msgstr "Has confirmado tu email"
 
 #: templates/web/base/report/display.html:20
 #: templates/web/base/report/new/fill_in_details.html:37
@@ -4078,24 +4077,24 @@ msgstr ""
 #: templates/web/fixmystreet/report/update-form.html:76
 #: templates/web/zurich/report/new/fill_in_details_form.html:88
 msgid "Your email"
-msgstr "Su email"
+msgstr "Tu email"
 
 #: templates/web/fixmystreet/auth/general.html:27
 #: templates/web/fixmystreet/report/update-form.html:82
 #: templates/web/zurich/auth/general.html:30
 #: templates/web/zurich/auth/general.html:58
 msgid "Your email address"
-msgstr "Su dirección de emai"
+msgstr "Tu dirección de email"
 
 #: templates/web/base/auth/general.html:27
 msgid "Your email address:"
-msgstr "Su dirección de email:"
+msgstr "Tu dirección de email:"
 
 #: templates/web/base/alert/_list.html:92
 #: templates/web/base/report/new/fill_in_details_form.html:125
 #: templates/web/base/report/update-form.html:81
 msgid "Your email:"
-msgstr "Su email:"
+msgstr "Tu email:"
 
 #: templates/web/fixmystreet/report/updates-sidebar-notes.html:7
 msgid ""
@@ -4151,7 +4150,7 @@ msgstr ""
 
 #: templates/web/base/contact/index.html:81
 msgid "Your&nbsp;email:"
-msgstr "Su&nbsp:email:"
+msgstr "Tu&nbsp:email:"
 
 #: templates/web/base/admin/timeline.html:4
 msgid "by %s"
