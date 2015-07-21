@@ -1,5 +1,8 @@
-[% INCLUDE 'header.html', title =>  loc('Local RSS feeds and email alerts') %]
-
+[% INCLUDE 'header.html', title =>  loc('Local RSS feeds and email alerts'), avoid_raising => 1 %]
+<div class="row faq">
+  <div class="col-xs-3">
+  </div>
+  <div class="col-xs-9">
 <h1>[% loc('Local RSS feeds and email alerts') %]</h1>
 
 [% IF possible_location_matches %]
@@ -10,5 +13,6 @@
         [% END %]
     </ul>
 [% END %]
+</div>
 
 [% INCLUDE 'footer.html' %]

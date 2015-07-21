@@ -27,19 +27,22 @@
             </form>
           </div>
         </div>
-        [% IF possible_location_matches %]
-            <script type="text/javascript">
-                $( function(){
-                    jQuery.noConflict();
-                    $('#myModal').modal('show');
-                } )
-            </script>
-            <div class="alerta-resultado">[% loc('Hemos encontrado más de un resultado para esta dirección. Mostraremos hasta diez resultados, intenta una búsqueda diferente si el tuyo no está aquí.') %]</div>
-            <ul class="pc_alternatives">
-                [% FOREACH match IN possible_location_matches %]
-                <li><a href="/around?latitude=[% match.latitude | uri %];longitude=[% match.longitude | uri %]">[% match.address | html %]</a></li>
-                [% END %]
-            </ul>
+        [% IF not avoid_raising %]
+          [% IF possible_location_matches %]
+              <script type="text/javascript">
+                  $( function(){
+                      jQuery.noConflict();
+                      $('#myModal').modal('show');
+                  } )
+              </script>
+
+              <div class="alerta-resultado">[% loc('Hemos encontrado más de un resultado para esta dirección. Mostraremos hasta diez resultados, intenta una búsqueda diferente si el tuyo no está aquí.') %]</div>
+              <ul class="pc_alternatives">
+                  [% FOREACH match IN possible_location_matches %]
+                  <li><a href="/around?latitude=[% match.latitude | uri %];longitude=[% match.longitude | uri %]">[% match.address | html %]</a></li>
+                  [% END %]
+              </ul>
+          [% END %]
         [% END %]
       </div>
     </div>
@@ -67,4 +70,3 @@ $(function(){
 });
 </script>
 <!-- Fin del terrible de modal -->
-
