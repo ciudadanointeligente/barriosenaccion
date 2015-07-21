@@ -231,18 +231,18 @@ header .branding {
 	background-color: #664EBC;
 	color: #ffffff;
 	padding-bottom: 20px;
-	
+
 }
 .tipos_home .well {
   background-color: #5E47B0;
-  border: #5E47B0; 
+  border: #5E47B0;
   color: #ffffff;
   font-weight: 100;
   min-height: 142px;
 }
 .pasos_home {
 	color: #000000;
-  background-image: url("/cobrands/barriosenaccion/images/bg_pasos_reportar.jpg"); 
+  background-image: url("/cobrands/barriosenaccion/images/bg_pasos_reportar.jpg");
   background-repeat: no-repeat;
 }
 .pasos_home .well {
@@ -556,4 +556,7 @@ h4.static-with-rule {
 			position: absolute;
 		}
 	}
+}
+.photo-report {
+  margin: 5px 0px 5px;
 }

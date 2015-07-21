@@ -20,16 +20,16 @@
     <div class="well">
       [% IF photos.size %]
       <h2>[% loc('Some photos of recent reports') %]</h2>
-      <ul>
         [% FOREACH p IN photos;
         photo = p.get_photo_params;
         %]
-        <li>
-          <a href="/report/[% p.id %]"><img border="0" height="100"
-            src="[% photo.url_tn %]" alt="[% p.title | html %]" title="[% p.title | html %]"></a>
-          </li>
+          <div class="photo-report">
+            <a href="/report/[% p.id %]"><img border="0" height="100"
+              src="[% photo.url_tn %]" alt="[% p.title | html %]" title="[% p.title | html %]">
+              <small>[% p.title | html %]</small></a>
+
+            </div>
           [% END %]
-        </ul>
       [% END %]
     </div>
   </div>
