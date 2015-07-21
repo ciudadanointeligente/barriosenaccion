@@ -135,7 +135,6 @@ $(function(){
     // Geolocation
     if (geo_position_js.init()) {
         var link ='<div class="elquegeolocaliza col-xs-6 col-sm-6 col-md-6 col-lg-6"><p>Ser localizado automáticamente:</p><a href="#LINK" id="geolocate_link" class="btn btn-primary"><i class="fa fa-location-arrow"></i> Encuéntrame</a></div>';
-        $('form[action="/alert/list"]').parent().parent().append(link.replace('LINK','alert/list'));
         if ($('body.frontpage').length) {
             $('#postcodeForm').after(link.replace('LINK','around'));
         } else{
@@ -210,4 +209,3 @@ $(function(){
 });
 
 })(jQuery);
-

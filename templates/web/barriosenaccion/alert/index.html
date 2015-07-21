@@ -1,5 +1,22 @@
 [% INCLUDE 'header.html', title = loc('Local RSS feeds and email alerts'), bodyclass = 'twothirdswidthpage alertindex' %]
 <div class="row">
+  <div class="col-xs-3">
+    <div class="well">
+    [% IF photos.size %]
+      <h2>[% loc('Some photos of recent reports') %]</h2>
+      <ul>
+        [% FOREACH p IN photos;
+        photo = p.get_photo_params;
+        %]
+        <li>
+          <a href="/report/[% p.id %]"><img border="0" height="100"
+            src="[% photo.url_tn %]" alt="[% p.title | html %]" title="[% p.title | html %]"></a>
+          </li>
+          [% END %]
+        </ul>
+      [% END %]
+    </div>
+  </div>
   <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
     <h1>Recibe alertas de los reportes en tu barrio</h1>
 
@@ -17,7 +34,7 @@
 Para saber cuáles son las alertas locales que tenemos para ti, por favor introduce tu dirección.
 </p>
 <div class="row">
-          <div  id="postcodeForm" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 elquegeolocaliza">
+          <div  id="FormularioBusqueda" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 elquegeolocaliza">
             <form action="/alert/list" method="get" name="postcodeForm">
                 <p>Ingresa una dirección:</p>
                 <div class="input-group">
@@ -29,25 +46,6 @@ Para saber cuáles son las alertas locales que tenemos para ti, por favor introd
             </form>
           </div>
         </div>
-[% IF photos.size %]
-<div class="" id="alert_recent">
-  
-    <h2>[% loc('Some photos of recent reports') %]</h2>
-    <ul>
-    [% FOREACH p IN photos;
-        photo = p.get_photo_params;
-    %]
-        <li>
-        <a href="/report/[% p.id %]"><img border="0" height="100"
-            src="[% photo.url_tn %]" alt="[% p.title | html %]" title="[% p.title | html %]"></a>
-        </li>
-    [% END %]
-    </ul>
-</div>
-[% END %]
-  </div>
-  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-    
   </div>
 </div>
 

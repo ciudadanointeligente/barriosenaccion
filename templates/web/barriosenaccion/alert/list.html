@@ -15,27 +15,33 @@
     %]
 [% END %]
 
-
-<h1>[% title %]</h1>
-
-<form id="alerts" name="alerts" method="post" action="/alert/subscribe">
-
-  [% IF photos.size %]
-    <div id="alert_photos" class="sticky-sidebar">
-      <aside>
-        <h2>[% loc('Photos of recent nearby reports') %]</h2>
+<div class="row faq">
+  <div class="col-xs-3">
+    <div class="well">
+      [% IF photos.size %]
+      <h2>[% loc('Some photos of recent reports') %]</h2>
+      <ul>
         [% FOREACH p IN photos;
-            photo = p.get_photo_params;
+        photo = p.get_photo_params;
         %]
-            <a href="/report/[% p.id %]"><img border="0" height="100"
-                src="[% photo.url_tn %]" alt="[% p.title | html %]" title="[% p.title | html %]"></a>
-        [% END %]
-      </aside>
+        <li>
+          <a href="/report/[% p.id %]"><img border="0" height="100"
+            src="[% photo.url_tn %]" alt="[% p.title | html %]" title="[% p.title | html %]"></a>
+          </li>
+          [% END %]
+        </ul>
+      [% END %]
     </div>
-  [% END %]
+  </div>
+  <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+    <h1>[% title %]</h1>
 
-  [% INCLUDE 'alert/_list.html' %]
+    <form id="alerts" name="alerts" method="post" action="/alert/subscribe">
 
-</form>
 
+      [% INCLUDE 'alert/_list.html' %]
+
+    </form>
+  </div>
+</div>
 [% INCLUDE 'footer.html' %]
