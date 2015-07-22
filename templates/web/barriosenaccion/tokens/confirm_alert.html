@@ -1,19 +1,24 @@
 [% INCLUDE 'header.html', bodyclass = 'fullwidthpage', title =>  loc('Local RSS feeds and email alerts') %]
+<div class="row faq">
+  <div class="col-xs-3">
+  </div>
+  <div class="col-xs-9">
+    <div class="confirmation-header">
 
-<div class="confirmation-header">
+      [% IF confirm_type == 'subscribe' || confirm_type == 'created' %]
+        <h1>Creamos una alerta de emails</h1>
+        <p>Por qué parar ahí? <a href="/alert">agregar más alertas</a></p>
 
-  [% IF confirm_type == 'subscribe' || confirm_type == 'created' %]
-    <h1>Creamos una alerta de emails</h1>
-    <p>Por qué parar ahí? <a href="/alert">agregar más alertas</a></p>
+      [% ELSIF confirm_type == 'unsubscribe' %]
+        <h1>Eliminamos tu alerta por email</h1>
+        <p>Bandeja de entrada vacía ahí vamos!</p>
 
-  [% ELSIF confirm_type == 'unsubscribe' %]
-    <h1>Eliminamos tu alerta por email</h1>
-    <p>Bandeja de entrada vacía ahí vamos!</p>
+      [% END %]
 
-  [% END %]
+    </div>
 
+    [% INCLUDE next_steps.html %]
+  </div>
 </div>
-
-[% INCLUDE next_steps.html %]
 
 [% INCLUDE 'footer.html' %]

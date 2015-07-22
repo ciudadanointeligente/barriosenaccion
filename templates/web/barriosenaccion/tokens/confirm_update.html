@@ -1,0 +1,30 @@
+[% INCLUDE 'header.html', bodyclass = 'fullwidthpage', title = loc('Confirmation');
+
+DEFAULT problem = update.problem;
+SET problem_url = c.uri_for('/report', problem.id);
+IF update;
+    problem_url = problem_url _ '#update_' _ update.id;
+END;
+
+%]
+<div class="row faq">
+  <div class="col-xs-3">
+  </div>
+  <div class="col-xs-9">
+    <div class="confirmation-header">
+
+      <h1><a href="[% problem_url %]">[% problem.title %]</a></h1>
+
+      <h2>[% loc('Thank you for updating this issue!') %]</h2>
+
+    </div>
+
+[% INCLUDE
+  next_steps.html,
+  just_interacted = 1,
+  share_url = c.cobrand.base_url_for_report(problem) _ problem.url,
+  twitter_comment = loc('I just updated a problem on @fixmystreet')
+%]
+  </div>
+</div>
+[% INCLUDE 'footer.html' %]

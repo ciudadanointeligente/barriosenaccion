@@ -31,30 +31,52 @@
 
   <div id="form_sign_in">
       <h3>Tiene una cotraseña en BarriosEnAcción?</h3>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <p>
+                  Sí, tengo un password
 
-      <div id="form_sign_in_yes">
+                </p>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
 
-          <p>
-          <label class="n" for="password_sign_in">[% loc('<strong>Yes</strong> I have a password') %]</label>
-          <input type="password" name="password_sign_in" id="password_sign_in" value="">
-          </p>
+              <div id="form_sign_in_yes">
+                <label class="n" for="password_sign_in">Mi password</label>
+                <input type="password" name="password_sign_in" id="password_sign_in" value="">
 
-          <p>
-          <input type="checkbox" id="remember_me" name="remember_me" value='1'[% ' checked' IF remember_me %]>
-          <label class="n" for="remember_me">
-          Recordar mi contraseña en este computador
-          </label>
-          </p>
+                <p>
+                  <input type="checkbox" id="remember_me" name="remember_me" value='1'[% ' checked' IF remember_me %]>
+                  <label class="n" for="remember_me">
+                    Recordar mi contraseña en este computador
+                  </label>
+                </p>
 
-          <p>
-          <input type="submit" name="sign_in" value="[% loc('Sign in') %]">
-          </p>
+                <p>
+                  <input type="submit" name="sign_in" value="Ingresar">
+                </p>
 
-      </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <p>Quiero registrarme ahora.</p>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
       <div id="form_sign_in_no">
-
-          <p>[% loc('<strong>No</strong>, I do not, let me sign in by email:') %]</p>
-
           <div class="fieldset">
               <div class="form-field">
                   <label for="name">[% loc('Your name:') %]</label>
@@ -74,6 +96,12 @@
           </p>
 
       </div>
+
+
+    </div>
+  </div>
+</div>
+</div>
 
   </div>
 
