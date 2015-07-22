@@ -56,9 +56,12 @@ sub pin_colour {
         else {
             return 'yellow'
         }
-        
+
     }
     return $p->is_fixed ? 'green' : 'red';
+}
+sub can_support_problems {
+  return 1;
 }
 
 sub path_to_pin_icons {
@@ -67,4 +70,3 @@ sub path_to_pin_icons {
 
 
 1;
-

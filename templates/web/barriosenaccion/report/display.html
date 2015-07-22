@@ -1,4 +1,4 @@
-[% 
+[%
     SET bodyclass = 'mappage';
     PROCESS "report/photo-js.html";
     PROCESS "maps/${map.type}.html";
@@ -6,7 +6,7 @@
     problem_title = problem.title_safe _ ' - ' _ loc('Viewing a problem');
     INCLUDE 'header.html'
         title = problem_title
-        rss = [ loc('Updates to this problem, FixMyStreet'), "/rss/$problem.id" ]
+        rss = [ loc('Updates to this problem, BarriosEnAccion'), "/rss/$problem.id" ]
         robots = 'index, nofollow';
 %]
 
