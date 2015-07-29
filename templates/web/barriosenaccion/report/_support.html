@@ -7,7 +7,7 @@ SET text = tprintf( nget( "%d persona apoya", "%d personas apoyan", problem.inte
 END;
 %]
 
-[% IF c.user AND c.user.from_body %]
+[% IF c.user %]
 <form action="[% c.uri_for( '/report/support' ) %]">
   <p id="supporter"><small>[% text %] <input type="hidden" name="id" value="[% problem.id %]"><input type="submit" class="green-btn" value="Apoyar"></small></p>
 </form>
