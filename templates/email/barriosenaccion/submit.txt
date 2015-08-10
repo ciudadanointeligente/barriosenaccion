@@ -27,14 +27,14 @@ Longitud: <?=$values['longitude']?>
 
 <?=$values['closest_address']?>----------
 
-Por favor no responda a este email puesto que irá a una cuenta no monitoreada.
+Agradecemos atender la solicitud.
 Si desea proveer una actualización por favor hágalo en el sitio.
 
 <?=$values['signature']?>
 
 Este mensaje fue en enviado por BarriosEnAcción, un proyecto de Ciudad Viva y Ciudadano Inteligente.
 Si existe algún mail más apropiado para problemas relacionados con <?=$values['category_footer']?>, 
-por favor envíenos un mail a lab@ciudadanointeligente.org. Esto mejorará el servicio para sus ciudadanos.
+por favor envíenos un mail a info@barriosenaccion.cl. Esto mejorará el servicio para sus ciudadanos.
 También agradecemos cualquier feedback que tenga sobre el sitio.
 
 BarriosEnAcción es una plataforma que utiliza el software FixMyStreet de MySociety.
