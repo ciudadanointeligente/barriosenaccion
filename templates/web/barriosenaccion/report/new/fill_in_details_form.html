@@ -53,14 +53,12 @@
             <p class='form-error'>[% field_errors.title %]</p>
           [% END %]
             <input type="text" value="[% report.title | html %]" name="title" id="form_title" placeholder="[% loc('Sea claro y breve') %]" required>
-
             <label for="form_detail">[% loc('Describa su problema') %] [% INCLUDE 'report/public_label.html' %]</label>
+            [% TRY %][% PROCESS 'report/new/inline-tips.html' %][% CATCH file %][% END %]
           [% IF field_errors.detail %]
             <p class='form-error'>[% field_errors.detail %]</p>
           [% END %]
             <textarea rows="7" cols="26" name="detail" id="form_detail" placeholder="[% loc('Especifíque en detalle') %]" required>[% report.detail | html %]</textarea>
-
-          [% TRY %][% PROCESS 'report/new/inline-tips.html' %][% CATCH file %][% END %]
 
           
 
