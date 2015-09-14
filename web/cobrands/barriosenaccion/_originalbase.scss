@@ -981,6 +981,8 @@ a:hover.button-left {
   @extend .full-width;
   background: #333;
   height: 29em;
+  width: 60%;
+  float: right;
   margin-bottom: 1em;
   overflow: hidden;
   position: relative;
