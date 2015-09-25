@@ -13,10 +13,6 @@ display: inline;
 <div id="share-buttons">
 
 
-    <!-- Facebook -->
-    <a href="http://www.facebook.com/sharer.php?u=[% c.req.uri %]" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-    </a>
 
     <!-- Google+ -->
     <a href="https://plus.google.com/share?url=[% c.req.uri %]" target="_blank">
@@ -33,9 +29,15 @@ display: inline;
         <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
     </a>
 
-    <!-- Twitter -->
-    <a href="https://twitter.com/share?url=[% c.req.uri %]&amp;name=BarriosEnAccion&amp;hashtags=barriosenaccion" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=[% c.req.uri %]" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
     </a>
+</div>
+<div>
+    <h3>Contacta a tu municipalidad</h3>
+    <!-- [% c.cobrand.municipalidad_twitter(problem) %] -->
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="[% c.req.uri %]" data-text="Hola! @[% c.cobrand.municipalidad_twitter(problem) %]" data-via="barriosenaccion">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </div>

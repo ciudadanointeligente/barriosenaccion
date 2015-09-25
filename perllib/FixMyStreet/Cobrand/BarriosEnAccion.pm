@@ -44,6 +44,9 @@ use constant CATEGORY_PINS_AND_CLASSES => {
 sub pin_colour {
     my ( $self, $p, $context ) = @_;
     #return 'green' if time() - $p->confirmed->epoch < 7 * 24 * 60 * 60;
+    if ($p->is_fixed) {
+        return 'green';
+    }
     if ($context eq 'around' || $context eq 'reports' || $context eq 'report') {
 
         my $decomposed = NFKD( $p->category );
@@ -54,11 +57,10 @@ sub pin_colour {
           return $self->CATEGORY_PINS_AND_CLASSES->{$decomposed};
         }
         else {
-            return 'yellow'
+            return '';
         }
 
     }
-    return $p->is_fixed ? 'green' : 'red';
 }
 sub can_support_problems {
   return 1;
@@ -68,5 +70,16 @@ sub path_to_pin_icons {
     return '/cobrands/barriosenaccion/images/pins/';
 }
 
+use constant TWITTERS => {
+    '1' => 'Muni_provi',
+    '2' => 'Muni_recoleta',
+    '5' => 'Muni_stgo'
+};
+
+sub municipalidad_twitter {
+    my ( $self, $r ) = @_;
+    my $bodies_str = $r->bodies_str;
+    return $self->TWITTERS->{$bodies_str};
+}
 
 1;
