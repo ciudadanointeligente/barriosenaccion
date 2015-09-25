@@ -38,7 +38,23 @@ use constant CATEGORY_PINS_AND_CLASSES => {
                                             "Faltas a la Convivencia"  => "faltas_a_la_convivencia",
                                             "Ruidos Molestos" => "ruidos_molestos",
                                             "Congestion"  => "congestion",
-                                            "Otros" => 'otros'
+                                            "Otros" => 'otros',
+                                            "Basura en vereda o calzada" => "basura_y_falta_de_higiene_en_el_espacio_publico",
+                                            "Basura fuera de horario de retiro" => "basura_fuera_de_horario_de_retiro",
+                                            "Calzadas o aceras en mal estado" => "calzadas_o_aceras_en_mal_estado",
+                                            "Casa abandonada / sitio eriazo" => "casa_abandonada_/_sitio_eriazo",
+                                            "Clandestinos" => "clandestinos",
+                                            "Cobro incorrecto de parquímetro" => "cobro_incorrecto_de_parquímetro",
+                                            "Comercio ambulante" => "comercio_ambulante",
+                                            "Falta de señal o señal en mal estado" => "falta_de_señal_o_señal_en_mal_estado",
+                                            "Luminarias apagadas o en mal estado" => "luminarias_apagadas_o_en_mal_estado",
+                                            "Mobiliario urbano en mal estado" => "mobiliario_urbano_en_mal_estado",
+                                            "Obstrucción del espacio público" => "obstrucción_del_espacio_público",
+                                            "Presencia de escombros" => "presencia_de_escombros",
+                                            "Ruidos Molestos" => "ruidos_molestos",
+                                            "Semáforo apagado o en mal estado" => "semáforo_apagado_o_en_mal_estado",
+                                            "Trabajos fuera de horario" => "trabajos_fuera_de_horario",
+                                            "Vehículos mal estacionados" => "vehículos_mal_estacionados"
                                         };
 
 sub pin_colour {
@@ -57,7 +73,7 @@ sub pin_colour {
           return $self->CATEGORY_PINS_AND_CLASSES->{$decomposed};
         }
         else {
-            return '';
+            return 'default';
         }
 
     }
