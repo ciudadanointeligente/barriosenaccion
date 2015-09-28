@@ -66,7 +66,7 @@ sub pin_colour {
           return $self->CATEGORY_PINS_AND_CLASSES->{$decomposed};
         }
         else {
-            return '';
+            return 'otros';
         }
 
     }
