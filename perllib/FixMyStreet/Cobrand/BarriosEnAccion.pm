@@ -1,3 +1,4 @@
+
 package FixMyStreet::Cobrand::BarriosEnAccion;
 use base 'FixMyStreet::Cobrand::Default';
 use Unicode::Normalize;
@@ -38,14 +39,15 @@ use constant CATEGORY_PINS_AND_CLASSES => {
                                             "Faltas a la Convivencia"  => "faltas_a_la_convivencia",
                                             "Ruidos Molestos" => "ruidos_molestos",
                                             "Congestion"  => "congestion",
-                                            "Otros" => 'otros',
-                                            "Basura en vereda o calzada" => "basura_y_falta_de_higiene_en_el_espacio_publico",
-                                            "Basura fuera de horario de retiro" => "basura_y_falta_de_higiene_en_el_espacio_publico",
-                                            "Calzadas o aceras en mal estado" => "vereda_o_calle_en_mal_estado",
-                                            "Clandestinos" => "clandestinos",
-                                            "Falta de señal o señal en mal estado" => "vereda_o_calle_en_mal_estado",
-                                            "Semáforo apagado o en mal estado" => "flujo_vehicular_y_peatonal",
-                                            "Vehículos mal estacionados" => "congestion"
+                                            "Otros" => 'otros'
+                                            # ,
+                                            # "Basura en vereda o calzada" => "basura_y_falta_de_higiene_en_el_espacio_publico",
+                                            # "Basura fuera de horario de retiro" => "basura_y_falta_de_higiene_en_el_espacio_publico",
+                                            # "Calzadas o aceras en mal estado" => "vereda_o_calle_en_mal_estado",
+                                            # "Clandestinos" => "clandestinos",
+                                            # "Falta de señal o señal en mal estado" => "vereda_o_calle_en_mal_estado",
+                                            # "Semáforo apagado o en mal estado" => "flujo_vehicular_y_peatonal",
+                                            # "Vehículos mal estacionados" => "congestion"
                                         };
 
 sub pin_colour {
