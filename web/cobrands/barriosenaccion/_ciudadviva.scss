@@ -574,14 +574,30 @@ h4.static-with-rule {
   .row .pasos_home img {
     display: none;
   }
+  .reportar-ahora-xs {
+    margin: 30px 0px;
+  }
   .pasos_home .well {
-      padding: 25px 0px 0px 0px;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      padding: 10px;
+      border-radius: 0%;
+      width: initial;
+      height: initial;
       margin-bottom: 20px;
       min-width: initial;
       min-height: initial;
-      margin-left: 15%;
+      margin-left: 0%;
+  }
+  .landing-text {
+    h2 {
+      font-size: 22px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-shadow: 0 0 4px #ffffff;
+    }
+    ul {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
   }
 }
+
