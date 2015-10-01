@@ -571,5 +571,17 @@ h4.static-with-rule {
   #map_box {
     display: none;
   }
-
+  .row .pasos_home img {
+    display: none;
+  }
+  .pasos_home .well {
+      padding: 25px 0px 0px 0px;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      min-width: initial;
+      min-height: initial;
+      margin-left: 15%;
+  }
 }
