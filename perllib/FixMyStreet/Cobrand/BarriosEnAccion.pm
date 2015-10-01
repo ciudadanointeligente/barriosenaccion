@@ -82,7 +82,7 @@ sub path_to_pin_icons {
 use constant TWITTERS => {
     '1' => 'Muni_provi',
     '2' => 'Muni_recoleta',
-    '5' => 'Muni_stgo'
+    '5' => 'AloStgo'
 };
 
 sub municipalidad_twitter {
