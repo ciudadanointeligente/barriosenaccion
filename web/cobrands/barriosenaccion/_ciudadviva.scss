@@ -271,17 +271,6 @@ header .branding {
 	font-size: 2.571em;
 }
 
-
-@media (min-width: 768px) {
-.nav-justified>li {
-  float: none !important;
-}
-.navbar-nav>li>a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: 75px;
-}
-}
 .navbar {
   margin-bottom: 0px;
 }
@@ -321,7 +310,7 @@ div#main-nav {
 }
 #side {
   position: absolute;
-  top: 148px;
+  //top: 148px;
   background-color: #F7F7F7;
   left: 0;
   z-index: 100;
@@ -483,6 +472,7 @@ h4.static-with-rule {
   border-top: none;
 }
 #map_box {
+  display: block;
   margin-bottom: 0;
 }
 .elquegeolocaliza {
@@ -559,4 +549,27 @@ h4.static-with-rule {
 }
 .photo-report {
   margin: 5px 0px 5px;
+}
+
+
+@media (min-width: 768px) {
+  .nav-justified>li {
+    float: none !important;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 75px;
+  }
+}
+@media (max-width: 768px) {
+  #side {
+    width: 100%;
+    top: initial;
+  }
+
+  #map_box {
+    display: none;
+  }
+
 }
