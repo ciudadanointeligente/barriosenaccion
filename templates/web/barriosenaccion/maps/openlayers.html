@@ -28,7 +28,9 @@ var fixmystreet = {
     'pins': [% INCLUDE maps/pins_js.html %]
 }
 </script>
-<div id="map_box">
+
+<div class="row"><!-- Este div se cierra en display.html -->
+<div id="map_box" class=" col-xs-12 col-sm-8 col-md-8 col-lg-8 pull-right">
     [% pre_map %]
     <div id="map"><noscript>
         <div id="drag"><[% map.img_type %]

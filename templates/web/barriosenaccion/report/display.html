@@ -16,56 +16,57 @@
 [% IF login_success %]
     <p class='form-success'>[% loc('You have successfully signed in; please check and confirm your details are accurate:') %]</p>
 [% END %]
-<div id="side">
-    [% INCLUDE 'report/sharing_social.html' %]
-    [% INCLUDE 'report/banner.html' %]
+    <div id="side" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
+        [% INCLUDE 'report/sharing_social.html' %]
+        [% INCLUDE 'report/banner.html' %]
 
-    [% INCLUDE 'report/_main.html' %]
-    [% TRY %][% INCLUDE 'report/_message_manager.html' %][% CATCH file %][% END %]
+        [% INCLUDE 'report/_main.html' %]
+        [% TRY %][% INCLUDE 'report/_message_manager.html' %][% CATCH file %][% END %]
 
-    <div class="shadow-wrap">
-        <ul id="key-tools">
-            [% IF c.user_exists AND c.cobrand.users_can_hide AND c.user.belongs_to_body( c.cobrand.council_id ) %]
-            <li><form method="post" action="/report/delete/[% problem.id %]" id="remove-from-site-form">
-                <input type="submit" id="key-tool-report-abuse" class="abuse" value="Remove from site">
-            </form></li>
-            [% ELSIF c.cobrand.moniker != 'zurich' %]
-            <li><a rel="nofollow" id="key-tool-report-abuse" class="abuse" href="[% c.uri_for( '/contact', { id => problem.id } ) %]">[% loc('Report abuse' ) %]</a></li>
-            [% END %]
-            [% IF c.cobrand.moniker != 'zurich' %]
-            <li><a rel="nofollow" id="key-tool-report-updates" class="feed" href="[% c.uri_for( '/alert/subscribe', { id => problem.id } ) %]">[% loc('Get updates' ) %]</a></li>
-            [% END %]
-            [% IF c.cobrand.moniker == 'fixmystreet' %]
-            <li><a rel="nofollow" id="key-tool-report-share" class="share" href="#report-share">[% loc('Share') %]</a></li>
-            [% END %]
-          [% IF c.cobrand.moniker == 'zurich' %]
-            <li><a class="chevron" id="key-tool-problems-nearby" href="[% c.uri_for( '/around', { lat => latitude, lon => longitude } ) %]">[% loc( 'Problems on the map' ) %]</a></li>
-          [% ELSE %]
-            <li><a class="chevron" id="key-tool-problems-nearby" href="[% c.uri_for( '/around', { lat => latitude, lon => longitude } ) %]">[% loc( 'Problems nearby' ) %]</a></li>
-          [% END %]
-        </ul>
+        <div class="shadow-wrap">
+            <ul id="key-tools">
+                [% IF c.user_exists AND c.cobrand.users_can_hide AND c.user.belongs_to_body( c.cobrand.council_id ) %]
+                <li><form method="post" action="/report/delete/[% problem.id %]" id="remove-from-site-form">
+                    <input type="submit" id="key-tool-report-abuse" class="abuse" value="Remove from site">
+                </form></li>
+                [% ELSIF c.cobrand.moniker != 'zurich' %]
+                <li><a rel="nofollow" id="key-tool-report-abuse" class="abuse" href="[% c.uri_for( '/contact', { id => problem.id } ) %]">[% loc('Report abuse' ) %]</a></li>
+                [% END %]
+                [% IF c.cobrand.moniker != 'zurich' %]
+                <li><a rel="nofollow" id="key-tool-report-updates" class="feed" href="[% c.uri_for( '/alert/subscribe', { id => problem.id } ) %]">[% loc('Get updates' ) %]</a></li>
+                [% END %]
+                [% IF c.cobrand.moniker == 'fixmystreet' %]
+                <li><a rel="nofollow" id="key-tool-report-share" class="share" href="#report-share">[% loc('Share') %]</a></li>
+                [% END %]
+              [% IF c.cobrand.moniker == 'zurich' %]
+                <li><a class="chevron" id="key-tool-problems-nearby" href="[% c.uri_for( '/around', { lat => latitude, lon => longitude } ) %]">[% loc( 'Problems on the map' ) %]</a></li>
+              [% ELSE %]
+                <li><a class="chevron" id="key-tool-problems-nearby" href="[% c.uri_for( '/around', { lat => latitude, lon => longitude } ) %]">[% loc( 'Problems nearby' ) %]</a></li>
+              [% END %]
+            </ul>
 
-    <div id="report-updates-data" class="hidden-js">
-        <form action="[% c.uri_for( '/alert/subscribe' ) %]" method="post">
-            <a href="[% c.uri_for( '/rss', problem.id ) %]">
-                <img src="/i/feed.png" width="16" height="16" title="[% loc('RSS feed') %]" alt="[% loc('RSS feed of updates to this problem' ) %]" border="0">
-            </a>
-            <p>[% loc('Receive email when updates are left on this problem.' ) %]</p>
-            <fieldset>
-            <label class="hidden n" for="alert_rznvy">[% loc('Your email') %]</label>
-            <div class="form-txt-submit-box">
-                <input type="email" name="rznvy" id="alert_rznvy" value="[% email | html %]" size="30" placeholder="[% loc('Your email') %]">
-                <input class="btn btn-default" type="submit" value="[% loc('Subscribe') %]">
-            </div>
-            <input type="hidden" name="id" value="[% problem.id %]">
-            <input type="hidden" name="type" value="updates">
-            </fieldset>
-        </form>
+        <div id="report-updates-data" class="hidden-js">
+            <form action="[% c.uri_for( '/alert/subscribe' ) %]" method="post">
+                <a href="[% c.uri_for( '/rss', problem.id ) %]">
+                    <img src="/i/feed.png" width="16" height="16" title="[% loc('RSS feed') %]" alt="[% loc('RSS feed of updates to this problem' ) %]" border="0">
+                </a>
+                <p>[% loc('Receive email when updates are left on this problem.' ) %]</p>
+                <fieldset>
+                <label class="hidden n" for="alert_rznvy">[% loc('Your email') %]</label>
+                <div class="form-txt-submit-box">
+                    <input type="email" name="rznvy" id="alert_rznvy" value="[% email | html %]" size="30" placeholder="[% loc('Your email') %]">
+                    <input class="btn btn-default" type="submit" value="[% loc('Subscribe') %]">
+                </div>
+                <input type="hidden" name="id" value="[% problem.id %]">
+                <input type="hidden" name="type" value="updates">
+                </fieldset>
+            </form>
+        </div>
+
+        </div>
+
+        [% INCLUDE 'report/updates.html' %]
+        [% INCLUDE 'report/update-form.html' %]
     </div>
-
-    </div>
-
-    [% INCLUDE 'report/updates.html' %]
-    [% INCLUDE 'report/update-form.html' %]
-</div>
+</div><!-- Este es el div que cierra el rwo que está justo arriba del div#map_box -->
 [% INCLUDE 'footer.html' %]

@@ -980,8 +980,7 @@ a:hover.button-left {
 #map_box{
   @extend .full-width;
   background: #333;
-  height: 29em;
-  width: 60%;
+  height: $max-height-map;
   float: right;
   margin-bottom: 1em;
   overflow: hidden;
