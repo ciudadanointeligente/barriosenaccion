@@ -308,7 +308,7 @@ div#main-nav {
   color: #ffffff;
   background: #864598;
 }
-#side {
+#side, #side-form {
   // position: absolute;
   //top: 148px;
   background-color: #F7F7F7;
@@ -341,19 +341,6 @@ div#main-nav {
 }
 .shadow-wrap ul#key-tools{
   display: none;
-}
-#side-form {
-  position: absolute;
-  top: 148px;
-  background-color: #F7F7F7;
-  left: 0;
-  z-index: 3000;
-  overflow: scroll;
-  min-height: $max-height-map;
-  padding: 0 15px;
-  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
-  -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
-  box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.26);
 }
 #side-form p {
   font-weight: 300;
@@ -563,7 +550,7 @@ h4.static-with-rule {
   }
 }
 @media (max-width: 768px) {
-  #side {
+  #side, #side-form {
     top: initial;
     max-height: 100%;
   }
