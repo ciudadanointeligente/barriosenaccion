@@ -47,10 +47,20 @@
     <div class="container-fluid">
             <header>
                 <div class="row branding">
-                    <div class="col-md-10">
+                    <div class="col-xs-8 col-md-10">
                         [% INCLUDE 'header_logo.html' %]
                     </div>
-                    <div class="col-md-2">
+                    <!-- <nav class="navbar navbar-default col-xs-2" role="navigation"> -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle tres-botones" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    <!-- </nav> -->
+                    <div class="col-xs-12 col-md-2">
 
                         [% IF c.user_exists %]
                         <div class="dropdown">
@@ -72,15 +82,6 @@
                 <div class="row">
                     <nav class="navbar navbar-default" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
-
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
 
                         <div class="collapse navbar-collapse navbar-ex1-collapse">
                             <ul class="nav navbar-nav nav-justified">

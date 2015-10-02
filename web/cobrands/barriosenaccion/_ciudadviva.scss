@@ -537,7 +537,10 @@ h4.static-with-rule {
 .photo-report {
   margin: 5px 0px 5px;
 }
-
+.tres-botones {
+  // background-color: #F8F8F8;
+  border-color: #E7E7E7;
+}
 
 @media (min-width: 768px) {
   .nav-justified>li {
@@ -550,6 +553,9 @@ h4.static-with-rule {
   }
 }
 @media (max-width: 768px) {
+  .navbar {
+    min-height: 0px;
+  }
   #side, #side-form {
     top: initial;
     max-height: 100%;
